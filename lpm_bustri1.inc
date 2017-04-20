@@ -15,10 +15,10 @@
 
 FUNCTION lpm_bustri1 
 (
-	data[3..0],
+	data[15..0],
 	enabledt
 )
 
 RETURNS (
-	tridata[3..0]
+	tridata[15..0]
 );

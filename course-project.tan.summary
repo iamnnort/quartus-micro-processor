@@ -5,9 +5,9 @@ Timing Analyzer Summary
 Type           : Worst-case tsu
 Slack          : N/A
 Required Time  : None
-Actual Time    : 6.984 ns
-From           : ABUS[8]
-To             : TAG_MEM:inst|TAG:inst2|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[2]
+Actual Time    : 3.942 ns
+From           : WRITE
+To             : CELL:inst20|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[0]
 From Clock     : --
 To Clock       : CLC
 Failed Paths   : 0
@@ -15,9 +15,9 @@ Failed Paths   : 0
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 8.645 ns
-From           : TAG_MEM:inst|TAG:inst|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[2]
-To             : HIT
+Actual Time    : 7.499 ns
+From           : CELL:inst20|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[8]
+To             : DBUS_OUT[8]
 From Clock     : CLC
 To Clock       : --
 Failed Paths   : 0
@@ -25,9 +25,9 @@ Failed Paths   : 0
 Type           : Worst-case tpd
 Slack          : N/A
 Required Time  : None
-Actual Time    : 11.319 ns
-From           : ABUS[8]
-To             : HIT
+Actual Time    : 10.827 ns
+From           : READ
+To             : DBUS_OUT[8]
 From Clock     : --
 To Clock       : --
 Failed Paths   : 0
@@ -35,20 +35,10 @@ Failed Paths   : 0
 Type           : Worst-case th
 Slack          : N/A
 Required Time  : None
-Actual Time    : -2.521 ns
-From           : ABUS[6]
-To             : TAG_MEM:inst|TAG:inst4|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[1]
+Actual Time    : -2.282 ns
+From           : DBUS_IN[9]
+To             : CELL:inst20|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[9]
 From Clock     : --
-To Clock       : CLC
-Failed Paths   : 0
-
-Type           : Clock Setup: 'CLC'
-Slack          : N/A
-Required Time  : None
-Actual Time    : 207.56 MHz ( period = 4.818 ns )
-From           : TAG_MEM:inst|TAG:inst1|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[7]
-To             : TAG_MEM:inst|TAG:inst4|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[5]
-From Clock     : CLC
 To Clock       : CLC
 Failed Paths   : 0
 

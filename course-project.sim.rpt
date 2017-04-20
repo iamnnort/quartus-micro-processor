@@ -1,5 +1,5 @@
 Simulator report for course-project
-Thu Apr 20 23:29:46 2017
+Thu Apr 20 23:46:03 2017
 Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
 
 
@@ -46,8 +46,8 @@ applicable agreement for further details.
 ; Simulation Start Time       ; 0 ps         ;
 ; Simulation End Time         ; 1.0 us       ;
 ; Simulation Netlist Size     ; 511 nodes    ;
-; Simulation Coverage         ;      60.36 % ;
-; Total Number of Transitions ; 13661        ;
+; Simulation Coverage         ;      60.18 % ;
+; Total Number of Transitions ; 13645        ;
 ; Simulation Breakpoints      ; 0            ;
 ; Family                      ; Stratix II   ;
 +-----------------------------+--------------+
@@ -93,13 +93,13 @@ Please use Quartus II to view the waveform report data.
 +-----------------------------------------------------+--------------+
 ; Type                                                ; Value        ;
 +-----------------------------------------------------+--------------+
-; Total coverage as a percentage                      ;      60.36 % ;
+; Total coverage as a percentage                      ;      60.18 % ;
 ; Total nodes checked                                 ; 511          ;
 ; Total output ports checked                          ; 550          ;
-; Total output ports with complete 1/0-value coverage ; 332          ;
+; Total output ports with complete 1/0-value coverage ; 331          ;
 ; Total output ports with no 1/0-value coverage       ; 185          ;
 ; Total output ports with no 1-value coverage         ; 204          ;
-; Total output ports with no 0-value coverage         ; 199          ;
+; Total output ports with no 0-value coverage         ; 200          ;
 +-----------------------------------------------------+--------------+
 
 
@@ -205,7 +205,6 @@ The following table displays output ports that toggle between 1 and 0 during sim
 ; |CASH|TAG_MEM:inst|TAG:inst1|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|counter_reg_bit1a[2]  ; |CASH|TAG_MEM:inst|TAG:inst1|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[2]               ; regout           ;
 ; |CASH|TAG_MEM:inst|TAG:inst1|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|counter_reg_bit1a[1]  ; |CASH|TAG_MEM:inst|TAG:inst1|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[1]               ; regout           ;
 ; |CASH|TAG_MEM:inst|TAG:inst1|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|counter_reg_bit1a[0]  ; |CASH|TAG_MEM:inst|TAG:inst1|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[0]               ; regout           ;
-; |CASH|TAG_MEM:inst|TAG:inst1|lpm_bustri2:inst3|lpm_bustri:lpm_bustri_component|dout[3]                                          ; |CASH|TAG_MEM:inst|TAG:inst1|lpm_bustri2:inst3|lpm_bustri:lpm_bustri_component|dout[3]                                            ; out              ;
 ; |CASH|TAG_MEM:inst|TAG:inst1|lpm_compare0:inst1|lpm_compare:lpm_compare_component|cmpr_40h:auto_generated|_~0                   ; |CASH|TAG_MEM:inst|TAG:inst1|lpm_compare0:inst1|lpm_compare:lpm_compare_component|cmpr_40h:auto_generated|_~0                     ; out0             ;
 ; |CASH|TAG_MEM:inst|TAG:inst1|lpm_compare0:inst1|lpm_compare:lpm_compare_component|cmpr_40h:auto_generated|aneb_result_wire[0]~0 ; |CASH|TAG_MEM:inst|TAG:inst1|lpm_compare0:inst1|lpm_compare:lpm_compare_component|cmpr_40h:auto_generated|aneb_result_wire[0]~0   ; out0             ;
 ; |CASH|TAG_MEM:inst|TAG:inst1|lpm_compare0:inst1|lpm_compare:lpm_compare_component|cmpr_40h:auto_generated|aneb_result_wire[0]   ; |CASH|TAG_MEM:inst|TAG:inst1|lpm_compare0:inst1|lpm_compare:lpm_compare_component|cmpr_40h:auto_generated|aneb_result_wire[0]     ; out0             ;
@@ -741,6 +740,7 @@ The following table displays output ports that do not toggle to 0 during simulat
 ; |CASH|TAG_MEM:inst|TAG:inst1|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|counter_reg_bit1a[8]  ; |CASH|TAG_MEM:inst|TAG:inst1|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[8]                ; regout           ;
 ; |CASH|TAG_MEM:inst|TAG:inst1|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|counter_reg_bit1a[7]  ; |CASH|TAG_MEM:inst|TAG:inst1|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[7]                ; regout           ;
 ; |CASH|TAG_MEM:inst|TAG:inst1|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|counter_reg_bit1a[6]  ; |CASH|TAG_MEM:inst|TAG:inst1|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[6]                ; regout           ;
+; |CASH|TAG_MEM:inst|TAG:inst1|lpm_bustri2:inst3|lpm_bustri:lpm_bustri_component|dout[3]                                          ; |CASH|TAG_MEM:inst|TAG:inst1|lpm_bustri2:inst3|lpm_bustri:lpm_bustri_component|dout[3]                                             ; out              ;
 ; |CASH|TAG_MEM:inst|TAG:inst1|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[6]                                                      ; |CASH|TAG_MEM:inst|TAG:inst1|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[6]                                                         ; regout           ;
 ; |CASH|TAG_MEM:inst|TAG:inst1|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[5]                                                      ; |CASH|TAG_MEM:inst|TAG:inst1|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[5]                                                         ; regout           ;
 ; |CASH|TAG_MEM:inst|TAG:inst1|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[4]                                                      ; |CASH|TAG_MEM:inst|TAG:inst1|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[4]                                                         ; regout           ;
@@ -878,17 +878,17 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II Simulator
     Info: Version 9.1 Build 222 10/21/2009 SJ Web Edition
-    Info: Processing started: Thu Apr 20 23:29:46 2017
+    Info: Processing started: Thu Apr 20 23:46:03 2017
 Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off course-project -c course-project
 Info: Using vector source file "D:/Универ/6 семестр/quartus-micro-processor/course-project.vwf"
 Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
 Info: Simulation partitioned into 1 sub-simulations
-Info: Simulation coverage is      60.36 %
-Info: Number of transitions in simulation is 13661
+Info: Simulation coverage is      60.18 %
+Info: Number of transitions in simulation is 13645
 Info: Quartus II Simulator was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 172 megabytes
-    Info: Processing ended: Thu Apr 20 23:29:46 2017
+    Info: Processing ended: Thu Apr 20 23:46:03 2017
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:01
 

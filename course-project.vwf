@@ -32,134 +32,34 @@ HEADER
 	GRID_DUTY_CYCLE = 50;
 }
 
-SIGNAL("ABUS")
+SIGNAL("CELL_NUM")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = BUS;
-	WIDTH = 12;
+	WIDTH = 2;
 	LSB_INDEX = 0;
 	DIRECTION = INPUT;
 	PARENT = "";
 }
 
-SIGNAL("ABUS[11]")
+SIGNAL("CELL_NUM[1]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "ABUS";
+	PARENT = "CELL_NUM";
 }
 
-SIGNAL("ABUS[10]")
+SIGNAL("CELL_NUM[0]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "ABUS";
-}
-
-SIGNAL("ABUS[9]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "ABUS";
-}
-
-SIGNAL("ABUS[8]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "ABUS";
-}
-
-SIGNAL("ABUS[7]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "ABUS";
-}
-
-SIGNAL("ABUS[6]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "ABUS";
-}
-
-SIGNAL("ABUS[5]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "ABUS";
-}
-
-SIGNAL("ABUS[4]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "ABUS";
-}
-
-SIGNAL("ABUS[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "ABUS";
-}
-
-SIGNAL("ABUS[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "ABUS";
-}
-
-SIGNAL("ABUS[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "ABUS";
-}
-
-SIGNAL("ABUS[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "ABUS";
+	PARENT = "CELL_NUM";
 }
 
 SIGNAL("CLC")
@@ -172,867 +72,377 @@ SIGNAL("CLC")
 	PARENT = "";
 }
 
-SIGNAL("HIT")
+SIGNAL("DBUS_IN")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 16;
+	LSB_INDEX = 0;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("DBUS_IN[15]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "DBUS_IN";
+}
+
+SIGNAL("DBUS_IN[14]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "DBUS_IN";
+}
+
+SIGNAL("DBUS_IN[13]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "DBUS_IN";
+}
+
+SIGNAL("DBUS_IN[12]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "DBUS_IN";
+}
+
+SIGNAL("DBUS_IN[11]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "DBUS_IN";
+}
+
+SIGNAL("DBUS_IN[10]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "DBUS_IN";
+}
+
+SIGNAL("DBUS_IN[9]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "DBUS_IN";
+}
+
+SIGNAL("DBUS_IN[8]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "DBUS_IN";
+}
+
+SIGNAL("DBUS_IN[7]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "DBUS_IN";
+}
+
+SIGNAL("DBUS_IN[6]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "DBUS_IN";
+}
+
+SIGNAL("DBUS_IN[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "DBUS_IN";
+}
+
+SIGNAL("DBUS_IN[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "DBUS_IN";
+}
+
+SIGNAL("DBUS_IN[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "DBUS_IN";
+}
+
+SIGNAL("DBUS_IN[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "DBUS_IN";
+}
+
+SIGNAL("DBUS_IN[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "DBUS_IN";
+}
+
+SIGNAL("DBUS_IN[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "DBUS_IN";
+}
+
+SIGNAL("DBUS_OUT")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 16;
+	LSB_INDEX = 0;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("DBUS_OUT[15]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "";
+	PARENT = "DBUS_OUT";
 }
 
-SIGNAL("MISS")
+SIGNAL("DBUS_OUT[14]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
+	PARENT = "DBUS_OUT";
+}
+
+SIGNAL("DBUS_OUT[13]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "DBUS_OUT";
+}
+
+SIGNAL("DBUS_OUT[12]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "DBUS_OUT";
+}
+
+SIGNAL("DBUS_OUT[11]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "DBUS_OUT";
+}
+
+SIGNAL("DBUS_OUT[10]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "DBUS_OUT";
+}
+
+SIGNAL("DBUS_OUT[9]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "DBUS_OUT";
+}
+
+SIGNAL("DBUS_OUT[8]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "DBUS_OUT";
+}
+
+SIGNAL("DBUS_OUT[7]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "DBUS_OUT";
+}
+
+SIGNAL("DBUS_OUT[6]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "DBUS_OUT";
+}
+
+SIGNAL("DBUS_OUT[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "DBUS_OUT";
+}
+
+SIGNAL("DBUS_OUT[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "DBUS_OUT";
+}
+
+SIGNAL("DBUS_OUT[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "DBUS_OUT";
+}
+
+SIGNAL("DBUS_OUT[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "DBUS_OUT";
+}
+
+SIGNAL("DBUS_OUT[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "DBUS_OUT";
+}
+
+SIGNAL("DBUS_OUT[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "DBUS_OUT";
+}
+
+SIGNAL("READ")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
 	PARENT = "";
 }
 
-SIGNAL("TAG_MEM:inst|TAG:inst|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs")
+SIGNAL("WRITE")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = BUS;
-	WIDTH = 7;
-	LSB_INDEX = 0;
-	DIRECTION = REGISTERED;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
 	PARENT = "";
 }
 
-SIGNAL("TAG_MEM:inst|TAG:inst|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[6]")
+SIGNAL("~DATA0~")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[5]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[4]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst1|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = BUS;
-	WIDTH = 7;
-	LSB_INDEX = 0;
-	DIRECTION = REGISTERED;
+	DIRECTION = INPUT;
 	PARENT = "";
 }
 
-SIGNAL("TAG_MEM:inst|TAG:inst1|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[6]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst1|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst1|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[5]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst1|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst1|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[4]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst1|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst1|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst1|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst1|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst1|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst1|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst1|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst1|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst1|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst2|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = BUS;
-	WIDTH = 7;
-	LSB_INDEX = 0;
-	DIRECTION = REGISTERED;
-	PARENT = "";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst2|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[6]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst2|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst2|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[5]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst2|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst2|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[4]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst2|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst2|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst2|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst2|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst2|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst2|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst2|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst2|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst2|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst4|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = BUS;
-	WIDTH = 7;
-	LSB_INDEX = 0;
-	DIRECTION = REGISTERED;
-	PARENT = "";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst4|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[6]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst4|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst4|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[5]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst4|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst4|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[4]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst4|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst4|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst4|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst4|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst4|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst4|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst4|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst4|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst4|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = BUS;
-	WIDTH = 12;
-	LSB_INDEX = 0;
-	DIRECTION = REGISTERED;
-	PARENT = "";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[11]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[10]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[9]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[8]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[7]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[6]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[5]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[4]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst1|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = BUS;
-	WIDTH = 12;
-	LSB_INDEX = 0;
-	DIRECTION = REGISTERED;
-	PARENT = "";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst1|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[11]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst1|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst1|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[10]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst1|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst1|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[9]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst1|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst1|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[8]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst1|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst1|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[7]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst1|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst1|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[6]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst1|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst1|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[5]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst1|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst1|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[4]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst1|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst1|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst1|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst1|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst1|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst1|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst1|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst1|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst1|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst2|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = BUS;
-	WIDTH = 12;
-	LSB_INDEX = 0;
-	DIRECTION = REGISTERED;
-	PARENT = "";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst2|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[11]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst2|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst2|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[10]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst2|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst2|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[9]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst2|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst2|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[8]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst2|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst2|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[7]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst2|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst2|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[6]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst2|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst2|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[5]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst2|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst2|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[4]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst2|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst2|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst2|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst2|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst2|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst2|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst2|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst2|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst2|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst4|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = BUS;
-	WIDTH = 12;
-	LSB_INDEX = 0;
-	DIRECTION = REGISTERED;
-	PARENT = "";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst4|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[11]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst4|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst4|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[10]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst4|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst4|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[9]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst4|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst4|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[8]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst4|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst4|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[7]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst4|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst4|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[6]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst4|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst4|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[5]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst4|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst4|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[4]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst4|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst4|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst4|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst4|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst4|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst4|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst4|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q";
-}
-
-SIGNAL("TAG_MEM:inst|TAG:inst4|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "TAG_MEM:inst|TAG:inst4|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q";
-}
-
-TRANSITION_LIST("ABUS[11]")
+TRANSITION_LIST("CELL_NUM[1]")
 {
 	NODE
 	{
@@ -1041,103 +451,7 @@ TRANSITION_LIST("ABUS[11]")
 	}
 }
 
-TRANSITION_LIST("ABUS[10]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("ABUS[9]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 150.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 840.0;
-	}
-}
-
-TRANSITION_LIST("ABUS[8]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 960.0;
-	}
-}
-
-TRANSITION_LIST("ABUS[7]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 120.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 870.0;
-	}
-}
-
-TRANSITION_LIST("ABUS[6]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("ABUS[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("ABUS[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("ABUS[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("ABUS[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("ABUS[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("ABUS[0]")
+TRANSITION_LIST("CELL_NUM[0]")
 {
 	NODE
 	{
@@ -1151,16 +465,155 @@ TRANSITION_LIST("CLC")
 	NODE
 	{
 		REPEAT = 1;
-		NODE
-		{
-			REPEAT = 100;
-			LEVEL 0 FOR 5.0;
-			LEVEL 1 FOR 5.0;
-		}
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
-TRANSITION_LIST("HIT")
+TRANSITION_LIST("DBUS_IN[15]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("DBUS_IN[14]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("DBUS_IN[13]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("DBUS_IN[12]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("DBUS_IN[11]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("DBUS_IN[10]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("DBUS_IN[9]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("DBUS_IN[8]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("DBUS_IN[7]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("DBUS_IN[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("DBUS_IN[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("DBUS_IN[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("DBUS_IN[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("DBUS_IN[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("DBUS_IN[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("DBUS_IN[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("DBUS_OUT[15]")
 {
 	NODE
 	{
@@ -1169,7 +622,7 @@ TRANSITION_LIST("HIT")
 	}
 }
 
-TRANSITION_LIST("MISS")
+TRANSITION_LIST("DBUS_OUT[14]")
 {
 	NODE
 	{
@@ -1178,688 +631,187 @@ TRANSITION_LIST("MISS")
 	}
 }
 
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[6]")
+TRANSITION_LIST("DBUS_OUT[13]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL U FOR 1000.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[5]")
+TRANSITION_LIST("DBUS_OUT[12]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL U FOR 1000.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[4]")
+TRANSITION_LIST("DBUS_OUT[11]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL U FOR 1000.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[3]")
+TRANSITION_LIST("DBUS_OUT[10]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL U FOR 1000.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[2]")
+TRANSITION_LIST("DBUS_OUT[9]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL U FOR 1000.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[1]")
+TRANSITION_LIST("DBUS_OUT[8]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL U FOR 1000.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[0]")
+TRANSITION_LIST("DBUS_OUT[7]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL U FOR 1000.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst1|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[6]")
+TRANSITION_LIST("DBUS_OUT[6]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL U FOR 1000.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst1|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[5]")
+TRANSITION_LIST("DBUS_OUT[5]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL U FOR 1000.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst1|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[4]")
+TRANSITION_LIST("DBUS_OUT[4]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL U FOR 1000.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst1|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[3]")
+TRANSITION_LIST("DBUS_OUT[3]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL U FOR 1000.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst1|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[2]")
+TRANSITION_LIST("DBUS_OUT[2]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL U FOR 1000.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst1|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[1]")
+TRANSITION_LIST("DBUS_OUT[1]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL U FOR 1000.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst1|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[0]")
+TRANSITION_LIST("DBUS_OUT[0]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL U FOR 1000.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst2|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[6]")
+TRANSITION_LIST("READ")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL U FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst2|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[5]")
+TRANSITION_LIST("WRITE")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL U FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst2|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[4]")
+TRANSITION_LIST("~DATA0~")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL U FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst2|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[3]")
+DISPLAY_LINE
 {
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst2|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst2|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst2|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst4|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[6]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst4|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst4|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst4|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst4|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst4|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst4|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[11]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[10]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[9]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[8]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[7]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[6]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst1|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[11]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst1|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[10]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst1|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[9]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst1|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[8]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst1|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[7]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst1|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[6]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst1|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst1|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst1|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst1|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst1|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst1|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst2|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[11]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst2|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[10]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst2|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[9]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst2|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[8]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst2|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[7]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst2|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[6]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst2|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst2|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst2|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst2|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst2|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst2|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst4|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[11]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst4|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[10]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst4|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[9]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst4|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[8]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst4|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[7]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst4|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[6]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst4|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst4|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst4|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst4|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
+	CHANNEL = "CELL_NUM";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 0;
+	TREE_LEVEL = 0;
+	CHILDREN = 1, 2;
 }
 
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst4|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[1]")
+DISPLAY_LINE
 {
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
+	CHANNEL = "CELL_NUM[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 1;
+	TREE_LEVEL = 1;
+	PARENT = 0;
 }
 
-TRANSITION_LIST("TAG_MEM:inst|TAG:inst4|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[0]")
+DISPLAY_LINE
 {
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
+	CHANNEL = "CELL_NUM[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 2;
+	TREE_LEVEL = 1;
+	PARENT = 0;
 }
 
 DISPLAY_LINE
@@ -1867,996 +819,375 @@ DISPLAY_LINE
 	CHANNEL = "CLC";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 0;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "ABUS";
-	EXPAND_STATUS = EXPANDED;
-	RADIX = Binary;
-	TREE_INDEX = 1;
-	TREE_LEVEL = 0;
-	CHILDREN = 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "ABUS[11]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 2;
-	TREE_LEVEL = 1;
-	PARENT = 1;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "ABUS[10]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
 	TREE_INDEX = 3;
-	TREE_LEVEL = 1;
-	PARENT = 1;
+	TREE_LEVEL = 0;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "ABUS[9]";
+	CHANNEL = "DBUS_IN";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 4;
-	TREE_LEVEL = 1;
-	PARENT = 1;
+	TREE_LEVEL = 0;
+	CHILDREN = 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "ABUS[8]";
+	CHANNEL = "DBUS_IN[15]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 5;
 	TREE_LEVEL = 1;
-	PARENT = 1;
+	PARENT = 4;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "ABUS[7]";
+	CHANNEL = "DBUS_IN[14]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 6;
 	TREE_LEVEL = 1;
-	PARENT = 1;
+	PARENT = 4;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "ABUS[6]";
+	CHANNEL = "DBUS_IN[13]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 7;
 	TREE_LEVEL = 1;
-	PARENT = 1;
+	PARENT = 4;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "ABUS[5]";
+	CHANNEL = "DBUS_IN[12]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 8;
 	TREE_LEVEL = 1;
-	PARENT = 1;
+	PARENT = 4;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "ABUS[4]";
+	CHANNEL = "DBUS_IN[11]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 9;
 	TREE_LEVEL = 1;
-	PARENT = 1;
+	PARENT = 4;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "ABUS[3]";
+	CHANNEL = "DBUS_IN[10]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 10;
 	TREE_LEVEL = 1;
-	PARENT = 1;
+	PARENT = 4;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "ABUS[2]";
+	CHANNEL = "DBUS_IN[9]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 11;
 	TREE_LEVEL = 1;
-	PARENT = 1;
+	PARENT = 4;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "ABUS[1]";
+	CHANNEL = "DBUS_IN[8]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 12;
 	TREE_LEVEL = 1;
-	PARENT = 1;
+	PARENT = 4;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "ABUS[0]";
+	CHANNEL = "DBUS_IN[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 13;
 	TREE_LEVEL = 1;
-	PARENT = 1;
+	PARENT = 4;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "HIT";
+	CHANNEL = "DBUS_IN[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 14;
-	TREE_LEVEL = 0;
+	TREE_LEVEL = 1;
+	PARENT = 4;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "MISS";
+	CHANNEL = "DBUS_IN[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 15;
-	TREE_LEVEL = 0;
+	TREE_LEVEL = 1;
+	PARENT = 4;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "TAG_MEM:inst|TAG:inst|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs";
+	CHANNEL = "DBUS_IN[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 16;
-	TREE_LEVEL = 0;
-	CHILDREN = 17, 18, 19, 20, 21, 22, 23;
+	TREE_LEVEL = 1;
+	PARENT = 4;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "TAG_MEM:inst|TAG:inst|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[6]";
+	CHANNEL = "DBUS_IN[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 17;
 	TREE_LEVEL = 1;
-	PARENT = 16;
+	PARENT = 4;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "TAG_MEM:inst|TAG:inst|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[5]";
+	CHANNEL = "DBUS_IN[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 18;
 	TREE_LEVEL = 1;
-	PARENT = 16;
+	PARENT = 4;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "TAG_MEM:inst|TAG:inst|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[4]";
+	CHANNEL = "DBUS_IN[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 19;
 	TREE_LEVEL = 1;
-	PARENT = 16;
+	PARENT = 4;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "TAG_MEM:inst|TAG:inst|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[3]";
+	CHANNEL = "DBUS_IN[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 20;
 	TREE_LEVEL = 1;
-	PARENT = 16;
+	PARENT = 4;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "TAG_MEM:inst|TAG:inst|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[2]";
+	CHANNEL = "DBUS_OUT";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 21;
-	TREE_LEVEL = 1;
-	PARENT = 16;
+	TREE_LEVEL = 0;
+	CHILDREN = 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "TAG_MEM:inst|TAG:inst|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[1]";
+	CHANNEL = "DBUS_OUT[15]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 22;
 	TREE_LEVEL = 1;
-	PARENT = 16;
+	PARENT = 21;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "TAG_MEM:inst|TAG:inst|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[0]";
+	CHANNEL = "DBUS_OUT[14]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 23;
 	TREE_LEVEL = 1;
-	PARENT = 16;
+	PARENT = 21;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "TAG_MEM:inst|TAG:inst1|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs";
+	CHANNEL = "DBUS_OUT[13]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 24;
-	TREE_LEVEL = 0;
-	CHILDREN = 25, 26, 27, 28, 29, 30, 31;
+	TREE_LEVEL = 1;
+	PARENT = 21;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "TAG_MEM:inst|TAG:inst1|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[6]";
+	CHANNEL = "DBUS_OUT[12]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 25;
 	TREE_LEVEL = 1;
-	PARENT = 24;
+	PARENT = 21;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "TAG_MEM:inst|TAG:inst1|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[5]";
+	CHANNEL = "DBUS_OUT[11]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 26;
 	TREE_LEVEL = 1;
-	PARENT = 24;
+	PARENT = 21;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "TAG_MEM:inst|TAG:inst1|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[4]";
+	CHANNEL = "DBUS_OUT[10]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 27;
 	TREE_LEVEL = 1;
-	PARENT = 24;
+	PARENT = 21;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "TAG_MEM:inst|TAG:inst1|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[3]";
+	CHANNEL = "DBUS_OUT[9]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 28;
 	TREE_LEVEL = 1;
-	PARENT = 24;
+	PARENT = 21;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "TAG_MEM:inst|TAG:inst1|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[2]";
+	CHANNEL = "DBUS_OUT[8]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 29;
 	TREE_LEVEL = 1;
-	PARENT = 24;
+	PARENT = 21;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "TAG_MEM:inst|TAG:inst1|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[1]";
+	CHANNEL = "DBUS_OUT[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 30;
 	TREE_LEVEL = 1;
-	PARENT = 24;
+	PARENT = 21;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "TAG_MEM:inst|TAG:inst1|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[0]";
+	CHANNEL = "DBUS_OUT[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 31;
 	TREE_LEVEL = 1;
-	PARENT = 24;
+	PARENT = 21;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "TAG_MEM:inst|TAG:inst2|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs";
+	CHANNEL = "DBUS_OUT[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 32;
-	TREE_LEVEL = 0;
-	CHILDREN = 33, 34, 35, 36, 37, 38, 39;
+	TREE_LEVEL = 1;
+	PARENT = 21;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "TAG_MEM:inst|TAG:inst2|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[6]";
+	CHANNEL = "DBUS_OUT[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 33;
 	TREE_LEVEL = 1;
-	PARENT = 32;
+	PARENT = 21;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "TAG_MEM:inst|TAG:inst2|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[5]";
+	CHANNEL = "DBUS_OUT[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 34;
 	TREE_LEVEL = 1;
-	PARENT = 32;
+	PARENT = 21;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "TAG_MEM:inst|TAG:inst2|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[4]";
+	CHANNEL = "DBUS_OUT[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 35;
 	TREE_LEVEL = 1;
-	PARENT = 32;
+	PARENT = 21;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "TAG_MEM:inst|TAG:inst2|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[3]";
+	CHANNEL = "DBUS_OUT[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 36;
 	TREE_LEVEL = 1;
-	PARENT = 32;
+	PARENT = 21;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "TAG_MEM:inst|TAG:inst2|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[2]";
+	CHANNEL = "DBUS_OUT[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 37;
 	TREE_LEVEL = 1;
-	PARENT = 32;
+	PARENT = 21;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "TAG_MEM:inst|TAG:inst2|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[1]";
+	CHANNEL = "READ";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 38;
-	TREE_LEVEL = 1;
-	PARENT = 32;
+	TREE_LEVEL = 0;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "TAG_MEM:inst|TAG:inst2|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[0]";
+	CHANNEL = "WRITE";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 39;
-	TREE_LEVEL = 1;
-	PARENT = 32;
+	TREE_LEVEL = 0;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "TAG_MEM:inst|TAG:inst4|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs";
+	CHANNEL = "~DATA0~";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 40;
 	TREE_LEVEL = 0;
-	CHILDREN = 41, 42, 43, 44, 45, 46, 47;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "TAG_MEM:inst|TAG:inst4|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[6]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 41;
-	TREE_LEVEL = 1;
-	PARENT = 40;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "TAG_MEM:inst|TAG:inst4|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[5]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 42;
-	TREE_LEVEL = 1;
-	PARENT = 40;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "TAG_MEM:inst|TAG:inst4|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[4]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 43;
-	TREE_LEVEL = 1;
-	PARENT = 40;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "TAG_MEM:inst|TAG:inst4|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[3]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 44;
-	TREE_LEVEL = 1;
-	PARENT = 40;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "TAG_MEM:inst|TAG:inst4|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[2]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 45;
-	TREE_LEVEL = 1;
-	PARENT = 40;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "TAG_MEM:inst|TAG:inst4|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[1]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 46;
-	TREE_LEVEL = 1;
-	PARENT = 40;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "TAG_MEM:inst|TAG:inst4|lpm_dff1:inst|lpm_ff:lpm_ff_component|dffs[0]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 47;
-	TREE_LEVEL = 1;
-	PARENT = 40;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "TAG_MEM:inst|TAG:inst|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 48;
-	TREE_LEVEL = 0;
-	CHILDREN = 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "TAG_MEM:inst|TAG:inst|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[11]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 49;
-	TREE_LEVEL = 1;
-	PARENT = 48;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "TAG_MEM:inst|TAG:inst|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[10]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 50;
-	TREE_LEVEL = 1;
-	PARENT = 48;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "TAG_MEM:inst|TAG:inst|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[9]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 51;
-	TREE_LEVEL = 1;
-	PARENT = 48;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "TAG_MEM:inst|TAG:inst|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[8]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 52;
-	TREE_LEVEL = 1;
-	PARENT = 48;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "TAG_MEM:inst|TAG:inst|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[7]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 53;
-	TREE_LEVEL = 1;
-	PARENT = 48;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "TAG_MEM:inst|TAG:inst|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[6]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 54;
-	TREE_LEVEL = 1;
-	PARENT = 48;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "TAG_MEM:inst|TAG:inst|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[5]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 55;
-	TREE_LEVEL = 1;
-	PARENT = 48;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "TAG_MEM:inst|TAG:inst|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[4]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 56;
-	TREE_LEVEL = 1;
-	PARENT = 48;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "TAG_MEM:inst|TAG:inst|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[3]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 57;
-	TREE_LEVEL = 1;
-	PARENT = 48;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "TAG_MEM:inst|TAG:inst|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[2]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 58;
-	TREE_LEVEL = 1;
-	PARENT = 48;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "TAG_MEM:inst|TAG:inst|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[1]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 59;
-	TREE_LEVEL = 1;
-	PARENT = 48;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "TAG_MEM:inst|TAG:inst|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[0]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 60;
-	TREE_LEVEL = 1;
-	PARENT = 48;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "TAG_MEM:inst|TAG:inst1|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 61;
-	TREE_LEVEL = 0;
-	CHILDREN = 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "TAG_MEM:inst|TAG:inst1|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[11]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 62;
-	TREE_LEVEL = 1;
-	PARENT = 61;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "TAG_MEM:inst|TAG:inst1|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[10]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 63;
-	TREE_LEVEL = 1;
-	PARENT = 61;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "TAG_MEM:inst|TAG:inst1|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[9]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 64;
-	TREE_LEVEL = 1;
-	PARENT = 61;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "TAG_MEM:inst|TAG:inst1|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[8]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 65;
-	TREE_LEVEL = 1;
-	PARENT = 61;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "TAG_MEM:inst|TAG:inst1|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[7]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 66;
-	TREE_LEVEL = 1;
-	PARENT = 61;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "TAG_MEM:inst|TAG:inst1|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[6]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 67;
-	TREE_LEVEL = 1;
-	PARENT = 61;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "TAG_MEM:inst|TAG:inst1|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[5]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 68;
-	TREE_LEVEL = 1;
-	PARENT = 61;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "TAG_MEM:inst|TAG:inst1|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[4]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 69;
-	TREE_LEVEL = 1;
-	PARENT = 61;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "TAG_MEM:inst|TAG:inst1|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[3]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 70;
-	TREE_LEVEL = 1;
-	PARENT = 61;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "TAG_MEM:inst|TAG:inst1|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[2]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 71;
-	TREE_LEVEL = 1;
-	PARENT = 61;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "TAG_MEM:inst|TAG:inst1|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[1]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 72;
-	TREE_LEVEL = 1;
-	PARENT = 61;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "TAG_MEM:inst|TAG:inst1|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[0]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 73;
-	TREE_LEVEL = 1;
-	PARENT = 61;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "TAG_MEM:inst|TAG:inst2|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 74;
-	TREE_LEVEL = 0;
-	CHILDREN = 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "TAG_MEM:inst|TAG:inst2|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[11]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 75;
-	TREE_LEVEL = 1;
-	PARENT = 74;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "TAG_MEM:inst|TAG:inst2|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[10]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 76;
-	TREE_LEVEL = 1;
-	PARENT = 74;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "TAG_MEM:inst|TAG:inst2|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[9]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 77;
-	TREE_LEVEL = 1;
-	PARENT = 74;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "TAG_MEM:inst|TAG:inst2|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[8]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 78;
-	TREE_LEVEL = 1;
-	PARENT = 74;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "TAG_MEM:inst|TAG:inst2|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[7]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 79;
-	TREE_LEVEL = 1;
-	PARENT = 74;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "TAG_MEM:inst|TAG:inst2|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[6]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 80;
-	TREE_LEVEL = 1;
-	PARENT = 74;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "TAG_MEM:inst|TAG:inst2|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[5]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 81;
-	TREE_LEVEL = 1;
-	PARENT = 74;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "TAG_MEM:inst|TAG:inst2|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[4]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 82;
-	TREE_LEVEL = 1;
-	PARENT = 74;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "TAG_MEM:inst|TAG:inst2|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[3]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 83;
-	TREE_LEVEL = 1;
-	PARENT = 74;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "TAG_MEM:inst|TAG:inst2|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[2]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 84;
-	TREE_LEVEL = 1;
-	PARENT = 74;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "TAG_MEM:inst|TAG:inst2|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[1]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 85;
-	TREE_LEVEL = 1;
-	PARENT = 74;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "TAG_MEM:inst|TAG:inst2|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[0]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 86;
-	TREE_LEVEL = 1;
-	PARENT = 74;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "TAG_MEM:inst|TAG:inst4|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 87;
-	TREE_LEVEL = 0;
-	CHILDREN = 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "TAG_MEM:inst|TAG:inst4|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[11]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 88;
-	TREE_LEVEL = 1;
-	PARENT = 87;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "TAG_MEM:inst|TAG:inst4|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[10]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 89;
-	TREE_LEVEL = 1;
-	PARENT = 87;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "TAG_MEM:inst|TAG:inst4|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[9]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 90;
-	TREE_LEVEL = 1;
-	PARENT = 87;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "TAG_MEM:inst|TAG:inst4|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[8]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 91;
-	TREE_LEVEL = 1;
-	PARENT = 87;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "TAG_MEM:inst|TAG:inst4|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[7]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 92;
-	TREE_LEVEL = 1;
-	PARENT = 87;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "TAG_MEM:inst|TAG:inst4|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[6]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 93;
-	TREE_LEVEL = 1;
-	PARENT = 87;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "TAG_MEM:inst|TAG:inst4|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[5]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 94;
-	TREE_LEVEL = 1;
-	PARENT = 87;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "TAG_MEM:inst|TAG:inst4|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[4]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 95;
-	TREE_LEVEL = 1;
-	PARENT = 87;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "TAG_MEM:inst|TAG:inst4|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[3]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 96;
-	TREE_LEVEL = 1;
-	PARENT = 87;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "TAG_MEM:inst|TAG:inst4|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[2]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 97;
-	TREE_LEVEL = 1;
-	PARENT = 87;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "TAG_MEM:inst|TAG:inst4|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[1]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 98;
-	TREE_LEVEL = 1;
-	PARENT = 87;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "TAG_MEM:inst|TAG:inst4|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[0]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 99;
-	TREE_LEVEL = 1;
-	PARENT = 87;
 }
 
 TIME_BAR

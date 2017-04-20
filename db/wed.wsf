@@ -465,9 +465,9 @@ VECTOR("D:/Универ/6 семестр/quartus-micro-processor/db/course-project.sim.cvwf")
 {
 	ZOOM{
 		ZBEGIN = 0;
-		ZEND = 74456;
+		ZEND = 65648;
 		NUMERATOR = 1388;
-		DENOMINATOR = 74456;
+		DENOMINATOR = 65648;
 		TOP_INDEX = 0;
 	}
 	CLOCK{
