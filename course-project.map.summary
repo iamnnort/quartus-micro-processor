@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Thu Apr 20 00:49:59 2017
+Analysis & Synthesis Status : Successful - Thu Apr 20 23:27:09 2017
 Quartus II Version : 9.1 Build 222 10/21/2009 SJ Web Edition
 Revision Name : course-project
-Top-level Entity Name : course-project
+Top-level Entity Name : CASH
 Family : Stratix II
 Logic utilization : N/A
-    Combinational ALUTs : 47
-    Dedicated logic registers : 32
-Total registers : 32
-Total pins : 21
+    Combinational ALUTs : 131
+    Dedicated logic registers : 76
+Total registers : 76
+Total pins : 15
 Total virtual pins : 0
 Total block memory bits : 0
 DSP block 9-bit elements : 0

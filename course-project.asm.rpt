@@ -1,5 +1,5 @@
 Assembler report for course-project
-Thu Apr 20 00:50:06 2017
+Thu Apr 20 23:27:15 2017
 Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
 
 
@@ -10,8 +10,8 @@ Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: D:/Универ/6 семестр/Курсач/course-project.sof
-  6. Assembler Device Options: D:/Универ/6 семестр/Курсач/course-project.pof
+  5. Assembler Device Options: D:/Универ/6 семестр/quartus-micro-processor/course-project.sof
+  6. Assembler Device Options: D:/Универ/6 семестр/quartus-micro-processor/course-project.pof
   7. Assembler Messages
 
 
@@ -38,9 +38,9 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Thu Apr 20 00:50:06 2017 ;
+; Assembler Status      ; Successful - Thu Apr 20 23:27:15 2017 ;
 ; Revision Name         ; course-project                        ;
-; Top-level Entity Name ; course-project                        ;
+; Top-level Entity Name ; CASH                                  ;
 ; Family                ; Stratix II                            ;
 ; Device                ; EP2S15F484C3                          ;
 +-----------------------+---------------------------------------+
@@ -79,37 +79,37 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+----------+---------------+
 
 
-+-----------------------------------------------+
-; Assembler Generated Files                     ;
-+-----------------------------------------------+
-; File Name                                     ;
-+-----------------------------------------------+
-; D:/Универ/6 семестр/Курсач/course-project.sof ;
-; D:/Универ/6 семестр/Курсач/course-project.pof ;
-+-----------------------------------------------+
++----------------------------------------------------------------+
+; Assembler Generated Files                                      ;
++----------------------------------------------------------------+
+; File Name                                                      ;
++----------------------------------------------------------------+
+; D:/Универ/6 семестр/quartus-micro-processor/course-project.sof ;
+; D:/Универ/6 семестр/quartus-micro-processor/course-project.pof ;
++----------------------------------------------------------------+
 
 
-+-------------------------------------------------------------------------+
-; Assembler Device Options: D:/Универ/6 семестр/Курсач/course-project.sof ;
-+----------------+--------------------------------------------------------+
-; Option         ; Setting                                                ;
-+----------------+--------------------------------------------------------+
-; Device         ; EP2S15F484C3                                           ;
-; JTAG usercode  ; 0xFFFFFFFF                                             ;
-; Checksum       ; 0x00289856                                             ;
-+----------------+--------------------------------------------------------+
++------------------------------------------------------------------------------------------+
+; Assembler Device Options: D:/Универ/6 семестр/quartus-micro-processor/course-project.sof ;
++----------------+-------------------------------------------------------------------------+
+; Option         ; Setting                                                                 ;
++----------------+-------------------------------------------------------------------------+
+; Device         ; EP2S15F484C3                                                            ;
+; JTAG usercode  ; 0xFFFFFFFF                                                              ;
+; Checksum       ; 0x0029A8E4                                                              ;
++----------------+-------------------------------------------------------------------------+
 
 
-+-------------------------------------------------------------------------+
-; Assembler Device Options: D:/Универ/6 семестр/Курсач/course-project.pof ;
-+--------------------+----------------------------------------------------+
-; Option             ; Setting                                            ;
-+--------------------+----------------------------------------------------+
-; Device             ; EPC16                                              ;
-; JTAG usercode      ; 0xFFFFFFFF                                         ;
-; Checksum           ; 0x1EF34243                                         ;
-; Compression Ratio  ; 3                                                  ;
-+--------------------+----------------------------------------------------+
++------------------------------------------------------------------------------------------+
+; Assembler Device Options: D:/Универ/6 семестр/quartus-micro-processor/course-project.pof ;
++--------------------+---------------------------------------------------------------------+
+; Option             ; Setting                                                             ;
++--------------------+---------------------------------------------------------------------+
+; Device             ; EPC16                                                               ;
+; JTAG usercode      ; 0xFFFFFFFF                                                          ;
+; Checksum           ; 0x1EEC8709                                                          ;
+; Compression Ratio  ; 3                                                                   ;
++--------------------+---------------------------------------------------------------------+
 
 
 +--------------------+
@@ -118,13 +118,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II Assembler
     Info: Version 9.1 Build 222 10/21/2009 SJ Web Edition
-    Info: Processing started: Thu Apr 20 00:50:04 2017
+    Info: Processing started: Thu Apr 20 23:27:14 2017
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off course-project -c course-project
 Info: Writing out detailed assembly data for power analysis
 Info: Assembler is generating device programming files
 Info: Quartus II Assembler was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 261 megabytes
-    Info: Processing ended: Thu Apr 20 00:50:06 2017
+    Info: Processing ended: Thu Apr 20 23:27:16 2017
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
