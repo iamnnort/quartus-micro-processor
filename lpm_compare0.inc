@@ -15,8 +15,8 @@
 
 FUNCTION lpm_compare0 
 (
-	dataa[6..0],
-	datab[6..0]
+	dataa[8..0],
+	datab[8..0]
 )
 
 RETURNS (

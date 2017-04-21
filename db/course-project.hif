@@ -149,9 +149,6 @@ data0
 -1
 3
 }
-# hierarchies {
-lpm_decode2:inst13|lpm_decode:lpm_decode_component|decode_p7f:auto_generated
-}
 # macro_sequence
 
 # end
@@ -320,6 +317,9 @@ data1
 data0
 -1
 3
+}
+# hierarchies {
+CASH:inst|TAG_MEM:inst|lpm_decode7:inst32|lpm_decode:lpm_decode_component|decode_u7f:auto_generated
 }
 # macro_sequence
 
@@ -1218,6 +1218,9 @@ result0
 -1
 3
 }
+# hierarchies {
+CU:inst2|lpm_constant1:inst8|lpm_constant:lpm_constant_component
+}
 # macro_sequence
 
 # end
@@ -1278,6 +1281,9 @@ clock
 # include_file {
 lpm_counter.inc
 c5cfeeabc5f2ab60b3453f6abbc42b41
+}
+# hierarchies {
+CU:inst2|lpm_counter0:inst
 }
 # macro_sequence
 
@@ -1410,6 +1416,9 @@ clock
 -1
 3
 }
+# hierarchies {
+CU:inst2|lpm_counter0:inst|lpm_counter:lpm_counter_component
+}
 # macro_sequence
 
 # end
@@ -1467,22 +1476,8 @@ clock
 -1
 3
 }
-# macro_sequence
-
-# end
-# entity
-CU
-# storage
-db|course-project.(15).cnf
-db|course-project.(15).cnf
-# case_insensitive
-# source_file
-cu.bdf
-43b0509c0bde4e1352c18b0256349a9
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
+# hierarchies {
+CU:inst2|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_0ci:auto_generated
 }
 # macro_sequence
 
@@ -2134,188 +2129,6 @@ address_a0
 
 # end
 # entity
-altsyncram_a001
-# storage
-db|course-project.(27).cnf
-db|course-project.(27).cnf
-# case_insensitive
-# source_file
-db|altsyncram_a001.tdf
-9f49b6e3d882a4e8aa096506e6997e
-7
-# used_port {
-q_a9
--1
-3
-q_a8
--1
-3
-q_a7
--1
-3
-q_a6
--1
-3
-q_a5
--1
-3
-q_a4
--1
-3
-q_a3
--1
-3
-q_a2
--1
-3
-q_a18
--1
-3
-q_a17
--1
-3
-q_a16
--1
-3
-q_a15
--1
-3
-q_a14
--1
-3
-q_a13
--1
-3
-q_a12
--1
-3
-q_a11
--1
-3
-q_a10
--1
-3
-q_a1
--1
-3
-q_a0
--1
-3
-clock0
--1
-3
-address_a9
--1
-3
-address_a8
--1
-3
-address_a7
--1
-3
-address_a6
--1
-3
-address_a5
--1
-3
-address_a4
--1
-3
-address_a3
--1
-3
-address_a2
--1
-3
-address_a11
--1
-3
-address_a10
--1
-3
-address_a1
--1
-3
-address_a0
--1
-3
-}
-# memory_file {
-rom.hex
-4e748e2a435185e412fc1a6fab1a4b
-}
-# macro_sequence
-
-# end
-# entity
-lpm_compare0
-# storage
-db|course-project.(30).cnf
-db|course-project.(30).cnf
-# case_insensitive
-# source_file
-lpm_compare0.tdf
-ae5cedc982684ac467dd661290a125b9
-7
-# used_port {
-datab6
--1
-3
-datab5
--1
-3
-datab4
--1
-3
-datab3
--1
-3
-datab2
--1
-3
-datab1
--1
-3
-datab0
--1
-3
-dataa6
--1
-3
-dataa5
--1
-3
-dataa4
--1
-3
-dataa3
--1
-3
-dataa2
--1
-3
-dataa1
--1
-3
-dataa0
--1
-3
-aneb
--1
-3
-aeb
--1
-3
-}
-# include_file {
-lpm_compare.inc
-bbd3e8c93afb7320934629e5fb11566
-}
-# macro_sequence
-
-# end
-# entity
 lpm_compare
 # storage
 db|course-project.(31).cnf
@@ -2504,73 +2317,6 @@ aeb
 
 # end
 # entity
-lpm_dff1
-# storage
-db|course-project.(33).cnf
-db|course-project.(33).cnf
-# case_insensitive
-# source_file
-lpm_dff1.tdf
-8f40d22611ffac97f92e7c2da0f152c3
-7
-# used_port {
-q6
--1
-3
-q5
--1
-3
-q4
--1
-3
-q3
--1
-3
-q2
--1
-3
-q1
--1
-3
-q0
--1
-3
-enable
--1
-3
-data6
--1
-3
-data5
--1
-3
-data4
--1
-3
-data3
--1
-3
-data2
--1
-3
-data1
--1
-3
-data0
--1
-3
-clock
--1
-3
-}
-# include_file {
-lpm_ff.inc
-5b1f18ec4f969a147b22e8c42bf962ac
-}
-# macro_sequence
-
-# end
-# entity
 lpm_ff
 # storage
 db|course-project.(34).cnf
@@ -2671,70 +2417,6 @@ data0
 clock
 -1
 3
-}
-# macro_sequence
-
-# end
-# entity
-lpm_bustri2
-# storage
-db|course-project.(35).cnf
-db|course-project.(35).cnf
-# case_insensitive
-# source_file
-lpm_bustri2.tdf
-fb9a8faf4574bba5542ec7cfbc9d1ec2
-7
-# used_port {
-tridata6
--1
-3
-tridata5
--1
-3
-tridata4
--1
-3
-tridata3
--1
-3
-tridata2
--1
-3
-tridata1
--1
-3
-tridata0
--1
-3
-enabledt
--1
-3
-data6
--1
-3
-data5
--1
-3
-data4
--1
-3
-data3
--1
-3
-data2
--1
-3
-data1
--1
-3
-data0
--1
-3
-}
-# include_file {
-lpm_bustri.inc
-e542f5adf6af653bd181242b9785544
 }
 # macro_sequence
 
@@ -2862,6 +2544,12 @@ clock
 # include_file {
 lpm_counter.inc
 c5cfeeabc5f2ab60b3453f6abbc42b41
+}
+# hierarchies {
+CASH:inst|TAG_MEM:inst|TAG:inst|lpm_counter1:inst5
+CASH:inst|TAG_MEM:inst|TAG:inst1|lpm_counter1:inst5
+CASH:inst|TAG_MEM:inst|TAG:inst4|lpm_counter1:inst5
+CASH:inst|TAG_MEM:inst|TAG:inst2|lpm_counter1:inst5
 }
 # macro_sequence
 
@@ -2994,6 +2682,12 @@ clock
 -1
 3
 }
+# hierarchies {
+CASH:inst|TAG_MEM:inst|TAG:inst|lpm_counter1:inst5|lpm_counter:lpm_counter_component
+CASH:inst|TAG_MEM:inst|TAG:inst1|lpm_counter1:inst5|lpm_counter:lpm_counter_component
+CASH:inst|TAG_MEM:inst|TAG:inst4|lpm_counter1:inst5|lpm_counter:lpm_counter_component
+CASH:inst|TAG_MEM:inst|TAG:inst2|lpm_counter1:inst5|lpm_counter:lpm_counter_component
+}
 # macro_sequence
 
 # end
@@ -3050,6 +2744,12 @@ q0
 clock
 -1
 3
+}
+# hierarchies {
+CASH:inst|TAG_MEM:inst|TAG:inst|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated
+CASH:inst|TAG_MEM:inst|TAG:inst1|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated
+CASH:inst|TAG_MEM:inst|TAG:inst4|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated
+CASH:inst|TAG_MEM:inst|TAG:inst2|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated
 }
 # macro_sequence
 
@@ -3147,6 +2847,14 @@ ageb
 # include_file {
 lpm_compare.inc
 bbd3e8c93afb7320934629e5fb11566
+}
+# hierarchies {
+CASH:inst|TAG_MEM:inst|lpm_compare1:inst6
+CASH:inst|TAG_MEM:inst|lpm_compare1:inst11
+CASH:inst|TAG_MEM:inst|lpm_compare1:inst9
+CASH:inst|TAG_MEM:inst|lpm_compare1:inst8
+CASH:inst|TAG_MEM:inst|lpm_compare1:inst12
+CASH:inst|TAG_MEM:inst|lpm_compare1:inst7
 }
 # macro_sequence
 
@@ -3303,6 +3011,14 @@ ageb
 -1
 3
 }
+# hierarchies {
+CASH:inst|TAG_MEM:inst|lpm_compare1:inst6|lpm_compare:lpm_compare_component
+CASH:inst|TAG_MEM:inst|lpm_compare1:inst11|lpm_compare:lpm_compare_component
+CASH:inst|TAG_MEM:inst|lpm_compare1:inst9|lpm_compare:lpm_compare_component
+CASH:inst|TAG_MEM:inst|lpm_compare1:inst8|lpm_compare:lpm_compare_component
+CASH:inst|TAG_MEM:inst|lpm_compare1:inst12|lpm_compare:lpm_compare_component
+CASH:inst|TAG_MEM:inst|lpm_compare1:inst7|lpm_compare:lpm_compare_component
+}
 # macro_sequence
 
 # end
@@ -3396,62 +3112,13 @@ ageb
 -1
 3
 }
-# macro_sequence
-
-# end
-# entity
-CASH
-# storage
-db|course-project.(0).cnf
-db|course-project.(0).cnf
-# case_insensitive
-# source_file
-cash.bdf
-4b4a799f8cacd392a5687d5264dccef
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# macro_sequence
-
-# end
-# entity
-TAG_MEM
-# storage
-db|course-project.(28).cnf
-db|course-project.(28).cnf
-# case_insensitive
-# source_file
-tag_mem.bdf
-8e62f0e9296356181eaac869761c8916
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# macro_sequence
-
-# end
-# entity
-CELL
-# storage
-db|course-project.(11).cnf
-db|course-project.(11).cnf
-# case_insensitive
-# source_file
-cell.bdf
-2ae0f4d3ca76e42c76d4cee762ecf1
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
 # hierarchies {
-CELL:inst20
-CELL:inst18
-CELL:inst17
-CELL:inst
+CASH:inst|TAG_MEM:inst|lpm_compare1:inst6|lpm_compare:lpm_compare_component|cmpr_g1h:auto_generated
+CASH:inst|TAG_MEM:inst|lpm_compare1:inst11|lpm_compare:lpm_compare_component|cmpr_g1h:auto_generated
+CASH:inst|TAG_MEM:inst|lpm_compare1:inst9|lpm_compare:lpm_compare_component|cmpr_g1h:auto_generated
+CASH:inst|TAG_MEM:inst|lpm_compare1:inst8|lpm_compare:lpm_compare_component|cmpr_g1h:auto_generated
+CASH:inst|TAG_MEM:inst|lpm_compare1:inst12|lpm_compare:lpm_compare_component|cmpr_g1h:auto_generated
+CASH:inst|TAG_MEM:inst|lpm_compare1:inst7|lpm_compare:lpm_compare_component|cmpr_g1h:auto_generated
 }
 # macro_sequence
 
@@ -3570,16 +3237,6 @@ data0
 # include_file {
 lpm_bustri.inc
 e542f5adf6af653bd181242b9785544
-}
-# hierarchies {
-CELL:inst20|lpm_bustri1:inst13
-CELL:inst20|lpm_bustri1:inst12
-CELL:inst18|lpm_bustri1:inst13
-CELL:inst18|lpm_bustri1:inst12
-CELL:inst17|lpm_bustri1:inst13
-CELL:inst17|lpm_bustri1:inst12
-CELL:inst|lpm_bustri1:inst13
-CELL:inst|lpm_bustri1:inst12
 }
 # macro_sequence
 
@@ -3701,16 +3358,6 @@ data0
 -1
 3
 }
-# hierarchies {
-CELL:inst20|lpm_bustri1:inst13|lpm_bustri:lpm_bustri_component
-CELL:inst20|lpm_bustri1:inst12|lpm_bustri:lpm_bustri_component
-CELL:inst18|lpm_bustri1:inst13|lpm_bustri:lpm_bustri_component
-CELL:inst18|lpm_bustri1:inst12|lpm_bustri:lpm_bustri_component
-CELL:inst17|lpm_bustri1:inst13|lpm_bustri:lpm_bustri_component
-CELL:inst17|lpm_bustri1:inst12|lpm_bustri:lpm_bustri_component
-CELL:inst|lpm_bustri1:inst13|lpm_bustri:lpm_bustri_component
-CELL:inst|lpm_bustri1:inst12|lpm_bustri:lpm_bustri_component
-}
 # macro_sequence
 
 # end
@@ -3831,12 +3478,6 @@ clock
 # include_file {
 lpm_ff.inc
 5b1f18ec4f969a147b22e8c42bf962ac
-}
-# hierarchies {
-CELL:inst20|lpm_dff0:inst
-CELL:inst18|lpm_dff0:inst
-CELL:inst17|lpm_dff0:inst
-CELL:inst|lpm_dff0:inst
 }
 # macro_sequence
 
@@ -3997,12 +3638,6 @@ clock
 -1
 3
 }
-# hierarchies {
-CELL:inst20|lpm_dff0:inst|lpm_ff:lpm_ff_component
-CELL:inst18|lpm_dff0:inst|lpm_ff:lpm_ff_component
-CELL:inst17|lpm_dff0:inst|lpm_ff:lpm_ff_component
-CELL:inst|lpm_dff0:inst|lpm_ff:lpm_ff_component
-}
 # macro_sequence
 
 # end
@@ -4039,9 +3674,6 @@ data0
 # include_file {
 lpm_decode.inc
 10da69a8bbd590d66779e7a142f73790
-}
-# hierarchies {
-lpm_decode2:inst13
 }
 # macro_sequence
 
@@ -4118,21 +3750,2879 @@ data0
 -1
 3
 }
+# macro_sequence
+
+# end
+# entity
+LPM_ROM
+# storage
+db|course-project.(11).cnf
+db|course-project.(11).cnf
+# case_insensitive
+# source_file
+c:|altera|91|quartus|libraries|megafunctions|lpm_rom.tdf
+9c34eff8ece26dc95cb15e19297de8d7
+7
+# user_parameter {
+LPM_WIDTH
+18
+PARAMETER_SIGNED_DEC
+USR
+LPM_WIDTHAD
+12
+PARAMETER_SIGNED_DEC
+USR
+LPM_NUMWORDS
+4096
+PARAMETER_SIGNED_DEC
+USR
+LPM_ADDRESS_CONTROL
+REGISTERED
+PARAMETER_UNKNOWN
+USR
+LPM_OUTDATA
+UNREGISTERED
+PARAMETER_UNKNOWN
+USR
+LPM_FILE
+ROM.hex
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Stratix II
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+q9
+-1
+3
+q8
+-1
+3
+q7
+-1
+3
+q6
+-1
+3
+q5
+-1
+3
+q4
+-1
+3
+q3
+-1
+3
+q2
+-1
+3
+q17
+-1
+3
+q16
+-1
+3
+q15
+-1
+3
+q14
+-1
+3
+q13
+-1
+3
+q12
+-1
+3
+q11
+-1
+3
+q10
+-1
+3
+q1
+-1
+3
+q0
+-1
+3
+memenab
+-1
+3
+inclock
+-1
+3
+address9
+-1
+3
+address8
+-1
+3
+address7
+-1
+3
+address6
+-1
+3
+address5
+-1
+3
+address4
+-1
+3
+address3
+-1
+3
+address2
+-1
+3
+address11
+-1
+3
+address10
+-1
+3
+address1
+-1
+3
+address0
+-1
+3
+}
 # hierarchies {
-lpm_decode2:inst13|lpm_decode:lpm_decode_component
+CU:inst2|lpm_rom:inst1
 }
 # macro_sequence
 
 # end
 # entity
-DATA_MEM
+altrom
 # storage
-db|course-project.(7).cnf
-db|course-project.(7).cnf
+db|course-project.(15).cnf
+db|course-project.(15).cnf
 # case_insensitive
 # source_file
-data_mem.bdf
-608ab82d4472dec4437634dbdd5f996
+c:|altera|91|quartus|libraries|megafunctions|altrom.tdf
+d390f2173c26cf4914ee32cdc63040
+7
+# user_parameter {
+WIDTH_BYTEENA_A
+1
+PARAMETER_UNKNOWN
+DEF
+WIDTH_BYTEENA_B
+1
+PARAMETER_UNKNOWN
+DEF
+WIDTH
+18
+PARAMETER_UNKNOWN
+USR
+AD_WIDTH
+12
+PARAMETER_UNKNOWN
+USR
+NUMWORDS
+4096
+PARAMETER_UNKNOWN
+USR
+FILE
+ROM.hex
+PARAMETER_UNKNOWN
+USR
+REGISTERINPUTMODE
+ADDRESS_CONTROL
+PARAMETER_UNKNOWN
+USR
+MAXIMUM_DEPTH
+2048
+PARAMETER_UNKNOWN
+DEF
+DEVICE_FAMILY
+Stratix II
+PARAMETER_UNKNOWN
+USR
+SUPPRESS_MEMORY_CONVERSION_WARNINGS
+OFF
+PARAMETER_UNKNOWN
+DEF
+CBXI_PARAMETER
+NOTHING
+PARAMETER_UNKNOWN
+DEF
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+q9
+-1
+3
+q8
+-1
+3
+q7
+-1
+3
+q6
+-1
+3
+q5
+-1
+3
+q4
+-1
+3
+q3
+-1
+3
+q2
+-1
+3
+q17
+-1
+3
+q16
+-1
+3
+q15
+-1
+3
+q14
+-1
+3
+q13
+-1
+3
+q12
+-1
+3
+q11
+-1
+3
+q10
+-1
+3
+q1
+-1
+3
+q0
+-1
+3
+clocki
+-1
+3
+address9
+-1
+3
+address8
+-1
+3
+address7
+-1
+3
+address6
+-1
+3
+address5
+-1
+3
+address4
+-1
+3
+address3
+-1
+3
+address2
+-1
+3
+address11
+-1
+3
+address10
+-1
+3
+address1
+-1
+3
+address0
+-1
+3
+}
+# hierarchies {
+CU:inst2|lpm_rom:inst1|altrom:srom
+}
+# macro_sequence
+
+# end
+# entity
+altsyncram
+# storage
+db|course-project.(27).cnf
+db|course-project.(27).cnf
+# case_insensitive
+# source_file
+c:|altera|91|quartus|libraries|megafunctions|altsyncram.tdf
+11126d23236b22214ea7531dfb5e29be
+7
+# user_parameter {
+BYTE_SIZE_BLOCK
+8
+PARAMETER_UNKNOWN
+DEF
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+WIDTH_BYTEENA
+1
+PARAMETER_UNKNOWN
+DEF
+OPERATION_MODE
+ROM
+PARAMETER_UNKNOWN
+USR
+WIDTH_A
+18
+PARAMETER_UNKNOWN
+USR
+WIDTHAD_A
+12
+PARAMETER_UNKNOWN
+USR
+NUMWORDS_A
+4096
+PARAMETER_UNKNOWN
+USR
+OUTDATA_REG_A
+UNREGISTERED
+PARAMETER_UNKNOWN
+USR
+ADDRESS_ACLR_A
+NONE
+PARAMETER_UNKNOWN
+USR
+OUTDATA_ACLR_A
+NONE
+PARAMETER_UNKNOWN
+USR
+WRCONTROL_ACLR_A
+NONE
+PARAMETER_UNKNOWN
+DEF
+INDATA_ACLR_A
+NONE
+PARAMETER_UNKNOWN
+DEF
+BYTEENA_ACLR_A
+NONE
+PARAMETER_UNKNOWN
+DEF
+WIDTH_B
+1
+PARAMETER_UNKNOWN
+DEF
+WIDTHAD_B
+1
+PARAMETER_UNKNOWN
+DEF
+NUMWORDS_B
+1
+PARAMETER_UNKNOWN
+DEF
+INDATA_REG_B
+CLOCK1
+PARAMETER_UNKNOWN
+DEF
+WRCONTROL_WRADDRESS_REG_B
+CLOCK1
+PARAMETER_UNKNOWN
+DEF
+RDCONTROL_REG_B
+CLOCK1
+PARAMETER_UNKNOWN
+DEF
+ADDRESS_REG_B
+CLOCK1
+PARAMETER_UNKNOWN
+DEF
+OUTDATA_REG_B
+UNREGISTERED
+PARAMETER_UNKNOWN
+DEF
+BYTEENA_REG_B
+CLOCK1
+PARAMETER_UNKNOWN
+DEF
+INDATA_ACLR_B
+NONE
+PARAMETER_UNKNOWN
+DEF
+WRCONTROL_ACLR_B
+NONE
+PARAMETER_UNKNOWN
+DEF
+ADDRESS_ACLR_B
+NONE
+PARAMETER_UNKNOWN
+DEF
+OUTDATA_ACLR_B
+NONE
+PARAMETER_UNKNOWN
+DEF
+RDCONTROL_ACLR_B
+NONE
+PARAMETER_UNKNOWN
+DEF
+BYTEENA_ACLR_B
+NONE
+PARAMETER_UNKNOWN
+DEF
+WIDTH_BYTEENA_A
+1
+PARAMETER_UNKNOWN
+DEF
+WIDTH_BYTEENA_B
+1
+PARAMETER_UNKNOWN
+DEF
+RAM_BLOCK_TYPE
+AUTO
+PARAMETER_UNKNOWN
+DEF
+BYTE_SIZE
+8
+PARAMETER_UNKNOWN
+DEF
+READ_DURING_WRITE_MODE_MIXED_PORTS
+DONT_CARE
+PARAMETER_UNKNOWN
+DEF
+READ_DURING_WRITE_MODE_PORT_A
+NEW_DATA_NO_NBE_READ
+PARAMETER_UNKNOWN
+DEF
+READ_DURING_WRITE_MODE_PORT_B
+NEW_DATA_NO_NBE_READ
+PARAMETER_UNKNOWN
+DEF
+INIT_FILE
+ROM.hex
+PARAMETER_UNKNOWN
+USR
+INIT_FILE_LAYOUT
+PORT_A
+PARAMETER_UNKNOWN
+DEF
+MAXIMUM_DEPTH
+0
+PARAMETER_UNKNOWN
+DEF
+CLOCK_ENABLE_INPUT_A
+NORMAL
+PARAMETER_UNKNOWN
+DEF
+CLOCK_ENABLE_INPUT_B
+NORMAL
+PARAMETER_UNKNOWN
+DEF
+CLOCK_ENABLE_OUTPUT_A
+NORMAL
+PARAMETER_UNKNOWN
+DEF
+CLOCK_ENABLE_OUTPUT_B
+NORMAL
+PARAMETER_UNKNOWN
+DEF
+CLOCK_ENABLE_CORE_A
+USE_INPUT_CLKEN
+PARAMETER_UNKNOWN
+DEF
+CLOCK_ENABLE_CORE_B
+USE_INPUT_CLKEN
+PARAMETER_UNKNOWN
+DEF
+ENABLE_ECC
+FALSE
+PARAMETER_UNKNOWN
+DEF
+DEVICE_FAMILY
+Stratix II
+PARAMETER_UNKNOWN
+USR
+CBXI_PARAMETER
+altsyncram_9001
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+q_a9
+-1
+3
+q_a8
+-1
+3
+q_a7
+-1
+3
+q_a6
+-1
+3
+q_a5
+-1
+3
+q_a4
+-1
+3
+q_a3
+-1
+3
+q_a2
+-1
+3
+q_a17
+-1
+3
+q_a16
+-1
+3
+q_a15
+-1
+3
+q_a14
+-1
+3
+q_a13
+-1
+3
+q_a12
+-1
+3
+q_a11
+-1
+3
+q_a10
+-1
+3
+q_a1
+-1
+3
+q_a0
+-1
+3
+clock0
+-1
+3
+address_a9
+-1
+3
+address_a8
+-1
+3
+address_a7
+-1
+3
+address_a6
+-1
+3
+address_a5
+-1
+3
+address_a4
+-1
+3
+address_a3
+-1
+3
+address_a2
+-1
+3
+address_a11
+-1
+3
+address_a10
+-1
+3
+address_a1
+-1
+3
+address_a0
+-1
+3
+}
+# hierarchies {
+CU:inst2|lpm_rom:inst1|altrom:srom|altsyncram:rom_block
+}
+# macro_sequence
+
+# end
+# entity
+lpm_decode
+# storage
+db|course-project.(50).cnf
+db|course-project.(50).cnf
+# case_insensitive
+# source_file
+c:|altera|91|quartus|libraries|megafunctions|lpm_decode.tdf
+bfce37ee9af3768dda7316c867798b
+7
+# user_parameter {
+LPM_WIDTH
+4
+PARAMETER_UNKNOWN
+USR
+LPM_DECODES
+16
+PARAMETER_UNKNOWN
+USR
+LPM_PIPELINE
+0
+PARAMETER_UNKNOWN
+DEF
+CASCADE_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Stratix II
+PARAMETER_UNKNOWN
+USR
+CBXI_PARAMETER
+decode_e9f
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+eq4
+-1
+3
+eq3
+-1
+3
+eq2
+-1
+3
+eq1
+-1
+3
+eq0
+-1
+3
+data3
+-1
+3
+data2
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+decode_e9f
+# storage
+db|course-project.(51).cnf
+db|course-project.(51).cnf
+# case_insensitive
+# source_file
+db|decode_e9f.tdf
+bed94a1668438da690492b9e30eb1f79
+7
+# used_port {
+eq9
+-1
+3
+eq8
+-1
+3
+eq7
+-1
+3
+eq6
+-1
+3
+eq5
+-1
+3
+eq4
+-1
+3
+eq3
+-1
+3
+eq2
+-1
+3
+eq15
+-1
+3
+eq14
+-1
+3
+eq13
+-1
+3
+eq12
+-1
+3
+eq11
+-1
+3
+eq10
+-1
+3
+eq1
+-1
+3
+eq0
+-1
+3
+data3
+-1
+3
+data2
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+}
+# hierarchies {
+CU:inst2|lpm_decode5:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated
+CU:inst2|lpm_decode4:inst2|lpm_decode:lpm_decode_component|decode_e9f:auto_generated
+}
+# macro_sequence
+
+# end
+# entity
+lpm_counter
+# storage
+db|course-project.(53).cnf
+db|course-project.(53).cnf
+# case_insensitive
+# source_file
+c:|altera|91|quartus|libraries|megafunctions|lpm_counter.tdf
+ea80917e5f6a67b6043b433538e1f4b
+7
+# user_parameter {
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+LPM_WIDTH
+4
+PARAMETER_UNKNOWN
+USR
+LPM_DIRECTION
+UP
+PARAMETER_UNKNOWN
+USR
+LPM_MODULUS
+0
+PARAMETER_UNKNOWN
+DEF
+LPM_AVALUE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+LPM_SVALUE
+1
+PARAMETER_UNKNOWN
+USR
+LPM_PORT_UPDOWN
+PORT_UNUSED
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Stratix II
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+NOT_GATE_PUSH_BACK
+ON
+NOT_GATE_PUSH_BACK
+USR
+CARRY_CNT_EN
+SMART
+PARAMETER_UNKNOWN
+DEF
+LABWIDE_SCLR
+ON
+PARAMETER_UNKNOWN
+DEF
+USE_NEW_VERSION
+TRUE
+PARAMETER_UNKNOWN
+DEF
+CBXI_PARAMETER
+cntr_jpj
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+sset
+-1
+3
+sclr
+-1
+3
+q3
+-1
+3
+q2
+-1
+3
+q1
+-1
+3
+q0
+-1
+3
+clock
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+cntr_jpj
+# storage
+db|course-project.(54).cnf
+db|course-project.(54).cnf
+# case_insensitive
+# source_file
+db|cntr_jpj.tdf
+66745a124d582d57a5f1e4673b2170b9
+7
+# used_port {
+sset
+-1
+3
+sclr
+-1
+3
+q3
+-1
+3
+q2
+-1
+3
+q1
+-1
+3
+q0
+-1
+3
+clock
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+lpm_decode4
+# storage
+db|course-project.(55).cnf
+db|course-project.(55).cnf
+# case_insensitive
+# source_file
+lpm_decode4.tdf
+7db2838f562b214d77a87ed87d787980
+7
+# used_port {
+eq1
+-1
+3
+data3
+-1
+3
+data2
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+}
+# include_file {
+lpm_decode.inc
+10da69a8bbd590d66779e7a142f73790
+}
+# hierarchies {
+CU:inst2|lpm_decode4:inst2
+}
+# macro_sequence
+
+# end
+# entity
+lpm_decode
+# storage
+db|course-project.(56).cnf
+db|course-project.(56).cnf
+# case_insensitive
+# source_file
+c:|altera|91|quartus|libraries|megafunctions|lpm_decode.tdf
+bfce37ee9af3768dda7316c867798b
+7
+# user_parameter {
+LPM_WIDTH
+4
+PARAMETER_UNKNOWN
+USR
+LPM_DECODES
+16
+PARAMETER_UNKNOWN
+USR
+LPM_PIPELINE
+0
+PARAMETER_UNKNOWN
+DEF
+CASCADE_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Stratix II
+PARAMETER_UNKNOWN
+USR
+CBXI_PARAMETER
+decode_e9f
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+eq4
+-1
+3
+eq3
+-1
+3
+eq2
+-1
+3
+eq1
+-1
+3
+data3
+-1
+3
+data2
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+}
+# hierarchies {
+CU:inst2|lpm_decode4:inst2|lpm_decode:lpm_decode_component
+}
+# macro_sequence
+
+# end
+# entity
+lpm_constant1
+# storage
+db|course-project.(57).cnf
+db|course-project.(57).cnf
+# case_insensitive
+# source_file
+lpm_constant1.tdf
+93f595305113f1c39a7260caba46f5b
+7
+# used_port {
+result0
+-1
+3
+}
+# include_file {
+lpm_constant.inc
+97ffb7e3fef9ce9fce4eff8455d5da5
+}
+# hierarchies {
+CU:inst2|lpm_constant1:inst8
+}
+# macro_sequence
+
+# end
+# entity
+lpm_decode
+# storage
+db|course-project.(52).cnf
+db|course-project.(52).cnf
+# case_insensitive
+# source_file
+c:|altera|91|quartus|libraries|megafunctions|lpm_decode.tdf
+bfce37ee9af3768dda7316c867798b
+7
+# user_parameter {
+LPM_WIDTH
+4
+PARAMETER_UNKNOWN
+USR
+LPM_DECODES
+16
+PARAMETER_UNKNOWN
+USR
+LPM_PIPELINE
+0
+PARAMETER_UNKNOWN
+DEF
+CASCADE_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Stratix II
+PARAMETER_UNKNOWN
+USR
+CBXI_PARAMETER
+decode_e9f
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+eq5
+-1
+3
+eq4
+-1
+3
+eq3
+-1
+3
+eq2
+-1
+3
+eq1
+-1
+3
+eq0
+-1
+3
+data3
+-1
+3
+data2
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+lpm_counter
+# storage
+db|course-project.(59).cnf
+db|course-project.(59).cnf
+# case_insensitive
+# source_file
+c:|altera|91|quartus|libraries|megafunctions|lpm_counter.tdf
+ea80917e5f6a67b6043b433538e1f4b
+7
+# user_parameter {
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+LPM_WIDTH
+4
+PARAMETER_UNKNOWN
+USR
+LPM_DIRECTION
+UP
+PARAMETER_UNKNOWN
+USR
+LPM_MODULUS
+0
+PARAMETER_UNKNOWN
+DEF
+LPM_AVALUE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+LPM_SVALUE
+1
+PARAMETER_UNKNOWN
+USR
+LPM_PORT_UPDOWN
+PORT_UNUSED
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Stratix II
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+NOT_GATE_PUSH_BACK
+ON
+NOT_GATE_PUSH_BACK
+USR
+CARRY_CNT_EN
+SMART
+PARAMETER_UNKNOWN
+DEF
+LABWIDE_SCLR
+ON
+PARAMETER_UNKNOWN
+DEF
+USE_NEW_VERSION
+TRUE
+PARAMETER_UNKNOWN
+DEF
+CBXI_PARAMETER
+cntr_aek
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+sset
+-1
+3
+sclr
+-1
+3
+q3
+-1
+3
+q2
+-1
+3
+q1
+-1
+3
+q0
+-1
+3
+cnt_en
+-1
+3
+clock
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+cntr_aek
+# storage
+db|course-project.(60).cnf
+db|course-project.(60).cnf
+# case_insensitive
+# source_file
+db|cntr_aek.tdf
+a53c1769d25ed791e46d8bcf6f8a5e8
+7
+# used_port {
+sset
+-1
+3
+sclr
+-1
+3
+q3
+-1
+3
+q2
+-1
+3
+q1
+-1
+3
+q0
+-1
+3
+cnt_en
+-1
+3
+clock
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+altsyncram_9001
+# storage
+db|course-project.(28).cnf
+db|course-project.(28).cnf
+# case_insensitive
+# source_file
+db|altsyncram_9001.tdf
+9cc0e1ecd42e95b48429e413cfd98b8
+7
+# used_port {
+q_a9
+-1
+3
+q_a8
+-1
+3
+q_a7
+-1
+3
+q_a6
+-1
+3
+q_a5
+-1
+3
+q_a4
+-1
+3
+q_a3
+-1
+3
+q_a2
+-1
+3
+q_a17
+-1
+3
+q_a16
+-1
+3
+q_a15
+-1
+3
+q_a14
+-1
+3
+q_a13
+-1
+3
+q_a12
+-1
+3
+q_a11
+-1
+3
+q_a10
+-1
+3
+q_a1
+-1
+3
+q_a0
+-1
+3
+clock0
+-1
+3
+address_a9
+-1
+3
+address_a8
+-1
+3
+address_a7
+-1
+3
+address_a6
+-1
+3
+address_a5
+-1
+3
+address_a4
+-1
+3
+address_a3
+-1
+3
+address_a2
+-1
+3
+address_a11
+-1
+3
+address_a10
+-1
+3
+address_a1
+-1
+3
+address_a0
+-1
+3
+}
+# memory_file {
+rom.hex
+52f922bddcd3b1fa23b35eaa255ee8b7
+}
+# hierarchies {
+CU:inst2|lpm_rom:inst1|altrom:srom|altsyncram:rom_block|altsyncram_9001:auto_generated
+}
+# macro_sequence
+
+# end
+# entity
+lpm_decode5
+# storage
+db|course-project.(30).cnf
+db|course-project.(30).cnf
+# case_insensitive
+# source_file
+lpm_decode5.tdf
+f9c8723fabc954366dbb295ee5a7539
+7
+# used_port {
+eq9
+-1
+3
+eq8
+-1
+3
+eq7
+-1
+3
+eq6
+-1
+3
+eq5
+-1
+3
+eq4
+-1
+3
+eq3
+-1
+3
+eq2
+-1
+3
+eq1
+-1
+3
+eq0
+-1
+3
+data3
+-1
+3
+data2
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+}
+# include_file {
+lpm_decode.inc
+10da69a8bbd590d66779e7a142f73790
+}
+# hierarchies {
+CU:inst2|lpm_decode5:inst4
+}
+# macro_sequence
+
+# end
+# entity
+lpm_decode
+# storage
+db|course-project.(33).cnf
+db|course-project.(33).cnf
+# case_insensitive
+# source_file
+c:|altera|91|quartus|libraries|megafunctions|lpm_decode.tdf
+bfce37ee9af3768dda7316c867798b
+7
+# user_parameter {
+LPM_WIDTH
+4
+PARAMETER_UNKNOWN
+USR
+LPM_DECODES
+16
+PARAMETER_UNKNOWN
+USR
+LPM_PIPELINE
+0
+PARAMETER_UNKNOWN
+DEF
+CASCADE_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Stratix II
+PARAMETER_UNKNOWN
+USR
+CBXI_PARAMETER
+decode_e9f
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+eq9
+-1
+3
+eq8
+-1
+3
+eq7
+-1
+3
+eq6
+-1
+3
+eq5
+-1
+3
+eq4
+-1
+3
+eq3
+-1
+3
+eq2
+-1
+3
+eq1
+-1
+3
+eq0
+-1
+3
+data3
+-1
+3
+data2
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+}
+# hierarchies {
+CU:inst2|lpm_decode5:inst4|lpm_decode:lpm_decode_component
+}
+# macro_sequence
+
+# end
+# entity
+lpm_decode5
+# storage
+db|course-project.(35).cnf
+db|course-project.(35).cnf
+# case_insensitive
+# source_file
+lpm_decode5.tdf
+f9c8723fabc954366dbb295ee5a7539
+7
+# used_port {
+eq5
+-1
+3
+eq4
+-1
+3
+eq3
+-1
+3
+eq2
+-1
+3
+eq1
+-1
+3
+eq0
+-1
+3
+data3
+-1
+3
+data2
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+}
+# include_file {
+lpm_decode.inc
+10da69a8bbd590d66779e7a142f73790
+}
+# macro_sequence
+
+# end
+# entity
+lpm_counter3
+# storage
+db|course-project.(48).cnf
+db|course-project.(48).cnf
+# case_insensitive
+# source_file
+lpm_counter3.tdf
+1f923af76ff82ca41d3df9a2bf5372b1
+7
+# used_port {
+sclr
+-1
+3
+q3
+-1
+3
+q2
+-1
+3
+q1
+-1
+3
+q0
+-1
+3
+cnt_en
+-1
+3
+clock
+-1
+3
+}
+# include_file {
+lpm_counter.inc
+c5cfeeabc5f2ab60b3453f6abbc42b41
+}
+# hierarchies {
+CU:inst2|lpm_counter3:inst3
+}
+# macro_sequence
+
+# end
+# entity
+lpm_counter
+# storage
+db|course-project.(49).cnf
+db|course-project.(49).cnf
+# case_insensitive
+# source_file
+c:|altera|91|quartus|libraries|megafunctions|lpm_counter.tdf
+ea80917e5f6a67b6043b433538e1f4b
+7
+# user_parameter {
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+LPM_WIDTH
+4
+PARAMETER_UNKNOWN
+USR
+LPM_DIRECTION
+UP
+PARAMETER_UNKNOWN
+USR
+LPM_MODULUS
+0
+PARAMETER_UNKNOWN
+DEF
+LPM_AVALUE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+LPM_SVALUE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+LPM_PORT_UPDOWN
+PORT_UNUSED
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Stratix II
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+NOT_GATE_PUSH_BACK
+ON
+NOT_GATE_PUSH_BACK
+USR
+CARRY_CNT_EN
+SMART
+PARAMETER_UNKNOWN
+DEF
+LABWIDE_SCLR
+ON
+PARAMETER_UNKNOWN
+DEF
+USE_NEW_VERSION
+TRUE
+PARAMETER_UNKNOWN
+DEF
+CBXI_PARAMETER
+cntr_5pi
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+sclr
+-1
+3
+q3
+-1
+3
+q2
+-1
+3
+q1
+-1
+3
+q0
+-1
+3
+cnt_en
+-1
+3
+clock
+-1
+3
+}
+# hierarchies {
+CU:inst2|lpm_counter3:inst3|lpm_counter:lpm_counter_component
+}
+# macro_sequence
+
+# end
+# entity
+cntr_5pi
+# storage
+db|course-project.(58).cnf
+db|course-project.(58).cnf
+# case_insensitive
+# source_file
+db|cntr_5pi.tdf
+346f23d2f9ca9a02bad81daae97cf81
+7
+# used_port {
+sclr
+-1
+3
+q3
+-1
+3
+q2
+-1
+3
+q1
+-1
+3
+q0
+-1
+3
+cnt_en
+-1
+3
+clock
+-1
+3
+}
+# hierarchies {
+CU:inst2|lpm_counter3:inst3|lpm_counter:lpm_counter_component|cntr_5pi:auto_generated
+}
+# macro_sequence
+
+# end
+# entity
+lpm_compare0
+# storage
+db|course-project.(64).cnf
+db|course-project.(64).cnf
+# case_insensitive
+# source_file
+lpm_compare0.tdf
+6c5e71f08edc22faca987ec347e24945
+7
+# used_port {
+datab8
+-1
+3
+datab7
+-1
+3
+datab6
+-1
+3
+datab5
+-1
+3
+datab4
+-1
+3
+datab3
+-1
+3
+datab2
+-1
+3
+datab1
+-1
+3
+datab0
+-1
+3
+dataa8
+-1
+3
+dataa7
+-1
+3
+dataa6
+-1
+3
+dataa5
+-1
+3
+dataa4
+-1
+3
+dataa3
+-1
+3
+dataa2
+-1
+3
+dataa1
+-1
+3
+dataa0
+-1
+3
+aneb
+-1
+3
+aeb
+-1
+3
+}
+# include_file {
+lpm_compare.inc
+bbd3e8c93afb7320934629e5fb11566
+}
+# hierarchies {
+CASH:inst|TAG_MEM:inst|TAG:inst|lpm_compare0:inst1
+CASH:inst|TAG_MEM:inst|TAG:inst1|lpm_compare0:inst1
+CASH:inst|TAG_MEM:inst|TAG:inst4|lpm_compare0:inst1
+CASH:inst|TAG_MEM:inst|TAG:inst2|lpm_compare0:inst1
+}
+# macro_sequence
+
+# end
+# entity
+lpm_compare
+# storage
+db|course-project.(65).cnf
+db|course-project.(65).cnf
+# case_insensitive
+# source_file
+c:|altera|91|quartus|libraries|megafunctions|lpm_compare.tdf
+c970ec48c9d7d7f713d7075c8e1a6b2
+7
+# user_parameter {
+lpm_width
+9
+PARAMETER_UNKNOWN
+USR
+LPM_REPRESENTATION
+UNSIGNED
+PARAMETER_UNKNOWN
+USR
+LPM_PIPELINE
+0
+PARAMETER_UNKNOWN
+DEF
+CHAIN_SIZE
+8
+PARAMETER_UNKNOWN
+DEF
+ONE_INPUT_IS_CONSTANT
+NO
+PARAMETER_UNKNOWN
+DEF
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CASCADE_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+CASCADE_CHAIN_LENGTH
+2
+CASCADE_CHAIN_LENGTH
+USR
+DEVICE_FAMILY
+Stratix II
+PARAMETER_UNKNOWN
+USR
+CBXI_PARAMETER
+cmpr_60h
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+datab8
+-1
+3
+datab7
+-1
+3
+datab6
+-1
+3
+datab5
+-1
+3
+datab4
+-1
+3
+datab3
+-1
+3
+datab2
+-1
+3
+datab1
+-1
+3
+datab0
+-1
+3
+dataa8
+-1
+3
+dataa7
+-1
+3
+dataa6
+-1
+3
+dataa5
+-1
+3
+dataa4
+-1
+3
+dataa3
+-1
+3
+dataa2
+-1
+3
+dataa1
+-1
+3
+dataa0
+-1
+3
+aneb
+-1
+3
+aeb
+-1
+3
+}
+# hierarchies {
+CASH:inst|TAG_MEM:inst|TAG:inst|lpm_compare0:inst1|lpm_compare:lpm_compare_component
+CASH:inst|TAG_MEM:inst|TAG:inst1|lpm_compare0:inst1|lpm_compare:lpm_compare_component
+CASH:inst|TAG_MEM:inst|TAG:inst4|lpm_compare0:inst1|lpm_compare:lpm_compare_component
+CASH:inst|TAG_MEM:inst|TAG:inst2|lpm_compare0:inst1|lpm_compare:lpm_compare_component
+}
+# macro_sequence
+
+# end
+# entity
+cmpr_60h
+# storage
+db|course-project.(66).cnf
+db|course-project.(66).cnf
+# case_insensitive
+# source_file
+db|cmpr_60h.tdf
+8138dde679ad40204cc5a25c4339bf
+7
+# used_port {
+datab8
+-1
+3
+datab7
+-1
+3
+datab6
+-1
+3
+datab5
+-1
+3
+datab4
+-1
+3
+datab3
+-1
+3
+datab2
+-1
+3
+datab1
+-1
+3
+datab0
+-1
+3
+dataa8
+-1
+3
+dataa7
+-1
+3
+dataa6
+-1
+3
+dataa5
+-1
+3
+dataa4
+-1
+3
+dataa3
+-1
+3
+dataa2
+-1
+3
+dataa1
+-1
+3
+dataa0
+-1
+3
+aneb
+-1
+3
+aeb
+-1
+3
+}
+# hierarchies {
+CASH:inst|TAG_MEM:inst|TAG:inst|lpm_compare0:inst1|lpm_compare:lpm_compare_component|cmpr_60h:auto_generated
+CASH:inst|TAG_MEM:inst|TAG:inst1|lpm_compare0:inst1|lpm_compare:lpm_compare_component|cmpr_60h:auto_generated
+CASH:inst|TAG_MEM:inst|TAG:inst4|lpm_compare0:inst1|lpm_compare:lpm_compare_component|cmpr_60h:auto_generated
+CASH:inst|TAG_MEM:inst|TAG:inst2|lpm_compare0:inst1|lpm_compare:lpm_compare_component|cmpr_60h:auto_generated
+}
+# macro_sequence
+
+# end
+# entity
+lpm_dff1
+# storage
+db|course-project.(67).cnf
+db|course-project.(67).cnf
+# case_insensitive
+# source_file
+lpm_dff1.tdf
+dd1337f229ef145b5b2a9aa428caf1c1
+7
+# used_port {
+q8
+-1
+3
+q7
+-1
+3
+q6
+-1
+3
+q5
+-1
+3
+q4
+-1
+3
+q3
+-1
+3
+q2
+-1
+3
+q1
+-1
+3
+q0
+-1
+3
+enable
+-1
+3
+data8
+-1
+3
+data7
+-1
+3
+data6
+-1
+3
+data5
+-1
+3
+data4
+-1
+3
+data3
+-1
+3
+data2
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+clock
+-1
+3
+}
+# include_file {
+lpm_ff.inc
+5b1f18ec4f969a147b22e8c42bf962ac
+}
+# hierarchies {
+CASH:inst|TAG_MEM:inst|TAG:inst|lpm_dff1:inst
+CASH:inst|TAG_MEM:inst|TAG:inst1|lpm_dff1:inst
+CASH:inst|TAG_MEM:inst|TAG:inst4|lpm_dff1:inst
+CASH:inst|TAG_MEM:inst|TAG:inst2|lpm_dff1:inst
+}
+# macro_sequence
+
+# end
+# entity
+lpm_ff
+# storage
+db|course-project.(68).cnf
+db|course-project.(68).cnf
+# case_insensitive
+# source_file
+c:|altera|91|quartus|libraries|megafunctions|lpm_ff.tdf
+46b042d3fd5eb2f17a9dfd3891afd1a
+7
+# user_parameter {
+LPM_WIDTH
+9
+PARAMETER_UNKNOWN
+USR
+LPM_AVALUE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+LPM_SVALUE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+LPM_FFTYPE
+DFF
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Stratix II
+PARAMETER_UNKNOWN
+USR
+CBXI_PARAMETER
+NOTHING
+PARAMETER_UNKNOWN
+DEF
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+q8
+-1
+3
+q7
+-1
+3
+q6
+-1
+3
+q5
+-1
+3
+q4
+-1
+3
+q3
+-1
+3
+q2
+-1
+3
+q1
+-1
+3
+q0
+-1
+3
+enable
+-1
+3
+data8
+-1
+3
+data7
+-1
+3
+data6
+-1
+3
+data5
+-1
+3
+data4
+-1
+3
+data3
+-1
+3
+data2
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+clock
+-1
+3
+}
+# hierarchies {
+CASH:inst|TAG_MEM:inst|TAG:inst|lpm_dff1:inst|lpm_ff:lpm_ff_component
+CASH:inst|TAG_MEM:inst|TAG:inst1|lpm_dff1:inst|lpm_ff:lpm_ff_component
+CASH:inst|TAG_MEM:inst|TAG:inst4|lpm_dff1:inst|lpm_ff:lpm_ff_component
+CASH:inst|TAG_MEM:inst|TAG:inst2|lpm_dff1:inst|lpm_ff:lpm_ff_component
+}
+# macro_sequence
+
+# end
+# entity
+lpm_bustri2
+# storage
+db|course-project.(69).cnf
+db|course-project.(69).cnf
+# case_insensitive
+# source_file
+lpm_bustri2.tdf
+dff8bf279a8e5b3b5365baa4c43a1478
+7
+# used_port {
+tridata8
+-1
+3
+tridata7
+-1
+3
+tridata6
+-1
+3
+tridata5
+-1
+3
+tridata4
+-1
+3
+tridata3
+-1
+3
+tridata2
+-1
+3
+tridata1
+-1
+3
+tridata0
+-1
+3
+enabledt
+-1
+3
+data8
+-1
+3
+data7
+-1
+3
+data6
+-1
+3
+data5
+-1
+3
+data4
+-1
+3
+data3
+-1
+3
+data2
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+}
+# include_file {
+lpm_bustri.inc
+e542f5adf6af653bd181242b9785544
+}
+# hierarchies {
+CASH:inst|TAG_MEM:inst|TAG:inst|lpm_bustri2:inst3
+CASH:inst|TAG_MEM:inst|TAG:inst1|lpm_bustri2:inst3
+CASH:inst|TAG_MEM:inst|TAG:inst4|lpm_bustri2:inst3
+CASH:inst|TAG_MEM:inst|TAG:inst2|lpm_bustri2:inst3
+}
+# macro_sequence
+
+# end
+# entity
+lpm_bustri
+# storage
+db|course-project.(70).cnf
+db|course-project.(70).cnf
+# case_insensitive
+# source_file
+c:|altera|91|quartus|libraries|megafunctions|lpm_bustri.tdf
+9e81b53c45b3aeaef540b95aa6d11233
+7
+# user_parameter {
+LPM_WIDTH
+9
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+tridata8
+-1
+3
+tridata7
+-1
+3
+tridata6
+-1
+3
+tridata5
+-1
+3
+tridata4
+-1
+3
+tridata3
+-1
+3
+tridata2
+-1
+3
+tridata1
+-1
+3
+tridata0
+-1
+3
+enabledt
+-1
+3
+data8
+-1
+3
+data7
+-1
+3
+data6
+-1
+3
+data5
+-1
+3
+data4
+-1
+3
+data3
+-1
+3
+data2
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+}
+# hierarchies {
+CASH:inst|TAG_MEM:inst|TAG:inst|lpm_bustri2:inst3|lpm_bustri:lpm_bustri_component
+CASH:inst|TAG_MEM:inst|TAG:inst1|lpm_bustri2:inst3|lpm_bustri:lpm_bustri_component
+CASH:inst|TAG_MEM:inst|TAG:inst4|lpm_bustri2:inst3|lpm_bustri:lpm_bustri_component
+CASH:inst|TAG_MEM:inst|TAG:inst2|lpm_bustri2:inst3|lpm_bustri:lpm_bustri_component
+}
+# macro_sequence
+
+# end
+# entity
+lpm_decode6
+# storage
+db|course-project.(71).cnf
+db|course-project.(71).cnf
+# case_insensitive
+# source_file
+lpm_decode6.tdf
+b8783dea4534cfbccdf5cd784fabf8cc
+7
+# used_port {
+eq4
+-1
+3
+eq3
+-1
+3
+eq2
+-1
+3
+eq1
+-1
+3
+eq0
+-1
+3
+data2
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+}
+# include_file {
+lpm_decode.inc
+10da69a8bbd590d66779e7a142f73790
+}
+# macro_sequence
+
+# end
+# entity
+lpm_decode
+# storage
+db|course-project.(72).cnf
+db|course-project.(72).cnf
+# case_insensitive
+# source_file
+c:|altera|91|quartus|libraries|megafunctions|lpm_decode.tdf
+bfce37ee9af3768dda7316c867798b
+7
+# user_parameter {
+LPM_WIDTH
+3
+PARAMETER_UNKNOWN
+USR
+LPM_DECODES
+8
+PARAMETER_UNKNOWN
+USR
+LPM_PIPELINE
+0
+PARAMETER_UNKNOWN
+DEF
+CASCADE_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Stratix II
+PARAMETER_UNKNOWN
+USR
+CBXI_PARAMETER
+decode_u7f
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+eq4
+-1
+3
+eq3
+-1
+3
+eq2
+-1
+3
+eq1
+-1
+3
+eq0
+-1
+3
+data2
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+}
+# hierarchies {
+CASH:inst|TAG_MEM:inst|lpm_decode7:inst32|lpm_decode:lpm_decode_component
+}
+# macro_sequence
+
+# end
+# entity
+lpm_counter10
+# storage
+db|course-project.(73).cnf
+db|course-project.(73).cnf
+# case_insensitive
+# source_file
+lpm_counter10.tdf
+ad4fadca1477b5f44e7112f143d86922
+7
+# used_port {
+sclr
+-1
+3
+q2
+-1
+3
+q1
+-1
+3
+q0
+-1
+3
+cnt_en
+-1
+3
+clock
+-1
+3
+}
+# include_file {
+lpm_counter.inc
+c5cfeeabc5f2ab60b3453f6abbc42b41
+}
+# hierarchies {
+CASH:inst|TAG_MEM:inst|lpm_counter10:inst25
+}
+# macro_sequence
+
+# end
+# entity
+lpm_counter
+# storage
+db|course-project.(74).cnf
+db|course-project.(74).cnf
+# case_insensitive
+# source_file
+c:|altera|91|quartus|libraries|megafunctions|lpm_counter.tdf
+ea80917e5f6a67b6043b433538e1f4b
+7
+# user_parameter {
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+LPM_WIDTH
+3
+PARAMETER_UNKNOWN
+USR
+LPM_DIRECTION
+UP
+PARAMETER_UNKNOWN
+USR
+LPM_MODULUS
+0
+PARAMETER_UNKNOWN
+DEF
+LPM_AVALUE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+LPM_SVALUE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+LPM_PORT_UPDOWN
+PORT_UNUSED
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Stratix II
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+NOT_GATE_PUSH_BACK
+ON
+NOT_GATE_PUSH_BACK
+USR
+CARRY_CNT_EN
+SMART
+PARAMETER_UNKNOWN
+DEF
+LABWIDE_SCLR
+ON
+PARAMETER_UNKNOWN
+DEF
+USE_NEW_VERSION
+TRUE
+PARAMETER_UNKNOWN
+DEF
+CBXI_PARAMETER
+cntr_4pi
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+sclr
+-1
+3
+q2
+-1
+3
+q1
+-1
+3
+q0
+-1
+3
+cnt_en
+-1
+3
+clock
+-1
+3
+}
+# hierarchies {
+CASH:inst|TAG_MEM:inst|lpm_counter10:inst25|lpm_counter:lpm_counter_component
+}
+# macro_sequence
+
+# end
+# entity
+cntr_4pi
+# storage
+db|course-project.(75).cnf
+db|course-project.(75).cnf
+# case_insensitive
+# source_file
+db|cntr_4pi.tdf
+65342c406f946fbb374bcab2981e5c54
+7
+# used_port {
+sclr
+-1
+3
+q2
+-1
+3
+q1
+-1
+3
+q0
+-1
+3
+cnt_en
+-1
+3
+clock
+-1
+3
+}
+# hierarchies {
+CASH:inst|TAG_MEM:inst|lpm_counter10:inst25|lpm_counter:lpm_counter_component|cntr_4pi:auto_generated
+}
+# macro_sequence
+
+# end
+# entity
+course-project
+# storage
+db|course-project.(0).cnf
+db|course-project.(0).cnf
+# case_insensitive
+# source_file
+course-project.bdf
+324ebed525448760f592721454e2df8b
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
@@ -4140,6 +6630,135 @@ AUTO
 }
 # hierarchies {
 |
+}
+# macro_sequence
+
+# end
+# entity
+CU
+# storage
+db|course-project.(62).cnf
+db|course-project.(62).cnf
+# case_insensitive
+# source_file
+cu.bdf
+4645773166d6b34a2e0d245b15124
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+CU:inst2
+}
+# macro_sequence
+
+# end
+# entity
+lpm_decode7
+# storage
+db|course-project.(76).cnf
+db|course-project.(76).cnf
+# case_insensitive
+# source_file
+lpm_decode7.tdf
+d26f6531e15a8e42e243b5035e0807e
+7
+# used_port {
+eq4
+-1
+3
+eq3
+-1
+3
+eq2
+-1
+3
+eq1
+-1
+3
+eq0
+-1
+3
+data2
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+}
+# include_file {
+lpm_decode.inc
+10da69a8bbd590d66779e7a142f73790
+}
+# hierarchies {
+CASH:inst|TAG_MEM:inst|lpm_decode7:inst32
+}
+# macro_sequence
+
+# end
+# entity
+CASH
+# storage
+db|course-project.(7).cnf
+db|course-project.(7).cnf
+# case_insensitive
+# source_file
+cash.bdf
+52032edeb54b1cc6c7e5b926f7453e7
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+CASH:inst
+}
+# macro_sequence
+
+# end
+# entity
+TAG
+# storage
+db|course-project.(63).cnf
+db|course-project.(63).cnf
+# case_insensitive
+# source_file
+tag.bdf
+713781aeb1a5451a7f32ec1944eb616
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+CASH:inst|TAG_MEM:inst|TAG:inst
+CASH:inst|TAG_MEM:inst|TAG:inst1
+CASH:inst|TAG_MEM:inst|TAG:inst4
+CASH:inst|TAG_MEM:inst|TAG:inst2
+}
+# macro_sequence
+
+# end
+# entity
+TAG_MEM
+# storage
+db|course-project.(61).cnf
+db|course-project.(61).cnf
+# case_insensitive
+# source_file
+tag_mem.bdf
+5be423c2969f2acb9cd2141c8453245
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+CASH:inst|TAG_MEM:inst
 }
 # macro_sequence
 

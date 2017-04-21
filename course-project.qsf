@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Stratix II"
 set_global_assignment -name DEVICE AUTO
-set_global_assignment -name TOP_LEVEL_ENTITY CELL
+set_global_assignment -name TOP_LEVEL_ENTITY "course-project"
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 9.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "22:45:02  APRIL 19, 2017"
 set_global_assignment -name LAST_QUARTUS_VERSION 9.1
@@ -72,8 +72,20 @@ set_global_assignment -name QIP_FILE lpm_decode2.qip
 set_global_assignment -name BDF_FILE DATA_MEM.bdf
 set_global_assignment -name QIP_FILE lpm_decode3.qip
 set_global_assignment -name BDF_FILE CELL.bdf
+set_global_assignment -name BDF_FILE ROW.bdf
+set_global_assignment -name BDF_FILE MEM.bdf
+set_global_assignment -name QIP_FILE lpm_counter2.qip
+set_global_assignment -name QIP_FILE lpm_bustri3.qip
+set_global_assignment -name QIP_FILE lpm_decode4.qip
+set_global_assignment -name QIP_FILE lpm_counter3.qip
+set_global_assignment -name QIP_FILE lpm_decode5.qip
+set_global_assignment -name QIP_FILE lpm_constant1.qip
+set_global_assignment -name QIP_FILE altecc_encoder0.qip
+set_global_assignment -name QIP_FILE lpm_counter10.qip
+set_global_assignment -name QIP_FILE lpm_decode6.qip
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
 set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name QIP_FILE lpm_decode7.qip
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

@@ -38,8 +38,8 @@ INCLUDE "lpm_compare.inc";
 
 SUBDESIGN lpm_compare0
 (
-	dataa[6..0]	 : INPUT;
-	datab[6..0]	 : INPUT;
+	dataa[8..0]	 : INPUT;
+	datab[8..0]	 : INPUT;
 	AeB	 : OUTPUT;
 	AneB	 : OUTPUT;
 )
@@ -49,15 +49,15 @@ VARIABLE
 	lpm_compare_component : lpm_compare WITH (
 			LPM_REPRESENTATION = "UNSIGNED",
 			LPM_TYPE = "LPM_COMPARE",
-			LPM_WIDTH = 7
+			LPM_WIDTH = 9
 			);
 
 BEGIN
 
 	AneB = lpm_compare_component.AneB;
 	AeB = lpm_compare_component.AeB;
-	lpm_compare_component.dataa[6..0] = dataa[6..0];
-	lpm_compare_component.datab[6..0] = datab[6..0];
+	lpm_compare_component.dataa[8..0] = dataa[8..0];
+	lpm_compare_component.datab[8..0] = datab[8..0];
 END;
 
 
@@ -81,18 +81,18 @@ END;
 -- Retrieval info: PRIVATE: aclr NUMERIC "0"
 -- Retrieval info: PRIVATE: clken NUMERIC "0"
 -- Retrieval info: PRIVATE: isPortBConstant NUMERIC "0"
--- Retrieval info: PRIVATE: nBit NUMERIC "7"
+-- Retrieval info: PRIVATE: nBit NUMERIC "9"
 -- Retrieval info: CONSTANT: LPM_REPRESENTATION STRING "UNSIGNED"
 -- Retrieval info: CONSTANT: LPM_TYPE STRING "LPM_COMPARE"
--- Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "7"
+-- Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "9"
 -- Retrieval info: USED_PORT: AeB 0 0 0 0 OUTPUT NODEFVAL AeB
 -- Retrieval info: USED_PORT: AneB 0 0 0 0 OUTPUT NODEFVAL AneB
--- Retrieval info: USED_PORT: dataa 0 0 7 0 INPUT NODEFVAL dataa[6..0]
--- Retrieval info: USED_PORT: datab 0 0 7 0 INPUT NODEFVAL datab[6..0]
+-- Retrieval info: USED_PORT: dataa 0 0 9 0 INPUT NODEFVAL dataa[8..0]
+-- Retrieval info: USED_PORT: datab 0 0 9 0 INPUT NODEFVAL datab[8..0]
 -- Retrieval info: CONNECT: AeB 0 0 0 0 @AeB 0 0 0 0
 -- Retrieval info: CONNECT: AneB 0 0 0 0 @AneB 0 0 0 0
--- Retrieval info: CONNECT: @dataa 0 0 7 0 dataa 0 0 7 0
--- Retrieval info: CONNECT: @datab 0 0 7 0 datab 0 0 7 0
+-- Retrieval info: CONNECT: @dataa 0 0 9 0 dataa 0 0 9 0
+-- Retrieval info: CONNECT: @datab 0 0 9 0 datab 0 0 9 0
 -- Retrieval info: LIBRARY: lpm lpm.lpm_components.all
 -- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_compare0.tdf TRUE
 -- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_compare0.inc TRUE
