@@ -608,13 +608,13 @@ VECTOR("D:/Универ/6 семестр/quartus-micro-processor/CASH.vwf")
 	}
 }
 
-VECTOR("D:/Универ/6 семестр/quartus-micro-processor/course-project.vwf")
+VECTOR("D:/Универ/6 семестр/quartus-micro-processor/db/course-project.sim.cvwf")
 {
 	ZOOM{
-		ZBEGIN = 71500;
-		ZEND = 147000;
-		NUMERATOR = 20;
-		DENOMINATOR = 1000;
+		ZBEGIN = 0;
+		ZEND = 153142;
+		NUMERATOR = 1345;
+		DENOMINATOR = 153142;
 		TOP_INDEX = 0;
 	}
 	CLOCK{
@@ -737,15 +737,39 @@ VECTOR("D:/Универ/6 семестр/quartus-micro-processor/course-project.vwf")
 		VISIBLE = Y;
 		FLAG = N;
 	}
+	LINE{
+		SIGNAL = "HIT";
+		INDEX = 14;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "MISS";
+		INDEX = 15;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "MOV_REG_MEM";
+		INDEX = 16;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
 }
 
-VECTOR("D:/Универ/6 семестр/quartus-micro-processor/db/course-project.sim.cvwf")
+VECTOR("D:/Универ/6 семестр/quartus-micro-processor/course-project.vwf")
 {
 	ZOOM{
-		ZBEGIN = 0;
-		ZEND = 153142;
-		NUMERATOR = 1345;
-		DENOMINATOR = 153142;
+		ZBEGIN = 71500;
+		ZEND = 147000;
+		NUMERATOR = 20;
+		DENOMINATOR = 1000;
 		TOP_INDEX = 0;
 	}
 	CLOCK{
