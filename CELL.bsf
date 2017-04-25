@@ -40,8 +40,8 @@ applicable agreement for further details.
 	(port
 		(pt 0 64)
 		(input)
-		(text "READ" (rect 0 0 33 14)(font "Arial" (font_size 8)))
-		(text "READ" (rect 21 59 54 73)(font "Arial" (font_size 8)))
+		(text "ENABLE" (rect 0 0 47 14)(font "Arial" (font_size 8)))
+		(text "ENABLE" (rect 21 59 68 73)(font "Arial" (font_size 8)))
 		(line (pt 0 64)(pt 16 64)(line_width 1))
 	)
 	(port
@@ -50,6 +50,13 @@ applicable agreement for further details.
 		(text "CLC" (rect 0 0 23 14)(font "Arial" (font_size 8)))
 		(text "CLC" (rect 21 75 44 89)(font "Arial" (font_size 8)))
 		(line (pt 0 80)(pt 16 80)(line_width 1))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "READ" (rect 0 0 33 14)(font "Arial" (font_size 8)))
+		(text "READ" (rect 21 91 54 105)(font "Arial" (font_size 8)))
+		(line (pt 0 96)(pt 16 96)(line_width 1))
 	)
 	(port
 		(pt 240 32)
