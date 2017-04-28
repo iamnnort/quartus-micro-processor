@@ -5,9 +5,9 @@ Timing Analyzer Summary
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 16.520 ns
-From           : CU:inst2|lpm_rom:inst1|altrom:srom|altsyncram:rom_block|altsyncram_9001:auto_generated|ram_block1a9~porta_address_reg11
-To             : DBUS[9]
+Actual Time    : 16.913 ns
+From           : CU:inst2|lpm_rom:inst1|altrom:srom|altsyncram:rom_block|altsyncram_9001:auto_generated|ram_block1a12~porta_address_reg11
+To             : DBUS[8]
 From Clock     : CLC
 To Clock       : --
 Failed Paths   : 0
@@ -15,9 +15,9 @@ Failed Paths   : 0
 Type           : Clock Setup: 'CLC'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 67.22 MHz ( period = 14.876 ns )
-From           : CU:inst2|lpm_rom:inst1|altrom:srom|altsyncram:rom_block|altsyncram_9001:auto_generated|ram_block1a9~porta_address_reg11
-To             : MEM:inst4|lpm_counter2:inst|lpm_counter:lpm_counter_component|cntr_dbj:auto_generated|safe_q[0]
+Actual Time    : 60.20 MHz ( period = 16.612 ns )
+From           : CU:inst2|lpm_rom:inst1|altrom:srom|altsyncram:rom_block|altsyncram_9001:auto_generated|ram_block1a12~porta_address_reg11
+To             : MEM:inst4|lpm_counter2:inst|lpm_counter:lpm_counter_component|cntr_dbj:auto_generated|safe_q[10]
 From Clock     : CLC
 To Clock       : CLC
 Failed Paths   : 0

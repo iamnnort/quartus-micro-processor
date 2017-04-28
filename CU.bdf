@@ -72,7 +72,7 @@ applicable agreement for further details.
 	(output)
 	(rect 1488 416 1665 432)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "MOV_REG_MEM" (rect 90 0 172 12)(font "Arial" ))
+	(text "MOV_MEM_REG" (rect 90 0 172 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8)(line_width 1))
@@ -88,7 +88,7 @@ applicable agreement for further details.
 	(output)
 	(rect 1488 432 1665 448)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "MOV_MEM_REG" (rect 90 0 172 12)(font "Arial" ))
+	(text "MOV_REG_MEM" (rect 90 0 172 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8)(line_width 1))
@@ -134,88 +134,6 @@ applicable agreement for further details.
 		(line (pt 16 26)(pt 22 32)(line_width 1))
 		(line (pt 22 32)(pt 16 38)(line_width 1))
 	)
-)
-(symbol
-	(rect 1032 288 1144 384)
-	(text "LPM_ROM" (rect 25 0 100 16)(font "Arial" (font_size 10)))
-	(text "inst1" (rect 3 85 26 97)(font "Arial" ))
-	(port
-		(pt 0 24)
-		(input)
-		(text "address[LPM_WIDTHAD-1..0]" (rect 20 17 186 31)(font "Arial" (font_size 8)))
-		(text "address[]" (rect 20 17 74 31)(font "Arial" (font_size 8)))
-		(line (pt 0 24)(pt 16 24)(line_width 3))
-	)
-	(port
-		(pt 0 40)
-		(input)
-		(text "inclock" (rect 20 33 58 47)(font "Arial" (font_size 8)))
-		(text "inclock" (rect 20 33 58 47)(font "Arial" (font_size 8)))
-		(line (pt 0 40)(pt 16 40)(line_width 1))
-	)
-	(port
-		(pt 0 56)
-		(input)
-		(text "outclock" (rect 20 49 67 63)(font "Arial" (font_size 8)))
-		(text "outclock" (rect 20 49 67 63)(font "Arial" (font_size 8)))
-		(line (pt 0 56)(pt 16 56)(line_width 1))
-		(unused)
-	)
-	(port
-		(pt 0 72)
-		(input)
-		(text "memenab" (rect 20 65 74 79)(font "Arial" (font_size 8)))
-		(text "memenab" (rect 20 65 74 79)(font "Arial" (font_size 8)))
-		(line (pt 0 72)(pt 16 72)(line_width 1))
-	)
-	(port
-		(pt 112 48)
-		(output)
-		(text "q[LPM_WIDTH-1..0]" (rect 80 41 188 55)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 80 41 94 55)(font "Arial" (font_size 8)))
-		(line (pt 96 48)(pt 112 48)(line_width 3))
-	)
-	(parameter
-		"LPM_ADDRESS_CONTROL"
-		"REGISTERED"
-		"Should the address and control ports be registered?"
-		"\"REGISTERED\"" "\"UNREGISTERED\"" 
-		(type "PARAMETER_STRING")	)
-	(parameter
-		"LPM_FILE"
-		"ROM.hex"
-		"File containing initial contents of memory array"
-		(type "PARAMETER_STRING")	)
-	(parameter
-		"LPM_NUMWORDS"
-		"4096"
-		"Number of memory words, default is 2^LPM_WIDTHAD"
-		(type "PARAMETER_UNSIGNED_DEC")	)
-	(parameter
-		"LPM_OUTDATA"
-		"UNREGISTERED"
-		"Should the output data be registered?"
-		"\"REGISTERED\"" "\"UNREGISTERED\"" 
-		(type "PARAMETER_STRING")	)
-	(parameter
-		"LPM_WIDTH"
-		"18"
-		"Data width in bits, any integer > 0"
-		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" "13" "14" "15" "16" "20" "24" "28" "32" "40" "48" "56" "64" 
-		(type "PARAMETER_UNSIGNED_DEC")	)
-	(parameter
-		"LPM_WIDTHAD"
-		"12"
-		"Number of address lines, any integer > 0"
-		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" 
-		(type "PARAMETER_UNSIGNED_DEC")	)
-	(drawing
-		(line (pt 16 16)(pt 96 16)(line_width 1))
-		(line (pt 16 80)(pt 96 80)(line_width 1))
-		(line (pt 96 80)(pt 96 16)(line_width 1))
-		(line (pt 16 80)(pt 16 16)(line_width 1))
-	)
-	(annotation_block (parameter)(rect 1032 152 1336 256))
 )
 (symbol
 	(rect 904 384 1000 432)
@@ -307,27 +225,91 @@ applicable agreement for further details.
 		(circle (rect 31 12 39 20)(line_width 1))
 	)
 )
-(connector
-	(text "rom[17..0]" (rect 1154 320 1204 332)(font "Arial" ))
-	(pt 1208 336)
-	(pt 1144 336)
-	(bus)
-)
-(connector
-	(text "rom[17..14]" (rect 1213 344 1269 356)(font "Arial" ))
-	(pt 1208 360)
-	(pt 1272 360)
-	(bus)
+(symbol
+	(rect 1032 288 1144 384)
+	(text "LPM_ROM" (rect 25 0 100 16)(font "Arial" (font_size 10)))
+	(text "inst1" (rect 3 85 26 97)(font "Arial" ))
+	(port
+		(pt 0 24)
+		(input)
+		(text "address[LPM_WIDTHAD-1..0]" (rect 20 17 186 31)(font "Arial" (font_size 8)))
+		(text "address[]" (rect 20 17 74 31)(font "Arial" (font_size 8)))
+		(line (pt 0 24)(pt 16 24)(line_width 3))
+	)
+	(port
+		(pt 0 40)
+		(input)
+		(text "inclock" (rect 20 33 58 47)(font "Arial" (font_size 8)))
+		(text "inclock" (rect 20 33 58 47)(font "Arial" (font_size 8)))
+		(line (pt 0 40)(pt 16 40)(line_width 1))
+	)
+	(port
+		(pt 0 56)
+		(input)
+		(text "outclock" (rect 20 49 67 63)(font "Arial" (font_size 8)))
+		(text "outclock" (rect 20 49 67 63)(font "Arial" (font_size 8)))
+		(line (pt 0 56)(pt 16 56)(line_width 1))
+		(unused)
+	)
+	(port
+		(pt 0 72)
+		(input)
+		(text "memenab" (rect 20 65 74 79)(font "Arial" (font_size 8)))
+		(text "memenab" (rect 20 65 74 79)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 16 72)(line_width 1))
+	)
+	(port
+		(pt 112 48)
+		(output)
+		(text "q[LPM_WIDTH-1..0]" (rect 80 41 188 55)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 80 41 94 55)(font "Arial" (font_size 8)))
+		(line (pt 96 48)(pt 112 48)(line_width 3))
+	)
+	(parameter
+		"LPM_ADDRESS_CONTROL"
+		"REGISTERED"
+		"Should the address and control ports be registered?"
+		"\"REGISTERED\"" "\"UNREGISTERED\"" 
+		(type "PARAMETER_STRING")	)
+	(parameter
+		"LPM_FILE"
+		"ROM.hex"
+		"File containing initial contents of memory array"
+		(type "PARAMETER_STRING")	)
+	(parameter
+		"LPM_NUMWORDS"
+		"4096"
+		"Number of memory words, default is 2^LPM_WIDTHAD"
+		(type "PARAMETER_UNSIGNED_DEC")	)
+	(parameter
+		"LPM_OUTDATA"
+		"UNREGISTERED"
+		"Should the output data be registered?"
+		"\"REGISTERED\"" "\"UNREGISTERED\"" 
+		(type "PARAMETER_STRING")	)
+	(parameter
+		"LPM_WIDTH"
+		"19"
+		"Data width in bits, any integer > 0"
+		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" "13" "14" "15" "16" "20" "24" "28" "32" "40" "48" "56" "64" 
+		(type "PARAMETER_UNSIGNED_DEC")	)
+	(parameter
+		"LPM_WIDTHAD"
+		"12"
+		"Number of address lines, any integer > 0"
+		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" 
+		(type "PARAMETER_UNSIGNED_DEC")	)
+	(drawing
+		(line (pt 16 16)(pt 96 16)(line_width 1))
+		(line (pt 16 80)(pt 96 80)(line_width 1))
+		(line (pt 96 80)(pt 96 16)(line_width 1))
+		(line (pt 16 80)(pt 16 16)(line_width 1))
+	)
+	(annotation_block (parameter)(rect 1032 152 1336 256))
 )
 (connector
 	(pt 1272 448)
 	(pt 1312 448)
-	(bus)
-)
-(connector
-	(text "rom[13..2]" (rect 1385 272 1435 284)(font "Arial" ))
-	(pt 1208 288)
-	(pt 1440 288)
 	(bus)
 )
 (connector
@@ -409,6 +391,24 @@ applicable agreement for further details.
 (connector
 	(pt 824 392)
 	(pt 704 392)
+)
+(connector
+	(text "rom[18..0]" (rect 1154 320 1204 332)(font "Arial" ))
+	(pt 1208 336)
+	(pt 1144 336)
+	(bus)
+)
+(connector
+	(text "rom[18..15]" (rect 1213 344 1269 356)(font "Arial" ))
+	(pt 1208 360)
+	(pt 1272 360)
+	(bus)
+)
+(connector
+	(text "rom[14..3]" (rect 1385 272 1435 284)(font "Arial" ))
+	(pt 1208 288)
+	(pt 1440 288)
+	(bus)
 )
 (junction (pt 1208 336))
 (junction (pt 744 368))

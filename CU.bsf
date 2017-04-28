@@ -47,15 +47,15 @@ applicable agreement for further details.
 	(port
 		(pt 176 48)
 		(output)
-		(text "MOV_REG_MEM" (rect 0 0 93 14)(font "Arial" (font_size 8)))
-		(text "MOV_REG_MEM" (rect 62 43 155 57)(font "Arial" (font_size 8)))
+		(text "MOV_MEM_REG" (rect 0 0 93 14)(font "Arial" (font_size 8)))
+		(text "MOV_MEM_REG" (rect 62 43 155 57)(font "Arial" (font_size 8)))
 		(line (pt 176 48)(pt 160 48)(line_width 1))
 	)
 	(port
 		(pt 176 64)
 		(output)
-		(text "MOV_MEM_REG" (rect 0 0 93 14)(font "Arial" (font_size 8)))
-		(text "MOV_MEM_REG" (rect 62 59 155 73)(font "Arial" (font_size 8)))
+		(text "MOV_REG_MEM" (rect 0 0 93 14)(font "Arial" (font_size 8)))
+		(text "MOV_REG_MEM" (rect 62 59 155 73)(font "Arial" (font_size 8)))
 		(line (pt 176 64)(pt 160 64)(line_width 1))
 	)
 	(drawing
