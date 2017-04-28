@@ -35,6 +35,7 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|course-project|CASH:inst|SET:inst11|TAG_MEM:inst|lpm_compare1:inst8|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_g1h.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|course-project|CASH:inst|SET:inst11|TAG_MEM:inst|lpm_counter12:inst38|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_4pi.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|course-project|MEM:inst4|LPM_RAM_IO:inst3|altram:sram|altsyncram:ram_block" CBX_FILE_NAME="altsyncram_hi91.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|course-project|Registers:inst6|lpm_decode0:inst3|lpm_decode:lpm_decode_component" CBX_FILE_NAME="decode_u7f.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|course-project|CASH:inst|SET:inst11|DATA_MEM:inst3|ROW:inst14|lpm_counter13:inst9|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_3pi.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|course-project|CASH:inst|SET:inst11|DATA_MEM:inst3|ROW:inst|lpm_decode2:inst13|lpm_decode:lpm_decode_component" CBX_FILE_NAME="decode_p7f.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|course-project|CASH:inst|SET:inst11|TAG_MEM:inst|lpm_compare1:inst9|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_g1h.tdf"/>

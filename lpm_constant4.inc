@@ -13,14 +13,11 @@
 --applicable agreement for further details.
 
 
-FUNCTION lpm_bustri0 
+FUNCTION lpm_constant4 
 (
-	data[15..0],
-	enabledt,
-	enabletr
+
 )
 
 RETURNS (
-	result[15..0],
-	tridata[15..0]
+	result[0..0]
 );
