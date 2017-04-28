@@ -86,6 +86,13 @@ applicable agreement for further details.
 		(text "FLAG" (rect 162 75 195 89)(font "Arial" (font_size 8)))
 		(line (pt 216 80)(pt 200 80)(line_width 1))
 	)
+	(port
+		(pt 216 96)
+		(output)
+		(text "OLD_TEG[8..0]" (rect 0 0 83 14)(font "Arial" (font_size 8)))
+		(text "OLD_TEG[8..0]" (rect 112 91 195 105)(font "Arial" (font_size 8)))
+		(line (pt 216 96)(pt 200 96)(line_width 3))
+	)
 	(drawing
 		(rectangle (rect 16 16 200 112)(line_width 1))
 	)

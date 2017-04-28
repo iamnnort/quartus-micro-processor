@@ -1,5 +1,5 @@
 Flow report for course-project
-Fri Apr 28 16:35:20 2017
+Fri Apr 28 17:13:59 2017
 Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
 
 
@@ -38,16 +38,16 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------+
 ; Flow Summary                                                            ;
 +-------------------------------+-----------------------------------------+
-; Flow Status                   ; Successful - Fri Apr 28 16:35:20 2017   ;
+; Flow Status                   ; Successful - Fri Apr 28 17:13:59 2017   ;
 ; Quartus II Version            ; 9.1 Build 222 10/21/2009 SJ Web Edition ;
 ; Revision Name                 ; course-project                          ;
 ; Top-level Entity Name         ; course-project                          ;
 ; Family                        ; Stratix II                              ;
 ; Met timing requirements       ; Yes                                     ;
 ; Logic utilization             ; 5 %                                     ;
-;     Combinational ALUTs       ; 465 / 12,480 ( 4 % )                    ;
-;     Dedicated logic registers ; 408 / 12,480 ( 3 % )                    ;
-; Total registers               ; 408                                     ;
+;     Combinational ALUTs       ; 451 / 12,480 ( 4 % )                    ;
+;     Dedicated logic registers ; 396 / 12,480 ( 3 % )                    ;
+; Total registers               ; 396                                     ;
 ; Total pins                    ; 45 / 343 ( 13 % )                       ;
 ; Total virtual pins            ; 0                                       ;
 ; Total block memory bits       ; 131,072 / 419,328 ( 31 % )              ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/28/2017 16:35:04 ;
+; Start date & time ; 04/28/2017 17:13:43 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; course-project      ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +------------------------------------+----------------------------------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                    ; Value                                                          ; Default Value ; Entity Name ; Section Id     ;
 +------------------------------------+----------------------------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID              ; 18431770694318.149338650306940                                 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID              ; 18431770694318.149338882310300                                 ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_FF                                                         ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_DECODE                                                     ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_DECODE                                                     ; --            ; --          ; --             ;
@@ -108,6 +108,8 @@ applicable agreement for further details.
 ; IP_TOOL_NAME                       ; LPM_COUNTER                                                    ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_BUSTRI                                                     ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_CONSTANT                                                   ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_DECODE                                                     ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.1                                                            ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                    ; 9.1                                                            ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                    ; 9.1                                                            ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                    ; 9.1                                                            ; --            ; --          ; --             ;
@@ -237,6 +239,9 @@ applicable agreement for further details.
 ; MISC_FILE                          ; lpm_constant2.tdf                                              ; --            ; --          ; --             ;
 ; MISC_FILE                          ; lpm_constant2.bsf                                              ; --            ; --          ; --             ;
 ; MISC_FILE                          ; lpm_constant2.inc                                              ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_decode9.tdf                                                ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_decode9.bsf                                                ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_decode9.inc                                                ; --            ; --          ; --             ;
 ; PARTITION_COLOR                    ; 16764057                                                       ; --            ; --          ; Top            ;
 ; PARTITION_NETLIST_TYPE             ; SOURCE                                                         ; --            ; --          ; Top            ;
 ; USE_GENERATED_PHYSICAL_CONSTRAINTS ; Off                                                            ; --            ; --          ; eda_blast_fpga ;
@@ -248,11 +253,11 @@ applicable agreement for further details.
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis    ; 00:00:07     ; 1.0                     ; 269 MB              ; 00:00:06                           ;
+; Analysis & Synthesis    ; 00:00:06     ; 1.0                     ; 270 MB              ; 00:00:06                           ;
 ; Fitter                  ; 00:00:05     ; 1.0                     ; 305 MB              ; 00:00:05                           ;
-; Assembler               ; 00:00:01     ; 1.0                     ; 264 MB              ; 00:00:01                           ;
+; Assembler               ; 00:00:01     ; 1.0                     ; 263 MB              ; 00:00:01                           ;
 ; Classic Timing Analyzer ; 00:00:01     ; 1.0                     ; 201 MB              ; 00:00:01                           ;
-; Total                   ; 00:00:14     ; --                      ; --                  ; 00:00:13                           ;
+; Total                   ; 00:00:13     ; --                      ; --                  ; 00:00:13                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

@@ -6226,8 +6226,8 @@ VECTOR("D:/Универ/6 семестр/quartus-micro-processor/course-project.vwf")
 VECTOR("D:/Универ/6 семестр/quartus-micro-processor/db/course-project.sim.cvwf")
 {
 	ZOOM{
-		ZBEGIN = 483763;
-		ZEND = 593222;
+		ZBEGIN = 203711;
+		ZEND = 313170;
 		NUMERATOR = 1345;
 		DENOMINATOR = 109459;
 		TOP_INDEX = 27;
