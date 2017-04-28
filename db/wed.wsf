@@ -3324,14 +3324,14 @@ VECTOR("D:/Универ/6 семестр/quartus-micro-processor/ROW.vwf")
 	}
 }
 
-VECTOR("D:/Универ/6 семестр/quartus-micro-processor/db/course-project.sim.cvwf")
+VECTOR("D:/Универ/6 семестр/quartus-micro-processor/course-project.vwf")
 {
 	ZOOM{
-		ZBEGIN = 163226;
-		ZEND = 279876;
-		NUMERATOR = 1345;
-		DENOMINATOR = 116650;
-		TOP_INDEX = 0;
+		ZBEGIN = 158550;
+		ZEND = 234050;
+		NUMERATOR = 20;
+		DENOMINATOR = 1000;
+		TOP_INDEX = 27;
 	}
 	CLOCK{
 		PERIOD = 10000;
@@ -6223,13 +6223,13 @@ VECTOR("D:/Универ/6 семестр/quartus-micro-processor/db/course-project.sim.cvwf")
 	}
 }
 
-VECTOR("D:/Универ/6 семестр/quartus-micro-processor/course-project.vwf")
+VECTOR("D:/Универ/6 семестр/quartus-micro-processor/db/course-project.sim.cvwf")
 {
 	ZOOM{
-		ZBEGIN = 158550;
-		ZEND = 234050;
-		NUMERATOR = 20;
-		DENOMINATOR = 1000;
+		ZBEGIN = 483763;
+		ZEND = 593222;
+		NUMERATOR = 1345;
+		DENOMINATOR = 109459;
 		TOP_INDEX = 27;
 	}
 	CLOCK{
