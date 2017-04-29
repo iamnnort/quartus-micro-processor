@@ -70,22 +70,6 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 440 136 608 152)
-	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
-	(text "DATA_IN[15..0]" (rect 9 0 86 12)(font "Arial" ))
-	(pt 168 8)
-	(drawing
-		(line (pt 92 12)(pt 117 12)(line_width 1))
-		(line (pt 92 4)(pt 117 4)(line_width 1))
-		(line (pt 121 8)(pt 168 8)(line_width 1))
-		(line (pt 92 12)(pt 92 4)(line_width 1))
-		(line (pt 117 4)(pt 121 8)(line_width 1))
-		(line (pt 117 12)(pt 121 8)(line_width 1))
-	)
-	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
-)
-(pin
-	(input)
 	(rect 440 568 608 584)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "CELL_NUM[1..0]" (rect 9 0 92 12)(font "Arial" ))
@@ -149,10 +133,26 @@ applicable agreement for further details.
 	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
 )
 (pin
+	(input)
+	(rect 440 136 608 152)
+	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
+	(text "DATA_IN[18..0]" (rect 5 0 82 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 92 12)(pt 117 12)(line_width 1))
+		(line (pt 92 4)(pt 117 4)(line_width 1))
+		(line (pt 121 8)(pt 168 8)(line_width 1))
+		(line (pt 92 12)(pt 92 4)(line_width 1))
+		(line (pt 117 4)(pt 121 8)(line_width 1))
+		(line (pt 117 12)(pt 121 8)(line_width 1))
+	)
+	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
+)
+(pin
 	(output)
-	(rect 2864 120 3040 136)
+	(rect 2864 120 3047 136)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "DATA_OUT[15..0]" (rect 90 0 178 12)(font "Arial" ))
+	(text "DATA_OUT[18..0]" (rect 90 0 178 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8)(line_width 1))
@@ -567,8 +567,8 @@ applicable agreement for further details.
 	(port
 		(pt 0 32)
 		(input)
-		(text "DATA_IN[15..0]" (rect 0 0 87 14)(font "Arial" (font_size 8)))
-		(text "DATA_IN[15..0]" (rect 21 27 108 41)(font "Arial" (font_size 8)))
+		(text "DATA_IN[18..0]" (rect 0 0 87 14)(font "Arial" (font_size 8)))
+		(text "DATA_IN[18..0]" (rect 21 27 108 41)(font "Arial" (font_size 8)))
 		(line (pt 0 32)(pt 16 32)(line_width 3))
 	)
 	(port
@@ -616,8 +616,8 @@ applicable agreement for further details.
 	(port
 		(pt 248 32)
 		(output)
-		(text "DATA_OUT[15..0]" (rect 0 0 101 14)(font "Arial" (font_size 8)))
-		(text "DATA_OUT[15..0]" (rect 126 27 227 41)(font "Arial" (font_size 8)))
+		(text "DATA_OUT[18..0]" (rect 0 0 101 14)(font "Arial" (font_size 8)))
+		(text "DATA_OUT[18..0]" (rect 126 27 227 41)(font "Arial" (font_size 8)))
 		(line (pt 248 32)(pt 232 32)(line_width 3))
 	)
 	(drawing
@@ -631,8 +631,8 @@ applicable agreement for further details.
 	(port
 		(pt 0 32)
 		(input)
-		(text "DATA_IN[15..0]" (rect 0 0 87 14)(font "Arial" (font_size 8)))
-		(text "DATA_IN[15..0]" (rect 21 27 108 41)(font "Arial" (font_size 8)))
+		(text "DATA_IN[18..0]" (rect 0 0 87 14)(font "Arial" (font_size 8)))
+		(text "DATA_IN[18..0]" (rect 21 27 108 41)(font "Arial" (font_size 8)))
 		(line (pt 0 32)(pt 16 32)(line_width 3))
 	)
 	(port
@@ -680,8 +680,8 @@ applicable agreement for further details.
 	(port
 		(pt 248 32)
 		(output)
-		(text "DATA_OUT[15..0]" (rect 0 0 101 14)(font "Arial" (font_size 8)))
-		(text "DATA_OUT[15..0]" (rect 126 27 227 41)(font "Arial" (font_size 8)))
+		(text "DATA_OUT[18..0]" (rect 0 0 101 14)(font "Arial" (font_size 8)))
+		(text "DATA_OUT[18..0]" (rect 126 27 227 41)(font "Arial" (font_size 8)))
 		(line (pt 248 32)(pt 232 32)(line_width 3))
 	)
 	(drawing
@@ -695,8 +695,8 @@ applicable agreement for further details.
 	(port
 		(pt 0 32)
 		(input)
-		(text "DATA_IN[15..0]" (rect 0 0 87 14)(font "Arial" (font_size 8)))
-		(text "DATA_IN[15..0]" (rect 21 27 108 41)(font "Arial" (font_size 8)))
+		(text "DATA_IN[18..0]" (rect 0 0 87 14)(font "Arial" (font_size 8)))
+		(text "DATA_IN[18..0]" (rect 21 27 108 41)(font "Arial" (font_size 8)))
 		(line (pt 0 32)(pt 16 32)(line_width 3))
 	)
 	(port
@@ -744,8 +744,8 @@ applicable agreement for further details.
 	(port
 		(pt 248 32)
 		(output)
-		(text "DATA_OUT[15..0]" (rect 0 0 101 14)(font "Arial" (font_size 8)))
-		(text "DATA_OUT[15..0]" (rect 126 27 227 41)(font "Arial" (font_size 8)))
+		(text "DATA_OUT[18..0]" (rect 0 0 101 14)(font "Arial" (font_size 8)))
+		(text "DATA_OUT[18..0]" (rect 126 27 227 41)(font "Arial" (font_size 8)))
 		(line (pt 248 32)(pt 232 32)(line_width 3))
 	)
 	(drawing
@@ -759,8 +759,8 @@ applicable agreement for further details.
 	(port
 		(pt 0 32)
 		(input)
-		(text "DATA_IN[15..0]" (rect 0 0 87 14)(font "Arial" (font_size 8)))
-		(text "DATA_IN[15..0]" (rect 21 27 108 41)(font "Arial" (font_size 8)))
+		(text "DATA_IN[18..0]" (rect 0 0 87 14)(font "Arial" (font_size 8)))
+		(text "DATA_IN[18..0]" (rect 21 27 108 41)(font "Arial" (font_size 8)))
 		(line (pt 0 32)(pt 16 32)(line_width 3))
 	)
 	(port
@@ -808,8 +808,8 @@ applicable agreement for further details.
 	(port
 		(pt 248 32)
 		(output)
-		(text "DATA_OUT[15..0]" (rect 0 0 101 14)(font "Arial" (font_size 8)))
-		(text "DATA_OUT[15..0]" (rect 126 27 227 41)(font "Arial" (font_size 8)))
+		(text "DATA_OUT[18..0]" (rect 0 0 101 14)(font "Arial" (font_size 8)))
+		(text "DATA_OUT[18..0]" (rect 126 27 227 41)(font "Arial" (font_size 8)))
 		(line (pt 248 32)(pt 232 32)(line_width 3))
 	)
 	(drawing

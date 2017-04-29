@@ -26,8 +26,8 @@ applicable agreement for further details.
 	(port
 		(pt 0 32)
 		(input)
-		(text "DATA_IN[15..0]" (rect 0 0 87 14)(font "Arial" (font_size 8)))
-		(text "DATA_IN[15..0]" (rect 21 27 108 41)(font "Arial" (font_size 8)))
+		(text "DATA_IN[18..0]" (rect 0 0 87 14)(font "Arial" (font_size 8)))
+		(text "DATA_IN[18..0]" (rect 21 27 108 41)(font "Arial" (font_size 8)))
 		(line (pt 0 32)(pt 16 32)(line_width 3))
 	)
 	(port
@@ -61,8 +61,8 @@ applicable agreement for further details.
 	(port
 		(pt 240 32)
 		(output)
-		(text "DATA_OUT[15..0]" (rect 0 0 101 14)(font "Arial" (font_size 8)))
-		(text "DATA_OUT[15..0]" (rect 118 27 219 41)(font "Arial" (font_size 8)))
+		(text "DATA_OUT[18..0]" (rect 0 0 101 14)(font "Arial" (font_size 8)))
+		(text "DATA_OUT[18..0]" (rect 118 27 219 41)(font "Arial" (font_size 8)))
 		(line (pt 240 32)(pt 224 32)(line_width 3))
 	)
 	(drawing
