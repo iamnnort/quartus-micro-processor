@@ -13,13 +13,11 @@
 --applicable agreement for further details.
 
 
-FUNCTION lpm_dff0 
+FUNCTION lpm_constant7 
 (
-	clock,
-	data[18..0],
-	enable
+
 )
 
 RETURNS (
-	q[18..0]
+	result[0..0]
 );

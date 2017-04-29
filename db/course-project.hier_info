@@ -813,16 +813,17 @@ ABUS[10] => SET:inst11.ABUS[10]
 ABUS[10] => SET:inst10.ABUS[10]
 ABUS[11] => SET:inst11.ABUS[11]
 ABUS[11] => SET:inst10.ABUS[11]
-MOV_MEM_REG => inst19.IN0
+ROM => inst3.IN0
+ROM => SET:inst11.ROM
+ROM => SET:inst10.ROM
+MOV_MEM_REG => inst3.IN1
 MOV_MEM_REG => SET:inst11.MOV_MEM_REG
 MOV_MEM_REG => SET:inst10.MOV_MEM_REG
-MOV_REG_MEM => inst19.IN1
+MOV_REG_MEM => inst3.IN2
 MOV_REG_MEM => SET:inst11.SET_FLAG
 MOV_REG_MEM => SET:inst11.MOV_REG_MEM
 MOV_REG_MEM => SET:inst10.SET_FLAG
 MOV_REG_MEM => SET:inst10.MOV_REG_MEM
-ROM => SET:inst11.ROM
-ROM => SET:inst10.ROM
 DATA_IN[0] => SET:inst11.DATA_IN[0]
 DATA_IN[0] => SET:inst10.DATA_IN[0]
 DATA_IN[1] => SET:inst11.DATA_IN[1]
@@ -946,6 +947,7 @@ DATA_OUT[12] <= DATA_MEM:inst3.DATA_OUT[12]
 DATA_OUT[13] <= DATA_MEM:inst3.DATA_OUT[13]
 DATA_OUT[14] <= DATA_MEM:inst3.DATA_OUT[14]
 DATA_OUT[15] <= DATA_MEM:inst3.DATA_OUT[15]
+ROM => inst8.IN1
 MOV_MEM_REG => inst6.IN1
 MOV_REG_MEM => inst7.IN1
 DATA_IN[0] => DATA_MEM:inst3.DATA_IN[0]
@@ -964,7 +966,6 @@ DATA_IN[12] => DATA_MEM:inst3.DATA_IN[12]
 DATA_IN[13] => DATA_MEM:inst3.DATA_IN[13]
 DATA_IN[14] => DATA_MEM:inst3.DATA_IN[14]
 DATA_IN[15] => DATA_MEM:inst3.DATA_IN[15]
-ROM => ~NO_FANOUT~
 
 
 |course-project|MEMORY:inst3|CASH:inst|SET:inst11|TAG_MEM:inst
@@ -10957,6 +10958,7 @@ DATA_OUT[12] <= DATA_MEM:inst3.DATA_OUT[12]
 DATA_OUT[13] <= DATA_MEM:inst3.DATA_OUT[13]
 DATA_OUT[14] <= DATA_MEM:inst3.DATA_OUT[14]
 DATA_OUT[15] <= DATA_MEM:inst3.DATA_OUT[15]
+ROM => inst8.IN1
 MOV_MEM_REG => inst6.IN1
 MOV_REG_MEM => inst7.IN1
 DATA_IN[0] => DATA_MEM:inst3.DATA_IN[0]
@@ -10975,7 +10977,6 @@ DATA_IN[12] => DATA_MEM:inst3.DATA_IN[12]
 DATA_IN[13] => DATA_MEM:inst3.DATA_IN[13]
 DATA_IN[14] => DATA_MEM:inst3.DATA_IN[14]
 DATA_IN[15] => DATA_MEM:inst3.DATA_IN[15]
-ROM => ~NO_FANOUT~
 
 
 |course-project|MEMORY:inst3|CASH:inst|SET:inst10|TAG_MEM:inst
@@ -20884,6 +20885,14 @@ result[12] <= result[12]~3.DB_MAX_OUTPUT_PORT_TYPE
 result[13] <= result[13]~2.DB_MAX_OUTPUT_PORT_TYPE
 result[14] <= result[14]~1.DB_MAX_OUTPUT_PORT_TYPE
 result[15] <= result[15]~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|course-project|MEMORY:inst3|lpm_constant7:inst2
+result[0] <= lpm_constant:lpm_constant_component.result[0]
+
+
+|course-project|MEMORY:inst3|lpm_constant7:inst2|lpm_constant:lpm_constant_component
+result[0] <= <GND>
 
 
 |course-project|MEMORY:inst3|MEM:inst4
