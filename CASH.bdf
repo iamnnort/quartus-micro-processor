@@ -101,6 +101,22 @@ applicable agreement for further details.
 	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
 )
 (pin
+	(input)
+	(rect 152 800 320 816)
+	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
+	(text "ROM" (rect 5 0 29 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 92 12)(pt 117 12)(line_width 1))
+		(line (pt 92 4)(pt 117 4)(line_width 1))
+		(line (pt 121 8)(pt 168 8)(line_width 1))
+		(line (pt 92 12)(pt 92 4)(line_width 1))
+		(line (pt 117 4)(pt 121 8)(line_width 1))
+		(line (pt 117 12)(pt 121 8)(line_width 1))
+	)
+	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
+)
+(pin
 	(output)
 	(rect 1272 616 1448 632)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
@@ -409,9 +425,9 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 776 104 1024 264)
+	(rect 792 280 1040 472)
 	(text "SET" (rect 5 0 27 14)(font "Arial" (font_size 8)))
-	(text "inst10" (rect 8 144 37 156)(font "Arial" ))
+	(text "inst11" (rect 8 176 37 188)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -462,6 +478,13 @@ applicable agreement for further details.
 		(line (pt 0 128)(pt 16 128)(line_width 1))
 	)
 	(port
+		(pt 0 144)
+		(input)
+		(text "ROM" (rect 0 0 27 14)(font "Arial" (font_size 8)))
+		(text "ROM" (rect 21 139 48 153)(font "Arial" (font_size 8)))
+		(line (pt 0 144)(pt 16 144)(line_width 1))
+	)
+	(port
 		(pt 248 32)
 		(output)
 		(text "DATA_OUT[15..0]" (rect 0 0 101 14)(font "Arial" (font_size 8)))
@@ -497,13 +520,13 @@ applicable agreement for further details.
 		(line (pt 248 96)(pt 232 96)(line_width 1))
 	)
 	(drawing
-		(rectangle (rect 16 16 232 144)(line_width 1))
+		(rectangle (rect 16 16 232 176)(line_width 1))
 	)
 )
 (symbol
-	(rect 776 280 1024 440)
+	(rect 792 104 1040 296)
 	(text "SET" (rect 5 0 27 14)(font "Arial" (font_size 8)))
-	(text "inst11" (rect 8 144 37 156)(font "Arial" ))
+	(text "inst10" (rect 8 176 37 188)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -554,6 +577,13 @@ applicable agreement for further details.
 		(line (pt 0 128)(pt 16 128)(line_width 1))
 	)
 	(port
+		(pt 0 144)
+		(input)
+		(text "ROM" (rect 0 0 27 14)(font "Arial" (font_size 8)))
+		(text "ROM" (rect 21 139 48 153)(font "Arial" (font_size 8)))
+		(line (pt 0 144)(pt 16 144)(line_width 1))
+	)
+	(port
 		(pt 248 32)
 		(output)
 		(text "DATA_OUT[15..0]" (rect 0 0 101 14)(font "Arial" (font_size 8)))
@@ -589,26 +619,8 @@ applicable agreement for further details.
 		(line (pt 248 96)(pt 232 96)(line_width 1))
 	)
 	(drawing
-		(rectangle (rect 16 16 232 144)(line_width 1))
+		(rectangle (rect 16 16 232 176)(line_width 1))
 	)
-)
-(connector
-	(pt 664 168)
-	(pt 776 168)
-)
-(connector
-	(pt 680 200)
-	(pt 776 200)
-)
-(connector
-	(pt 696 152)
-	(pt 776 152)
-	(bus)
-)
-(connector
-	(pt 712 136)
-	(pt 776 136)
-	(bus)
 )
 (connector
 	(pt 648 640)
@@ -654,14 +666,6 @@ applicable agreement for further details.
 (connector
 	(pt 712 632)
 	(pt 728 632)
-)
-(connector
-	(pt 728 184)
-	(pt 728 632)
-)
-(connector
-	(pt 728 184)
-	(pt 776 184)
 )
 (connector
 	(pt 712 728)
@@ -758,64 +762,24 @@ applicable agreement for further details.
 	(pt 680 544)
 )
 (connector
-	(pt 1184 616)
-	(pt 1184 168)
+	(pt 336 632)
+	(pt 336 784)
 )
 (connector
-	(pt 1152 672)
-	(pt 1152 184)
+	(pt 360 632)
+	(pt 336 632)
 )
 (connector
-	(pt 1120 728)
-	(pt 1120 200)
+	(pt 328 784)
+	(pt 336 784)
 )
 (connector
-	(pt 1024 136)
-	(pt 1216 136)
-	(bus)
-)
-(connector
-	(pt 1024 152)
-	(pt 1200 152)
-	(bus)
-)
-(connector
-	(pt 1024 168)
-	(pt 1184 168)
-)
-(connector
-	(pt 1024 184)
-	(pt 1152 184)
-)
-(connector
-	(pt 1024 200)
-	(pt 1120 200)
-)
-(connector
-	(pt 712 312)
-	(pt 776 312)
-	(bus)
-)
-(connector
-	(pt 696 328)
-	(pt 776 328)
-	(bus)
-)
-(connector
-	(pt 664 344)
-	(pt 776 344)
-)
-(connector
-	(pt 680 376)
-	(pt 776 376)
+	(pt 336 784)
+	(pt 760 784)
 )
 (connector
 	(pt 744 728)
 	(pt 744 360)
-)
-(connector
-	(pt 744 360)
-	(pt 776 360)
 )
 (connector
 	(pt 1168 632)
@@ -831,25 +795,117 @@ applicable agreement for further details.
 )
 (connector
 	(pt 1216 312)
-	(pt 1024 312)
+	(pt 1040 312)
 	(bus)
 )
 (connector
 	(pt 1200 328)
-	(pt 1024 328)
+	(pt 1040 328)
 	(bus)
 )
 (connector
 	(pt 1168 344)
-	(pt 1024 344)
+	(pt 1040 344)
 )
 (connector
 	(pt 1136 360)
-	(pt 1024 360)
+	(pt 1040 360)
 )
 (connector
 	(pt 1104 376)
-	(pt 1024 376)
+	(pt 1040 376)
+)
+(connector
+	(pt 680 376)
+	(pt 680 408)
+)
+(connector
+	(pt 680 408)
+	(pt 680 544)
+)
+(connector
+	(pt 712 312)
+	(pt 792 312)
+	(bus)
+)
+(connector
+	(pt 696 328)
+	(pt 792 328)
+	(bus)
+)
+(connector
+	(pt 664 344)
+	(pt 792 344)
+)
+(connector
+	(pt 744 360)
+	(pt 792 360)
+)
+(connector
+	(pt 680 376)
+	(pt 792 376)
+)
+(connector
+	(pt 760 392)
+	(pt 792 392)
+)
+(connector
+	(pt 680 408)
+	(pt 792 408)
+)
+(connector
+	(pt 320 808)
+	(pt 776 808)
+)
+(connector
+	(pt 776 424)
+	(pt 792 424)
+)
+(connector
+	(pt 728 632)
+	(pt 728 184)
+)
+(connector
+	(pt 1184 616)
+	(pt 1184 168)
+)
+(connector
+	(pt 1152 672)
+	(pt 1152 184)
+)
+(connector
+	(pt 1120 728)
+	(pt 1120 200)
+)
+(connector
+	(pt 1216 136)
+	(pt 1040 136)
+	(bus)
+)
+(connector
+	(pt 1200 152)
+	(pt 1040 152)
+	(bus)
+)
+(connector
+	(pt 1184 168)
+	(pt 1040 168)
+)
+(connector
+	(pt 1152 184)
+	(pt 1040 184)
+)
+(connector
+	(pt 1120 200)
+	(pt 1040 200)
+)
+(connector
+	(pt 680 200)
+	(pt 680 232)
+)
+(connector
+	(pt 680 232)
+	(pt 680 376)
 )
 (connector
 	(pt 712 136)
@@ -900,60 +956,54 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 776 408)
-	(pt 680 408)
+	(pt 760 216)
+	(pt 760 392)
 )
 (connector
-	(pt 680 376)
-	(pt 680 408)
+	(pt 760 392)
+	(pt 760 784)
 )
 (connector
-	(pt 680 408)
-	(pt 680 544)
+	(pt 712 136)
+	(pt 792 136)
+	(bus)
 )
 (connector
-	(pt 776 232)
-	(pt 680 232)
+	(pt 696 152)
+	(pt 792 152)
+	(bus)
+)
+(connector
+	(pt 664 168)
+	(pt 792 168)
+)
+(connector
+	(pt 728 184)
+	(pt 792 184)
 )
 (connector
 	(pt 680 200)
-	(pt 680 232)
-)
-(connector
-	(pt 680 232)
-	(pt 680 376)
-)
-(connector
-	(pt 336 632)
-	(pt 336 784)
-)
-(connector
-	(pt 360 632)
-	(pt 336 632)
-)
-(connector
-	(pt 328 784)
-	(pt 336 784)
-)
-(connector
-	(pt 336 784)
-	(pt 760 784)
-)
-(connector
-	(pt 760 392)
-	(pt 776 392)
+	(pt 792 200)
 )
 (connector
 	(pt 760 216)
-	(pt 760 392)
+	(pt 792 216)
 )
 (connector
-	(pt 760 392)
-	(pt 760 784)
+	(pt 680 232)
+	(pt 792 232)
 )
 (connector
-	(pt 760 216)
-	(pt 776 216)
+	(pt 776 248)
+	(pt 776 424)
+)
+(connector
+	(pt 776 424)
+	(pt 776 808)
+)
+(connector
+	(pt 776 248)
+	(pt 792 248)
 )
 (junction (pt 448 624))
 (junction (pt 464 568))
@@ -968,3 +1018,4 @@ applicable agreement for further details.
 (junction (pt 680 232))
 (junction (pt 336 784))
 (junction (pt 760 392))
+(junction (pt 776 424))

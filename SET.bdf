@@ -102,7 +102,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 32 280 200 296)
+	(rect 32 264 200 280)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "MOV_MEM_REG" (rect 5 0 87 12)(font "Arial" ))
 	(pt 168 8)
@@ -118,7 +118,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 32 264 208 280)
+	(rect 32 280 208 296)
 	(text "INPUT" (rect 141 0 169 10)(font "Arial" (font_size 6)))
 	(text "MOV_REG_MEM" (rect 5 0 87 12)(font "Arial" ))
 	(pt 176 8)
@@ -131,6 +131,22 @@ applicable agreement for further details.
 		(line (pt 125 12)(pt 129 8)(line_width 1))
 	)
 	(text "VCC" (rect 144 7 164 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 32 296 200 312)
+	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
+	(text "ROM" (rect 5 0 29 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 92 12)(pt 117 12)(line_width 1))
+		(line (pt 92 4)(pt 117 4)(line_width 1))
+		(line (pt 121 8)(pt 168 8)(line_width 1))
+		(line (pt 92 12)(pt 92 4)(line_width 1))
+		(line (pt 117 4)(pt 121 8)(line_width 1))
+		(line (pt 117 12)(pt 121 8)(line_width 1))
+	)
+	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
 )
 (pin
 	(output)
@@ -671,22 +687,6 @@ applicable agreement for further details.
 	(pt 1600 704)
 )
 (connector
-	(pt 208 272)
-	(pt 304 272)
-)
-(connector
-	(pt 304 272)
-	(pt 304 688)
-)
-(connector
-	(pt 200 288)
-	(pt 320 288)
-)
-(connector
-	(pt 320 288)
-	(pt 320 672)
-)
-(connector
 	(pt 592 224)
 	(pt 656 224)
 )
@@ -1029,6 +1029,22 @@ applicable agreement for further details.
 	(pt 1368 184)
 	(pt 1424 184)
 	(bus)
+)
+(connector
+	(pt 320 272)
+	(pt 200 272)
+)
+(connector
+	(pt 320 672)
+	(pt 320 272)
+)
+(connector
+	(pt 304 288)
+	(pt 208 288)
+)
+(connector
+	(pt 304 688)
+	(pt 304 288)
 )
 (junction (pt 272 208))
 (junction (pt 272 192))
