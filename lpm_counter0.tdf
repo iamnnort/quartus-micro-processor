@@ -67,7 +67,7 @@ END;
 -- Retrieval info: PRIVATE: ACLR NUMERIC "0"
 -- Retrieval info: PRIVATE: ALOAD NUMERIC "0"
 -- Retrieval info: PRIVATE: ASET NUMERIC "0"
--- Retrieval info: PRIVATE: ASET_ALL1 NUMERIC "1"
+-- Retrieval info: PRIVATE: ASET_ALL1 NUMERIC "0"
 -- Retrieval info: PRIVATE: CLK_EN NUMERIC "0"
 -- Retrieval info: PRIVATE: CNT_EN NUMERIC "1"
 -- Retrieval info: PRIVATE: CarryIn NUMERIC "0"
