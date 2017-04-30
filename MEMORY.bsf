@@ -20,9 +20,9 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 264 144)
+	(rect 16 16 264 176)
 	(text "MEMORY" (rect 5 0 58 14)(font "Arial" (font_size 8)))
-	(text "inst" (rect 8 112 25 124)(font "Arial" ))
+	(text "inst" (rect 8 144 25 156)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -93,7 +93,14 @@ applicable agreement for further details.
 		(text "ARAM[11..0]" (rect 156 91 227 105)(font "Arial" (font_size 8)))
 		(line (pt 248 96)(pt 232 96)(line_width 3))
 	)
+	(port
+		(pt 248 112)
+		(output)
+		(text "LOAD" (rect 0 0 34 14)(font "Arial" (font_size 8)))
+		(text "LOAD" (rect 193 107 227 121)(font "Arial" (font_size 8)))
+		(line (pt 248 112)(pt 232 112)(line_width 1))
+	)
 	(drawing
-		(rectangle (rect 16 16 232 112)(line_width 1))
+		(rectangle (rect 16 16 232 144)(line_width 1))
 	)
 )

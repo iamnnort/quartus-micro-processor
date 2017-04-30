@@ -212,6 +212,22 @@ applicable agreement for further details.
 		(line (pt 78 12)(pt 82 8)(line_width 1))
 	)
 )
+(pin
+	(output)
+	(rect 1120 376 1296 392)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "LOAD" (rect 90 0 119 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8)(line_width 1))
+		(line (pt 52 4)(pt 78 4)(line_width 1))
+		(line (pt 52 12)(pt 78 12)(line_width 1))
+		(line (pt 52 12)(pt 52 4)(line_width 1))
+		(line (pt 78 4)(pt 82 8)(line_width 1))
+		(line (pt 82 8)(pt 78 12)(line_width 1))
+		(line (pt 78 12)(pt 82 8)(line_width 1))
+	)
+)
 (symbol
 	(rect 720 -216 960 -56)
 	(text "Registers" (rect 5 0 59 14)(font "Arial" (font_size 8)))
@@ -341,9 +357,9 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 704 72 952 200)
+	(rect 704 72 952 232)
 	(text "MEMORY" (rect 5 0 58 14)(font "Arial" (font_size 8)))
-	(text "inst3" (rect 8 112 31 124)(font "Arial" ))
+	(text "inst3" (rect 8 144 31 156)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -414,8 +430,15 @@ applicable agreement for further details.
 		(text "ARAM[11..0]" (rect 156 91 227 105)(font "Arial" (font_size 8)))
 		(line (pt 248 96)(pt 232 96)(line_width 3))
 	)
+	(port
+		(pt 248 112)
+		(output)
+		(text "LOAD" (rect 0 0 34 14)(font "Arial" (font_size 8)))
+		(text "LOAD" (rect 193 107 227 121)(font "Arial" (font_size 8)))
+		(line (pt 248 112)(pt 232 112)(line_width 1))
+	)
 	(drawing
-		(rectangle (rect 16 16 232 112)(line_width 1))
+		(rectangle (rect 16 16 232 144)(line_width 1))
 	)
 )
 (connector
@@ -700,6 +723,18 @@ applicable agreement for further details.
 	(pt 968 168)
 	(pt 952 168)
 	(bus)
+)
+(connector
+	(pt 1120 384)
+	(pt 960 384)
+)
+(connector
+	(pt 960 384)
+	(pt 960 184)
+)
+(connector
+	(pt 960 184)
+	(pt 952 184)
 )
 (junction (pt 232 224))
 (junction (pt 488 224))

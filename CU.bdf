@@ -749,7 +749,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 224 256 368 352)
+	(rect 304 256 448 352)
 	(text "lpm_counter0" (rect 33 1 125 17)(font "Arial" (font_size 10)))
 	(text "inst" (rect 8 80 25 92)(font "Arial" ))
 	(port
@@ -784,7 +784,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 136 296 200 376)
+	(rect 152 304 216 384)
 	(text "DFF" (rect 1 0 19 10)(font "Arial" (font_size 6)))
 	(text "inst17" (rect 3 68 32 80)(font "Arial" ))
 	(port
@@ -1243,7 +1243,7 @@ applicable agreement for further details.
 	(pt 24 392)
 )
 (connector
-	(pt 368 312)
+	(pt 448 312)
 	(pt 520 312)
 	(bus)
 )
@@ -1254,35 +1254,43 @@ applicable agreement for further details.
 )
 (connector
 	(pt 120 288)
-	(pt 224 288)
+	(pt 304 288)
 )
 (connector
-	(pt 200 320)
-	(pt 224 320)
+	(pt 304 320)
+	(pt 296 320)
+)
+(connector
+	(pt 296 320)
+	(pt 296 328)
+)
+(connector
+	(pt 296 328)
+	(pt 216 328)
 )
 (connector
 	(pt 24 80)
-	(pt 24 320)
+	(pt 24 328)
 )
 (connector
-	(pt 24 320)
+	(pt 24 328)
 	(pt 24 392)
 )
 (connector
-	(pt 24 320)
-	(pt 136 320)
-)
-(connector
-	(pt 136 336)
-	(pt 40 336)
-)
-(connector
 	(pt 40 288)
-	(pt 40 336)
+	(pt 40 344)
 )
 (connector
-	(pt 40 336)
+	(pt 40 344)
 	(pt 40 376)
+)
+(connector
+	(pt 40 344)
+	(pt 152 344)
+)
+(connector
+	(pt 24 328)
+	(pt 152 328)
 )
 (junction (pt 560 96))
 (junction (pt 544 64))
@@ -1302,8 +1310,8 @@ applicable agreement for further details.
 (junction (pt 832 312))
 (junction (pt 1024 408))
 (junction (pt 40 288))
-(junction (pt 24 320))
 (junction (pt 8 424))
 (junction (pt 40 376))
 (junction (pt 24 392))
-(junction (pt 40 336))
+(junction (pt 24 328))
+(junction (pt 40 344))
