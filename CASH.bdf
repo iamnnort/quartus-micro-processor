@@ -730,12 +730,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "abus[11..0]" (rect 496 552 551 564)(font "Arial" ))
-	(pt 464 568)
-	(pt 696 568)
-	(bus)
-)
-(connector
 	(pt 320 568)
 	(pt 464 568)
 	(bus)
@@ -1023,6 +1017,12 @@ applicable agreement for further details.
 (connector
 	(pt 776 456)
 	(pt 776 808)
+)
+(connector
+	(text "<<__$DEF_ALIAS2992>>" (rect 496 552 619 564)(font "Arial" )(invisible))
+	(pt 464 568)
+	(pt 696 568)
+	(bus)
 )
 (junction (pt 448 624))
 (junction (pt 464 568))

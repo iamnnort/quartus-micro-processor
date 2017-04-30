@@ -5,9 +5,9 @@ Timing Analyzer Summary
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 21.691 ns
+Actual Time    : 28.983 ns
 From           : MEMORY:inst3|CASH:inst|SET:inst11|TAG_MEM:inst|inst47
-To             : DBUS[18]
+To             : DBUS[5]
 From Clock     : CLC
 To Clock       : --
 Failed Paths   : 0
@@ -15,9 +15,9 @@ Failed Paths   : 0
 Type           : Clock Setup: 'CLC'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 47.25 MHz ( period = 21.166 ns )
-From           : CU:inst2|lpm_rom:inst1|altrom:srom|altsyncram:rom_block|altsyncram_a001:auto_generated|ram_block1a11~porta_address_reg11
-To             : MEMORY:inst3|MEM:inst4|lpm_counter2:inst|lpm_counter:lpm_counter_component|cntr_dbj:auto_generated|safe_q[11]
+Actual Time    : 23.28 MHz ( period = 42.962 ns )
+From           : CU:inst2|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_0ci:auto_generated|safe_q[6]
+To             : MEMORY:inst3|MEM:inst4|lpm_ram_io:inst3|altram:sram|altsyncram:ram_block|altsyncram_ki91:auto_generated|ram_block1a9~porta_datain_reg0
 From Clock     : CLC
 To Clock       : CLC
 Failed Paths   : 0
@@ -26,8 +26,8 @@ Type           : Clock Hold: 'CLC'
 Slack          : Not operational: Clock Skew > Data Delay
 Required Time  : None
 Actual Time    : N/A
-From           : MEMORY:inst3|CASH:inst|SET:inst10|TAG_MEM:inst|lpm_counter12:inst38|lpm_counter:lpm_counter_component|cntr_4pi:auto_generated|safe_q[0]
-To             : MEMORY:inst3|CASH:inst|SET:inst10|TAG_MEM:inst|inst47
+From           : MEMORY:inst3|CASH:inst|SET:inst11|TAG_MEM:inst|lpm_counter12:inst38|lpm_counter:lpm_counter_component|cntr_4pi:auto_generated|safe_q[1]
+To             : MEMORY:inst3|CASH:inst|SET:inst11|TAG_MEM:inst|inst47
 From Clock     : CLC
 To Clock       : CLC
 Failed Paths   : 6

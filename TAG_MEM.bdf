@@ -150,7 +150,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 1600 1024 1776 1040)
+	(rect 1672 888 1848 904)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "HIT" (rect 90 0 107 12)(font "Arial" ))
 	(pt 0 8)
@@ -2610,10 +2610,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 256 208)
-	(pt 432 208)
-)
-(connector
 	(pt 432 208)
 	(pt 568 208)
 )
@@ -3163,10 +3159,6 @@ applicable agreement for further details.
 	(pt 1048 1368)
 )
 (connector
-	(pt 1592 1032)
-	(pt 1600 1032)
-)
-(connector
 	(pt 1064 1096)
 	(pt 1064 1168)
 )
@@ -3209,6 +3201,22 @@ applicable agreement for further details.
 (connector
 	(pt 1520 1040)
 	(pt 1520 1168)
+)
+(connector
+	(pt 1592 1032)
+	(pt 1616 1032)
+)
+(connector
+	(pt 1616 896)
+	(pt 1616 1032)
+)
+(connector
+	(pt 256 208)
+	(pt 432 208)
+)
+(connector
+	(pt 1616 896)
+	(pt 1672 896)
 )
 (junction (pt 960 16))
 (junction (pt 976 88))

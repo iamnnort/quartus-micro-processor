@@ -1,5 +1,5 @@
 Flow report for course-project
-Sun Apr 30 01:59:07 2017
+Sun Apr 30 02:52:51 2017
 Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
 
 
@@ -38,17 +38,17 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------+
 ; Flow Summary                                                            ;
 +-------------------------------+-----------------------------------------+
-; Flow Status                   ; Successful - Sun Apr 30 01:59:07 2017   ;
+; Flow Status                   ; Successful - Sun Apr 30 02:52:51 2017   ;
 ; Quartus II Version            ; 9.1 Build 222 10/21/2009 SJ Web Edition ;
 ; Revision Name                 ; course-project                          ;
 ; Top-level Entity Name         ; course-project                          ;
 ; Family                        ; Stratix II                              ;
 ; Met timing requirements       ; No                                      ;
-; Logic utilization             ; 14 %                                    ;
-;     Combinational ALUTs       ; 1,146 / 12,480 ( 9 % )                  ;
-;     Dedicated logic registers ; 1,016 / 12,480 ( 8 % )                  ;
-; Total registers               ; 1016                                    ;
-; Total pins                    ; 34 / 343 ( 10 % )                       ;
+; Logic utilization             ; 23 %                                    ;
+;     Combinational ALUTs       ; 1,875 / 12,480 ( 15 % )                 ;
+;     Dedicated logic registers ; 1,853 / 12,480 ( 15 % )                 ;
+; Total registers               ; 1853                                    ;
+; Total pins                    ; 36 / 343 ( 10 % )                       ;
 ; Total virtual pins            ; 0                                       ;
 ; Total block memory bits       ; 155,648 / 419,328 ( 37 % )              ;
 ; DSP block 9-bit elements      ; 0 / 96 ( 0 % )                          ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/30/2017 01:58:36 ;
+; Start date & time ; 04/30/2017 02:51:48 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; course-project      ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +------------------------------------+----------------------------------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                    ; Value                                                          ; Default Value ; Entity Name ; Section Id     ;
 +------------------------------------+----------------------------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID              ; 18431770694318.149350671505300                                 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID              ; 18431770694318.149350990807352                                 ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_FF                                                         ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_DECODE                                                     ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_DECODE                                                     ; --            ; --          ; --             ;
@@ -116,6 +116,8 @@ applicable agreement for further details.
 ; IP_TOOL_NAME                       ; LPM_CONSTANT                                                   ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_CONSTANT                                                   ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_MULT                                                       ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_BUSTRI                                                     ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.1                                                            ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                    ; 9.1                                                            ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                    ; 9.1                                                            ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                    ; 9.1                                                            ; --            ; --          ; --             ;
@@ -277,6 +279,9 @@ applicable agreement for further details.
 ; MISC_FILE                          ; lpm_mult1.tdf                                                  ; --            ; --          ; --             ;
 ; MISC_FILE                          ; lpm_mult1.bsf                                                  ; --            ; --          ; --             ;
 ; MISC_FILE                          ; lpm_mult1.inc                                                  ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_bustri9.tdf                                                ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_bustri9.bsf                                                ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_bustri9.inc                                                ; --            ; --          ; --             ;
 ; PARTITION_COLOR                    ; 16764057                                                       ; --            ; --          ; Top            ;
 ; PARTITION_NETLIST_TYPE             ; SOURCE                                                         ; --            ; --          ; Top            ;
 ; USE_GENERATED_PHYSICAL_CONSTRAINTS ; Off                                                            ; --            ; --          ; eda_blast_fpga ;
@@ -288,11 +293,11 @@ applicable agreement for further details.
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis    ; 00:00:14     ; 1.0                     ; 279 MB              ; 00:00:16                           ;
-; Fitter                  ; 00:00:09     ; 1.0                     ; 309 MB              ; 00:00:10                           ;
-; Assembler               ; 00:00:02     ; 1.0                     ; 270 MB              ; 00:00:02                           ;
-; Classic Timing Analyzer ; 00:00:03     ; 1.0                     ; 213 MB              ; 00:00:03                           ;
-; Total                   ; 00:00:28     ; --                      ; --                  ; 00:00:31                           ;
+; Analysis & Synthesis    ; 00:00:33     ; 1.0                     ; 289 MB              ; 00:00:58                           ;
+; Fitter                  ; 00:00:17     ; 1.0                     ; 314 MB              ; 00:00:21                           ;
+; Assembler               ; 00:00:03     ; 1.0                     ; 269 MB              ; 00:00:02                           ;
+; Classic Timing Analyzer ; 00:00:05     ; 1.0                     ; 238 MB              ; 00:00:10                           ;
+; Total                   ; 00:00:58     ; --                      ; --                  ; 00:01:31                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
