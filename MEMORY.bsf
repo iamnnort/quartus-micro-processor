@@ -79,6 +79,20 @@ applicable agreement for further details.
 		(text "MISS" (rect 199 59 227 73)(font "Arial" (font_size 8)))
 		(line (pt 248 64)(pt 232 64)(line_width 1))
 	)
+	(port
+		(pt 248 80)
+		(output)
+		(text "MISS_WRITE" (rect 0 0 71 14)(font "Arial" (font_size 8)))
+		(text "MISS_WRITE" (rect 156 75 227 89)(font "Arial" (font_size 8)))
+		(line (pt 248 80)(pt 232 80)(line_width 1))
+	)
+	(port
+		(pt 248 96)
+		(output)
+		(text "ARAM[11..0]" (rect 0 0 71 14)(font "Arial" (font_size 8)))
+		(text "ARAM[11..0]" (rect 156 91 227 105)(font "Arial" (font_size 8)))
+		(line (pt 248 96)(pt 232 96)(line_width 3))
+	)
 	(drawing
 		(rectangle (rect 16 16 232 112)(line_width 1))
 	)
