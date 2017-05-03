@@ -118,73 +118,9 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 2136 448 2319 464)
+	(rect 2136 480 2319 496)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "DATA_OUT[18..0]" (rect 90 0 178 12)(font "Arial" ))
-	(pt 0 8)
-	(drawing
-		(line (pt 0 8)(pt 52 8)(line_width 1))
-		(line (pt 52 4)(pt 78 4)(line_width 1))
-		(line (pt 52 12)(pt 78 12)(line_width 1))
-		(line (pt 52 12)(pt 52 4)(line_width 1))
-		(line (pt 78 4)(pt 82 8)(line_width 1))
-		(line (pt 82 8)(pt 78 12)(line_width 1))
-		(line (pt 78 12)(pt 82 8)(line_width 1))
-	)
-)
-(pin
-	(output)
-	(rect 1744 496 1920 512)
-	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "MISS" (rect 90 0 115 12)(font "Arial" ))
-	(pt 0 8)
-	(drawing
-		(line (pt 0 8)(pt 52 8)(line_width 1))
-		(line (pt 52 4)(pt 78 4)(line_width 1))
-		(line (pt 52 12)(pt 78 12)(line_width 1))
-		(line (pt 52 12)(pt 52 4)(line_width 1))
-		(line (pt 78 4)(pt 82 8)(line_width 1))
-		(line (pt 82 8)(pt 78 12)(line_width 1))
-		(line (pt 78 12)(pt 82 8)(line_width 1))
-	)
-)
-(pin
-	(output)
-	(rect 856 552 1032 568)
-	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "MISS_WRITE" (rect 90 0 157 12)(font "Arial" ))
-	(pt 0 8)
-	(drawing
-		(line (pt 0 8)(pt 52 8)(line_width 1))
-		(line (pt 52 4)(pt 78 4)(line_width 1))
-		(line (pt 52 12)(pt 78 12)(line_width 1))
-		(line (pt 52 12)(pt 52 4)(line_width 1))
-		(line (pt 78 4)(pt 82 8)(line_width 1))
-		(line (pt 82 8)(pt 78 12)(line_width 1))
-		(line (pt 78 12)(pt 82 8)(line_width 1))
-	)
-)
-(pin
-	(output)
-	(rect 1720 576 1896 592)
-	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "ARAM[11..0]" (rect 90 0 152 12)(font "Arial" ))
-	(pt 0 8)
-	(drawing
-		(line (pt 0 8)(pt 52 8)(line_width 1))
-		(line (pt 52 4)(pt 78 4)(line_width 1))
-		(line (pt 52 12)(pt 78 12)(line_width 1))
-		(line (pt 52 12)(pt 52 4)(line_width 1))
-		(line (pt 78 4)(pt 82 8)(line_width 1))
-		(line (pt 82 8)(pt 78 12)(line_width 1))
-		(line (pt 78 12)(pt 82 8)(line_width 1))
-	)
-)
-(pin
-	(output)
-	(rect 2032 640 2208 656)
-	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "LOAD" (rect 90 0 119 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8)(line_width 1))
@@ -298,63 +234,6 @@ applicable agreement for further details.
 	)
 	(drawing
 		(rectangle (rect 16 16 232 144)(line_width 1))
-	)
-)
-(symbol
-	(rect 1728 192 1968 320)
-	(text "MEM" (rect 5 0 30 14)(font "Arial" (font_size 8)))
-	(text "inst4" (rect 8 112 31 124)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "ARAM[11..0]" (rect 0 0 71 14)(font "Arial" (font_size 8)))
-		(text "ARAM[11..0]" (rect 21 27 92 41)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "CLC" (rect 0 0 23 14)(font "Arial" (font_size 8)))
-		(text "CLC" (rect 21 43 44 57)(font "Arial" (font_size 8)))
-		(line (pt 0 48)(pt 16 48)(line_width 1))
-	)
-	(port
-		(pt 0 64)
-		(input)
-		(text "WRITE" (rect 0 0 36 14)(font "Arial" (font_size 8)))
-		(text "WRITE" (rect 21 59 57 73)(font "Arial" (font_size 8)))
-		(line (pt 0 64)(pt 16 64)(line_width 1))
-	)
-	(port
-		(pt 0 80)
-		(input)
-		(text "READ" (rect 0 0 33 14)(font "Arial" (font_size 8)))
-		(text "READ" (rect 21 75 54 89)(font "Arial" (font_size 8)))
-		(line (pt 0 80)(pt 16 80)(line_width 1))
-	)
-	(port
-		(pt 0 96)
-		(input)
-		(text "DATA_IN[18..0]" (rect 0 0 87 14)(font "Arial" (font_size 8)))
-		(text "DATA_IN[18..0]" (rect 21 91 108 105)(font "Arial" (font_size 8)))
-		(line (pt 0 96)(pt 16 96)(line_width 3))
-	)
-	(port
-		(pt 240 32)
-		(output)
-		(text "LOAD" (rect 0 0 34 14)(font "Arial" (font_size 8)))
-		(text "LOAD" (rect 185 27 219 41)(font "Arial" (font_size 8)))
-		(line (pt 240 32)(pt 224 32)(line_width 1))
-	)
-	(port
-		(pt 240 48)
-		(output)
-		(text "DATA_OUT[18..0]" (rect 0 0 101 14)(font "Arial" (font_size 8)))
-		(text "DATA_OUT[18..0]" (rect 118 43 219 57)(font "Arial" (font_size 8)))
-		(line (pt 240 48)(pt 224 48)(line_width 3))
-	)
-	(drawing
-		(rectangle (rect 16 16 224 112)(line_width 1))
 	)
 )
 (symbol
@@ -669,6 +548,56 @@ applicable agreement for further details.
 		(arc (pt 31 37)(pt 30 12)(rect 18 12 43 37)(line_width 1))
 	)
 )
+(symbol
+	(rect 1728 192 1968 320)
+	(text "MEM" (rect 5 0 30 14)(font "Arial" (font_size 8)))
+	(text "inst4" (rect 8 112 31 124)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "ARAM[11..0]" (rect 0 0 71 14)(font "Arial" (font_size 8)))
+		(text "ARAM[11..0]" (rect 21 27 92 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "CLC" (rect 0 0 23 14)(font "Arial" (font_size 8)))
+		(text "CLC" (rect 21 43 44 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "WRITE" (rect 0 0 36 14)(font "Arial" (font_size 8)))
+		(text "WRITE" (rect 21 59 57 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 1))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "READ" (rect 0 0 33 14)(font "Arial" (font_size 8)))
+		(text "READ" (rect 21 75 54 89)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80)(line_width 1))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "DATA_IN[18..0]" (rect 0 0 87 14)(font "Arial" (font_size 8)))
+		(text "DATA_IN[18..0]" (rect 21 91 108 105)(font "Arial" (font_size 8)))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 240 32)
+		(output)
+		(text "DATA_OUT[18..0]" (rect 0 0 101 14)(font "Arial" (font_size 8)))
+		(text "DATA_OUT[18..0]" (rect 118 27 219 41)(font "Arial" (font_size 8)))
+		(line (pt 240 32)(pt 224 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 224 112)(line_width 1))
+	)
+)
 (connector
 	(pt 480 88)
 	(pt 480 224)
@@ -791,28 +720,6 @@ applicable agreement for further details.
 	(pt 1664 256)
 )
 (connector
-	(pt 1624 504)
-	(pt 1624 272)
-)
-(connector
-	(pt 1656 584)
-	(pt 1656 240)
-	(bus)
-)
-(connector
-	(pt 1968 240)
-	(pt 1992 240)
-	(bus)
-)
-(connector
-	(pt 1968 224)
-	(pt 2032 224)
-)
-(connector
-	(pt 2032 224)
-	(pt 2032 648)
-)
-(connector
 	(pt 432 136)
 	(pt 432 160)
 	(bus)
@@ -839,10 +746,6 @@ applicable agreement for further details.
 	(pt 1664 288)
 )
 (connector
-	(pt 744 272)
-	(pt 1624 272)
-)
-(connector
 	(pt 1680 224)
 	(pt 1728 224)
 	(bus)
@@ -856,26 +759,8 @@ applicable agreement for further details.
 	(pt 1728 256)
 )
 (connector
-	(pt 1624 272)
-	(pt 1728 272)
-)
-(connector
 	(pt 1696 288)
 	(pt 1728 288)
-	(bus)
-)
-(connector
-	(pt 1624 504)
-	(pt 1744 504)
-)
-(connector
-	(pt 1656 584)
-	(pt 1720 584)
-	(bus)
-)
-(connector
-	(pt 1656 240)
-	(pt 1680 240)
 	(bus)
 )
 (connector
@@ -907,10 +792,6 @@ applicable agreement for further details.
 (connector
 	(pt 872 384)
 	(pt 880 384)
-)
-(connector
-	(pt 752 560)
-	(pt 856 560)
 )
 (connector
 	(pt 936 384)
@@ -968,10 +849,6 @@ applicable agreement for further details.
 	(pt 752 472)
 )
 (connector
-	(pt 752 472)
-	(pt 752 560)
-)
-(connector
 	(pt 744 240)
 	(pt 832 240)
 	(bus)
@@ -979,11 +856,6 @@ applicable agreement for further details.
 (connector
 	(pt 832 240)
 	(pt 1008 240)
-	(bus)
-)
-(connector
-	(pt 1424 240)
-	(pt 1656 240)
 	(bus)
 )
 (connector
@@ -1009,31 +881,6 @@ applicable agreement for further details.
 (connector
 	(pt 776 224)
 	(pt 776 488)
-	(bus)
-)
-(connector
-	(pt 2128 456)
-	(pt 2128 488)
-	(bus)
-)
-(connector
-	(pt 2136 456)
-	(pt 2128 456)
-	(bus)
-)
-(connector
-	(pt 1992 240)
-	(pt 1992 488)
-	(bus)
-)
-(connector
-	(pt 776 488)
-	(pt 1992 488)
-	(bus)
-)
-(connector
-	(pt 1992 488)
-	(pt 2128 488)
 	(bus)
 )
 (connector
@@ -1093,15 +940,41 @@ applicable agreement for further details.
 	(pt 1424 240)
 	(bus)
 )
+(connector
+	(pt 1992 224)
+	(pt 1968 224)
+	(bus)
+)
+(connector
+	(pt 1992 488)
+	(pt 1992 224)
+	(bus)
+)
+(connector
+	(pt 776 488)
+	(pt 1992 488)
+	(bus)
+)
+(connector
+	(pt 744 272)
+	(pt 1728 272)
+)
+(connector
+	(pt 1992 488)
+	(pt 2136 488)
+	(bus)
+)
+(connector
+	(pt 1424 240)
+	(pt 1680 240)
+	(bus)
+)
 (junction (pt 480 88))
 (junction (pt 432 160))
 (junction (pt 752 288))
 (junction (pt 752 384))
 (junction (pt 792 88))
-(junction (pt 1624 272))
-(junction (pt 1656 240))
 (junction (pt 1104 88))
-(junction (pt 752 472))
 (junction (pt 1040 368))
 (junction (pt 832 240))
 (junction (pt 1424 240))
