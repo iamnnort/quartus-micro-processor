@@ -40,15 +40,15 @@ applicable agreement for further details.
 	(port
 		(pt 176 32)
 		(output)
-		(text "ABUS[11..0]" (rect 0 0 69 14)(font "Arial" (font_size 8)))
-		(text "ABUS[11..0]" (rect 86 27 155 41)(font "Arial" (font_size 8)))
+		(text "REG1[2..0]" (rect 0 0 60 14)(font "Arial" (font_size 8)))
+		(text "REG1[2..0]" (rect 95 27 155 41)(font "Arial" (font_size 8)))
 		(line (pt 176 32)(pt 160 32)(line_width 3))
 	)
 	(port
 		(pt 176 48)
 		(output)
-		(text "REG1[2..0]" (rect 0 0 60 14)(font "Arial" (font_size 8)))
-		(text "REG1[2..0]" (rect 95 43 155 57)(font "Arial" (font_size 8)))
+		(text "ABUS[11..0]" (rect 0 0 69 14)(font "Arial" (font_size 8)))
+		(text "ABUS[11..0]" (rect 86 43 155 57)(font "Arial" (font_size 8)))
 		(line (pt 176 48)(pt 160 48)(line_width 3))
 	)
 	(port
@@ -110,8 +110,8 @@ applicable agreement for further details.
 	(port
 		(pt 176 192)
 		(output)
-		(text "ADD_REG_MEM" (rect 0 0 90 14)(font "Arial" (font_size 8)))
-		(text "ADD_REG_MEM" (rect 65 187 155 201)(font "Arial" (font_size 8)))
+		(text "ADDC_MEM" (rect 0 0 67 14)(font "Arial" (font_size 8)))
+		(text "ADDC_MEM" (rect 88 187 155 201)(font "Arial" (font_size 8)))
 		(line (pt 176 192)(pt 160 192)(line_width 1))
 	)
 	(port
@@ -124,15 +124,15 @@ applicable agreement for further details.
 	(port
 		(pt 176 224)
 		(output)
-		(text "OR_REG_MEM" (rect 0 0 82 14)(font "Arial" (font_size 8)))
-		(text "OR_REG_MEM" (rect 73 219 155 233)(font "Arial" (font_size 8)))
+		(text "NOT_MEM" (rect 0 0 57 14)(font "Arial" (font_size 8)))
+		(text "NOT_MEM" (rect 98 219 155 233)(font "Arial" (font_size 8)))
 		(line (pt 176 224)(pt 160 224)(line_width 1))
 	)
 	(port
 		(pt 176 240)
 		(output)
-		(text "ROL_REG_MEM" (rect 0 0 89 14)(font "Arial" (font_size 8)))
-		(text "ROL_REG_MEM" (rect 66 235 155 249)(font "Arial" (font_size 8)))
+		(text "RSA_REG_MEM" (rect 0 0 90 14)(font "Arial" (font_size 8)))
+		(text "RSA_REG_MEM" (rect 65 235 155 249)(font "Arial" (font_size 8)))
 		(line (pt 176 240)(pt 160 240)(line_width 1))
 	)
 	(drawing
