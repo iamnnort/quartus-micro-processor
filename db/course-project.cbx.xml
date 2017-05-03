@@ -51,6 +51,7 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|course-project|CU:inst2|LPM_ROM:inst1|altrom:srom|altsyncram:rom_block" CBX_FILE_NAME="altsyncram_a001.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|course-project|MEMORY:inst3|CASH:inst|SET:inst10|DATA_MEM:inst3|ROW:inst|lpm_counter13:inst4|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_3pi.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|course-project|MEMORY:inst3|lpm_constant7:inst2|lpm_constant:lpm_constant_component" CBX_FILE_NAME="lpm_constant_3e6.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|course-project|ALU:inst|lpm_clshift0:inst29|lpm_clshift:lpm_clshift_component" CBX_FILE_NAME="lpm_clshift_nib.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|course-project|MEMORY:inst3|CASH:inst|SET:inst10|TAG_MEM:inst|TAG:inst|lpm_counter1:inst5|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_t5i.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|course-project|MEMORY:inst3|CASH:inst|SET:inst11|DATA_MEM:inst3|ROW:inst|lpm_counter13:inst4|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_3pi.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|course-project|CU:inst2|CASH:inst3|SET:inst10|TAG_MEM:inst|TAG:inst|lpm_counter1:inst5|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_t5i.tdf"/>

@@ -20,7 +20,14 @@ FUNCTION lpm_decode4
 
 RETURNS (
 	eq1,
+	eq10,
+	eq11,
 	eq2,
 	eq3,
-	eq4
+	eq4,
+	eq5,
+	eq6,
+	eq7,
+	eq8,
+	eq9
 );

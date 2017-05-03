@@ -5,9 +5,9 @@ Timing Analyzer Summary
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 25.513 ns
-From           : CU:inst2|CASH:inst3|SET:inst10|TAG_MEM:inst|TAG:inst4|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[1]
-To             : DBUS[18]
+Actual Time    : 26.166 ns
+From           : CU:inst2|CASH:inst3|SET:inst10|TAG_MEM:inst|TAG:inst|lpm_counter1:inst5|lpm_counter:lpm_counter_component|cntr_t5i:auto_generated|safe_q[11]
+To             : DBUS[0]
 From Clock     : CLC
 To Clock       : --
 Failed Paths   : 0
@@ -15,9 +15,9 @@ Failed Paths   : 0
 Type           : Clock Setup: 'CLC'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 25.19 MHz ( period = 39.696 ns )
-From           : CU:inst2|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_0ci:auto_generated|safe_q[8]
-To             : Registers:inst6|lpm_dff0:inst12|lpm_ff:lpm_ff_component|dffs[8]
+Actual Time    : 23.80 MHz ( period = 42.024 ns )
+From           : CU:inst2|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_0ci:auto_generated|safe_q[9]
+To             : Registers:inst6|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[0]
 From Clock     : CLC
 To Clock       : CLC
 Failed Paths   : 0
