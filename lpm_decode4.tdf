@@ -42,6 +42,8 @@ SUBDESIGN lpm_decode4
 	eq1	 : OUTPUT;
 	eq10	 : OUTPUT;
 	eq11	 : OUTPUT;
+	eq12	 : OUTPUT;
+	eq13	 : OUTPUT;
 	eq2	 : OUTPUT;
 	eq3	 : OUTPUT;
 	eq4	 : OUTPUT;
@@ -73,6 +75,8 @@ BEGIN
 	eq10 = lpm_decode_component.eq[10..10];
 	eq9 = lpm_decode_component.eq[9..9];
 	eq11 = lpm_decode_component.eq[11..11];
+	eq12 = lpm_decode_component.eq[12..12];
+	eq13 = lpm_decode_component.eq[13..13];
 	lpm_decode_component.data[3..0] = data[3..0];
 END;
 
@@ -93,8 +97,8 @@ END;
 -- Retrieval info: PRIVATE: eq1 NUMERIC "1"
 -- Retrieval info: PRIVATE: eq10 NUMERIC "1"
 -- Retrieval info: PRIVATE: eq11 NUMERIC "1"
--- Retrieval info: PRIVATE: eq12 NUMERIC "0"
--- Retrieval info: PRIVATE: eq13 NUMERIC "0"
+-- Retrieval info: PRIVATE: eq12 NUMERIC "1"
+-- Retrieval info: PRIVATE: eq13 NUMERIC "1"
 -- Retrieval info: PRIVATE: eq14 NUMERIC "0"
 -- Retrieval info: PRIVATE: eq15 NUMERIC "0"
 -- Retrieval info: PRIVATE: eq2 NUMERIC "1"
@@ -114,6 +118,8 @@ END;
 -- Retrieval info: USED_PORT: eq1 0 0 0 0 OUTPUT NODEFVAL eq1
 -- Retrieval info: USED_PORT: eq10 0 0 0 0 OUTPUT NODEFVAL eq10
 -- Retrieval info: USED_PORT: eq11 0 0 0 0 OUTPUT NODEFVAL eq11
+-- Retrieval info: USED_PORT: eq12 0 0 0 0 OUTPUT NODEFVAL eq12
+-- Retrieval info: USED_PORT: eq13 0 0 0 0 OUTPUT NODEFVAL eq13
 -- Retrieval info: USED_PORT: eq2 0 0 0 0 OUTPUT NODEFVAL eq2
 -- Retrieval info: USED_PORT: eq3 0 0 0 0 OUTPUT NODEFVAL eq3
 -- Retrieval info: USED_PORT: eq4 0 0 0 0 OUTPUT NODEFVAL eq4
@@ -134,6 +140,8 @@ END;
 -- Retrieval info: CONNECT: eq9 0 0 0 0 @eq 0 0 1 9
 -- Retrieval info: CONNECT: eq10 0 0 0 0 @eq 0 0 1 10
 -- Retrieval info: CONNECT: eq11 0 0 0 0 @eq 0 0 1 11
+-- Retrieval info: CONNECT: eq12 0 0 0 0 @eq 0 0 1 12
+-- Retrieval info: CONNECT: eq13 0 0 0 0 @eq 0 0 1 13
 -- Retrieval info: LIBRARY: lpm lpm.lpm_components.all
 -- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_decode4.tdf TRUE
 -- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_decode4.inc TRUE

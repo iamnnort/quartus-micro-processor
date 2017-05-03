@@ -16,7 +16,9 @@
 FUNCTION lpm_counter0 
 (
 	clock,
-	cnt_en
+	cnt_en,
+	data[11..0],
+	sload
 )
 
 RETURNS (

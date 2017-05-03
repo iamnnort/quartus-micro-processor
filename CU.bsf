@@ -20,9 +20,9 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 192 304)
+	(rect 16 16 192 336)
 	(text "CU" (rect 5 0 21 14)(font "Arial" (font_size 8)))
-	(text "inst" (rect 8 272 25 284)(font "Arial" ))
+	(text "inst" (rect 8 304 25 316)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -40,15 +40,15 @@ applicable agreement for further details.
 	(port
 		(pt 176 32)
 		(output)
-		(text "REG1[2..0]" (rect 0 0 60 14)(font "Arial" (font_size 8)))
-		(text "REG1[2..0]" (rect 95 27 155 41)(font "Arial" (font_size 8)))
+		(text "ABUS[11..0]" (rect 0 0 69 14)(font "Arial" (font_size 8)))
+		(text "ABUS[11..0]" (rect 86 27 155 41)(font "Arial" (font_size 8)))
 		(line (pt 176 32)(pt 160 32)(line_width 3))
 	)
 	(port
 		(pt 176 48)
 		(output)
-		(text "ABUS[11..0]" (rect 0 0 69 14)(font "Arial" (font_size 8)))
-		(text "ABUS[11..0]" (rect 86 43 155 57)(font "Arial" (font_size 8)))
+		(text "REG1[2..0]" (rect 0 0 60 14)(font "Arial" (font_size 8)))
+		(text "REG1[2..0]" (rect 95 43 155 57)(font "Arial" (font_size 8)))
 		(line (pt 176 48)(pt 160 48)(line_width 3))
 	)
 	(port
@@ -135,7 +135,21 @@ applicable agreement for further details.
 		(text "RSA_REG_MEM" (rect 65 235 155 249)(font "Arial" (font_size 8)))
 		(line (pt 176 240)(pt 160 240)(line_width 1))
 	)
+	(port
+		(pt 176 256)
+		(output)
+		(text "JMP" (rect 0 0 22 14)(font "Arial" (font_size 8)))
+		(text "JMP" (rect 133 251 155 265)(font "Arial" (font_size 8)))
+		(line (pt 176 256)(pt 160 256)(line_width 1))
+	)
+	(port
+		(pt 176 272)
+		(output)
+		(text "JNS" (rect 0 0 22 14)(font "Arial" (font_size 8)))
+		(text "JNS" (rect 133 267 155 281)(font "Arial" (font_size 8)))
+		(line (pt 176 272)(pt 160 272)(line_width 1))
+	)
 	(drawing
-		(rectangle (rect 16 16 160 272)(line_width 1))
+		(rectangle (rect 16 16 160 304)(line_width 1))
 	)
 )

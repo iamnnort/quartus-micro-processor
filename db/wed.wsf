@@ -15938,10 +15938,10 @@ VECTOR("D:/Универ/6 семестр/quartus-micro-processor/course-project.vwf")
 VECTOR("D:/Универ/6 семестр/quartus-micro-processor/db/course-project.sim.cvwf")
 {
 	ZOOM{
-		ZBEGIN = 956437;
-		ZEND = 1099277;
+		ZBEGIN = 929106;
+		ZEND = 1066245;
 		NUMERATOR = 1328;
-		DENOMINATOR = 142840;
+		DENOMINATOR = 137139;
 		TOP_INDEX = 0;
 	}
 	CLOCK{
@@ -16281,7 +16281,7 @@ VECTOR("D:/Универ/6 семестр/quartus-micro-processor/db/course-project.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ADDC_REG_MEM";
+		SIGNAL = "ADDC_MEM";
 		INDEX = 41;
 		FORMAT = E;
 		SCALE = 1;
@@ -16289,15 +16289,15 @@ VECTOR("D:/Универ/6 семестр/quartus-micro-processor/db/course-project.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "MEMORY:inst3|lpm_counter8:inst14|lpm_counter:lpm_counter_component|cntr_fai:auto_generated|safe_q";
+		SIGNAL = "AND_REG_MEM";
 		INDEX = 42;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "MEMORY:inst3|lpm_counter8:inst14|lpm_counter:lpm_counter_component|cntr_fai:auto_generated|safe_q[1]";
+		SIGNAL = "NOT_MEM";
 		INDEX = 43;
 		FORMAT = E;
 		SCALE = 1;
@@ -16305,7 +16305,7 @@ VECTOR("D:/Универ/6 семестр/quartus-micro-processor/db/course-project.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "MEMORY:inst3|lpm_counter8:inst14|lpm_counter:lpm_counter_component|cntr_fai:auto_generated|safe_q[0]";
+		SIGNAL = "RSA_REG_MEM";
 		INDEX = 44;
 		FORMAT = E;
 		SCALE = 1;
@@ -16313,7 +16313,7 @@ VECTOR("D:/Универ/6 семестр/quartus-micro-processor/db/course-project.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "REG1";
+		SIGNAL = "MEMORY:inst3|lpm_counter11:inst23|lpm_counter:lpm_counter_component|cntr_3pi:auto_generated|safe_q";
 		INDEX = 45;
 		FORMAT = T;
 		SCALE = 1;
@@ -16321,7 +16321,7 @@ VECTOR("D:/Универ/6 семестр/quartus-micro-processor/db/course-project.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "REG1[2]";
+		SIGNAL = "MEMORY:inst3|lpm_counter11:inst23|lpm_counter:lpm_counter_component|cntr_3pi:auto_generated|safe_q[1]";
 		INDEX = 46;
 		FORMAT = E;
 		SCALE = 1;
@@ -16329,7 +16329,7 @@ VECTOR("D:/Универ/6 семестр/quartus-micro-processor/db/course-project.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "REG1[1]";
+		SIGNAL = "MEMORY:inst3|lpm_counter11:inst23|lpm_counter:lpm_counter_component|cntr_3pi:auto_generated|safe_q[0]";
 		INDEX = 47;
 		FORMAT = E;
 		SCALE = 1;
@@ -16337,23 +16337,23 @@ VECTOR("D:/Универ/6 семестр/quartus-micro-processor/db/course-project.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "REG1[0]";
+		SIGNAL = "REG1";
 		INDEX = 48;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "REG2";
-		INDEX = 49;
 		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "REG2[2]";
+		SIGNAL = "REG1[2]";
+		INDEX = 49;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "REG1[1]";
 		INDEX = 50;
 		FORMAT = E;
 		SCALE = 1;
@@ -16361,7 +16361,7 @@ VECTOR("D:/Универ/6 семестр/quartus-micro-processor/db/course-project.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "REG2[1]";
+		SIGNAL = "REG1[0]";
 		INDEX = 51;
 		FORMAT = E;
 		SCALE = 1;
@@ -16369,23 +16369,23 @@ VECTOR("D:/Универ/6 семестр/quartus-micro-processor/db/course-project.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "REG2[0]";
+		SIGNAL = "REG2";
 		INDEX = 52;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ALU:inst|lpm_counter8:inst7|lpm_counter:lpm_counter_component|cntr_fai:auto_generated|safe_q";
-		INDEX = 53;
 		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ALU:inst|lpm_counter8:inst7|lpm_counter:lpm_counter_component|cntr_fai:auto_generated|safe_q[1]";
+		SIGNAL = "REG2[2]";
+		INDEX = 53;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "REG2[1]";
 		INDEX = 54;
 		FORMAT = E;
 		SCALE = 1;
@@ -16393,7 +16393,7 @@ VECTOR("D:/Универ/6 семестр/quartus-micro-processor/db/course-project.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ALU:inst|lpm_counter8:inst7|lpm_counter:lpm_counter_component|cntr_fai:auto_generated|safe_q[0]";
+		SIGNAL = "REG2[0]";
 		INDEX = 55;
 		FORMAT = E;
 		SCALE = 1;
@@ -28659,6 +28659,22 @@ VECTOR("D:/Универ/6 семестр/quartus-micro-processor/db/course-project.sim.cvwf")
 	LINE{
 		SIGNAL = "MEMORY:inst3|MEM:inst4|lpm_counter2:inst|lpm_counter:lpm_counter_component|cntr_dbj:auto_generated|safe_q[0]";
 		INDEX = 1588;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "JMP";
+		INDEX = 1589;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "JNS";
+		INDEX = 1590;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;

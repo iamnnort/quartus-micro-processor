@@ -9,8 +9,13 @@ AND_REG_REG <= CU:inst2.AND_REG_REG
 MOV_REG_REG <= CU:inst2.MOV_REG_REG
 NOT_REG <= CU:inst2.NOT_REG
 RSA_REG_REG <= CU:inst2.RSA_REG_REG
-ADDC_REG_MEM <= CU:inst2.ADDC_MEM
 ADDC_REG <= CU:inst2.ADD
+ADDC_MEM <= CU:inst2.ADDC_MEM
+AND_REG_MEM <= CU:inst2.AND_REG_MEM
+NOT_MEM <= CU:inst2.NOT_MEM
+RSA_REG_MEM <= CU:inst2.RSA_REG_MEM
+JMP <= CU:inst2.JMP
+JNS <= CU:inst2.JNS
 ABUS[0] <= CU:inst2.ABUS[0]
 ABUS[1] <= CU:inst2.ABUS[1]
 ABUS[2] <= CU:inst2.ABUS[2]
@@ -63,12 +68,14 @@ MOV_REG_MEM <= lpm_decode4:inst2.eq2
 AND_REG_REG <= lpm_decode4:inst2.eq4
 MOV_REG_REG <= lpm_decode4:inst2.eq7
 AND_REG_MEM <= lpm_decode4:inst2.eq9
-OR_REG_MEM <= lpm_decode4:inst2.eq10
-ROL_REG_MEM <= lpm_decode4:inst2.eq11
 NOT_REG <= lpm_decode4:inst2.eq5
 RSA_REG_REG <= lpm_decode4:inst2.eq6
 ADD <= lpm_decode4:inst2.eq3
 ADDC_MEM <= lpm_decode4:inst2.eq8
+NOT_MEM <= lpm_decode4:inst2.eq10
+RSA_REG_MEM <= lpm_decode4:inst2.eq11
+JMP <= lpm_decode4:inst2.eq12
+JNS <= lpm_decode4:inst2.eq13
 ABUS[0] <= rom[3].DB_MAX_OUTPUT_PORT_TYPE
 ABUS[1] <= rom[4].DB_MAX_OUTPUT_PORT_TYPE
 ABUS[2] <= rom[5].DB_MAX_OUTPUT_PORT_TYPE
@@ -97,6 +104,8 @@ data[3] => lpm_decode:lpm_decode_component.data[3]
 eq1 <= lpm_decode:lpm_decode_component.eq[1]
 eq10 <= lpm_decode:lpm_decode_component.eq[10]
 eq11 <= lpm_decode:lpm_decode_component.eq[11]
+eq12 <= lpm_decode:lpm_decode_component.eq[12]
+eq13 <= lpm_decode:lpm_decode_component.eq[13]
 eq2 <= lpm_decode:lpm_decode_component.eq[2]
 eq3 <= lpm_decode:lpm_decode_component.eq[3]
 eq4 <= lpm_decode:lpm_decode_component.eq[4]
@@ -22529,6 +22538,19 @@ result[0] <= <VCC>
 |course-project|CU:inst2|lpm_counter0:inst
 clock => lpm_counter:lpm_counter_component.clock
 cnt_en => lpm_counter:lpm_counter_component.cnt_en
+data[0] => lpm_counter:lpm_counter_component.data[0]
+data[1] => lpm_counter:lpm_counter_component.data[1]
+data[2] => lpm_counter:lpm_counter_component.data[2]
+data[3] => lpm_counter:lpm_counter_component.data[3]
+data[4] => lpm_counter:lpm_counter_component.data[4]
+data[5] => lpm_counter:lpm_counter_component.data[5]
+data[6] => lpm_counter:lpm_counter_component.data[6]
+data[7] => lpm_counter:lpm_counter_component.data[7]
+data[8] => lpm_counter:lpm_counter_component.data[8]
+data[9] => lpm_counter:lpm_counter_component.data[9]
+data[10] => lpm_counter:lpm_counter_component.data[10]
+data[11] => lpm_counter:lpm_counter_component.data[11]
+sload => lpm_counter:lpm_counter_component.sload
 q[0] <= lpm_counter:lpm_counter_component.q[0]
 q[1] <= lpm_counter:lpm_counter_component.q[1]
 q[2] <= lpm_counter:lpm_counter_component.q[2]
@@ -22544,9 +22566,9 @@ q[11] <= lpm_counter:lpm_counter_component.q[11]
 
 
 |course-project|CU:inst2|lpm_counter0:inst|lpm_counter:lpm_counter_component
-clock => cntr_0ci:auto_generated.clock
+clock => cntr_dbj:auto_generated.clock
 clk_en => ~NO_FANOUT~
-cnt_en => cntr_0ci:auto_generated.cnt_en
+cnt_en => cntr_dbj:auto_generated.cnt_en
 updown => ~NO_FANOUT~
 aclr => ~NO_FANOUT~
 aset => ~NO_FANOUT~
@@ -22555,32 +22577,32 @@ aload => ~NO_FANOUT~
 sclr => ~NO_FANOUT~
 sset => ~NO_FANOUT~
 sconst => ~NO_FANOUT~
-sload => ~NO_FANOUT~
-data[0] => ~NO_FANOUT~
-data[1] => ~NO_FANOUT~
-data[2] => ~NO_FANOUT~
-data[3] => ~NO_FANOUT~
-data[4] => ~NO_FANOUT~
-data[5] => ~NO_FANOUT~
-data[6] => ~NO_FANOUT~
-data[7] => ~NO_FANOUT~
-data[8] => ~NO_FANOUT~
-data[9] => ~NO_FANOUT~
-data[10] => ~NO_FANOUT~
-data[11] => ~NO_FANOUT~
+sload => cntr_dbj:auto_generated.sload
+data[0] => cntr_dbj:auto_generated.data[0]
+data[1] => cntr_dbj:auto_generated.data[1]
+data[2] => cntr_dbj:auto_generated.data[2]
+data[3] => cntr_dbj:auto_generated.data[3]
+data[4] => cntr_dbj:auto_generated.data[4]
+data[5] => cntr_dbj:auto_generated.data[5]
+data[6] => cntr_dbj:auto_generated.data[6]
+data[7] => cntr_dbj:auto_generated.data[7]
+data[8] => cntr_dbj:auto_generated.data[8]
+data[9] => cntr_dbj:auto_generated.data[9]
+data[10] => cntr_dbj:auto_generated.data[10]
+data[11] => cntr_dbj:auto_generated.data[11]
 cin => ~NO_FANOUT~
-q[0] <= cntr_0ci:auto_generated.q[0]
-q[1] <= cntr_0ci:auto_generated.q[1]
-q[2] <= cntr_0ci:auto_generated.q[2]
-q[3] <= cntr_0ci:auto_generated.q[3]
-q[4] <= cntr_0ci:auto_generated.q[4]
-q[5] <= cntr_0ci:auto_generated.q[5]
-q[6] <= cntr_0ci:auto_generated.q[6]
-q[7] <= cntr_0ci:auto_generated.q[7]
-q[8] <= cntr_0ci:auto_generated.q[8]
-q[9] <= cntr_0ci:auto_generated.q[9]
-q[10] <= cntr_0ci:auto_generated.q[10]
-q[11] <= cntr_0ci:auto_generated.q[11]
+q[0] <= cntr_dbj:auto_generated.q[0]
+q[1] <= cntr_dbj:auto_generated.q[1]
+q[2] <= cntr_dbj:auto_generated.q[2]
+q[3] <= cntr_dbj:auto_generated.q[3]
+q[4] <= cntr_dbj:auto_generated.q[4]
+q[5] <= cntr_dbj:auto_generated.q[5]
+q[6] <= cntr_dbj:auto_generated.q[6]
+q[7] <= cntr_dbj:auto_generated.q[7]
+q[8] <= cntr_dbj:auto_generated.q[8]
+q[9] <= cntr_dbj:auto_generated.q[9]
+q[10] <= cntr_dbj:auto_generated.q[10]
+q[11] <= cntr_dbj:auto_generated.q[11]
 cout <= <GND>
 eq[0] <= <GND>
 eq[1] <= <GND>
@@ -22600,7 +22622,7 @@ eq[14] <= <GND>
 eq[15] <= <GND>
 
 
-|course-project|CU:inst2|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_0ci:auto_generated
+|course-project|CU:inst2|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_dbj:auto_generated
 clock => counter_reg_bit1a[11].CLK
 clock => counter_reg_bit1a[10].CLK
 clock => counter_reg_bit1a[9].CLK
@@ -22614,6 +22636,18 @@ clock => counter_reg_bit1a[2].CLK
 clock => counter_reg_bit1a[1].CLK
 clock => counter_reg_bit1a[0].CLK
 cnt_en => _~25.IN0
+data[0] => _~24.IN1
+data[1] => _~23.IN1
+data[2] => _~22.IN1
+data[3] => _~21.IN1
+data[4] => _~20.IN1
+data[5] => _~19.IN1
+data[6] => _~18.IN1
+data[7] => _~17.IN1
+data[8] => _~16.IN1
+data[9] => _~15.IN1
+data[10] => _~14.IN1
+data[11] => _~13.IN1
 q[0] <= counter_reg_bit1a[0].REGOUT
 q[1] <= counter_reg_bit1a[1].REGOUT
 q[2] <= counter_reg_bit1a[2].REGOUT
@@ -22626,6 +22660,8 @@ q[8] <= counter_reg_bit1a[8].REGOUT
 q[9] <= counter_reg_bit1a[9].REGOUT
 q[10] <= counter_reg_bit1a[10].REGOUT
 q[11] <= counter_reg_bit1a[11].REGOUT
+sload => _~27.IN1
+sload => counter_reg_bit1a[11]~13.IN1
 
 
 |course-project|CU:inst2|LPM_ROM:inst1
@@ -23358,6 +23394,32 @@ result[17] <= result[17]~1.DB_MAX_OUTPUT_PORT_TYPE
 result[18] <= result[18]~0.DB_MAX_OUTPUT_PORT_TYPE
 
 
+|course-project|CU:inst2|lpm_bustri18:inst25
+data[0] => lpm_bustri:lpm_bustri_component.data[0]
+data[1] => lpm_bustri:lpm_bustri_component.data[1]
+data[2] => lpm_bustri:lpm_bustri_component.data[2]
+enabledt => lpm_bustri:lpm_bustri_component.enabledt
+tridata[0] <> lpm_bustri:lpm_bustri_component.tridata[0]
+tridata[1] <> lpm_bustri:lpm_bustri_component.tridata[1]
+tridata[2] <> lpm_bustri:lpm_bustri_component.tridata[2]
+
+
+|course-project|CU:inst2|lpm_bustri18:inst25|lpm_bustri:lpm_bustri_component
+tridata[0] <> dout[0]
+tridata[1] <> dout[1]
+tridata[2] <> dout[2]
+data[0] => dout[0].DATAIN
+data[1] => dout[1].DATAIN
+data[2] => dout[2].DATAIN
+enabletr => ~NO_FANOUT~
+enabledt => dout[2].OE
+enabledt => dout[1].OE
+enabledt => dout[0].OE
+result[0] <= result[0]~2.DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= result[1]~1.DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= result[2]~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
 |course-project|CU:inst2|lpm_bustri18:inst24
 data[0] => lpm_bustri:lpm_bustri_component.data[0]
 data[1] => lpm_bustri:lpm_bustri_component.data[1]
@@ -23394,32 +23456,6 @@ result[2] <= lpm_constant:lpm_constant_component.result[2]
 result[0] <= <GND>
 result[1] <= <GND>
 result[2] <= <GND>
-
-
-|course-project|CU:inst2|lpm_bustri18:inst25
-data[0] => lpm_bustri:lpm_bustri_component.data[0]
-data[1] => lpm_bustri:lpm_bustri_component.data[1]
-data[2] => lpm_bustri:lpm_bustri_component.data[2]
-enabledt => lpm_bustri:lpm_bustri_component.enabledt
-tridata[0] <> lpm_bustri:lpm_bustri_component.tridata[0]
-tridata[1] <> lpm_bustri:lpm_bustri_component.tridata[1]
-tridata[2] <> lpm_bustri:lpm_bustri_component.tridata[2]
-
-
-|course-project|CU:inst2|lpm_bustri18:inst25|lpm_bustri:lpm_bustri_component
-tridata[0] <> dout[0]
-tridata[1] <> dout[1]
-tridata[2] <> dout[2]
-data[0] => dout[0].DATAIN
-data[1] => dout[1].DATAIN
-data[2] => dout[2].DATAIN
-enabletr => ~NO_FANOUT~
-enabledt => dout[2].OE
-enabledt => dout[1].OE
-enabledt => dout[0].OE
-result[0] <= result[0]~2.DB_MAX_OUTPUT_PORT_TYPE
-result[1] <= result[1]~1.DB_MAX_OUTPUT_PORT_TYPE
-result[2] <= result[2]~0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |course-project|CU:inst2|lpm_bustri18:inst30
@@ -23480,20 +23516,26 @@ CLC => lpm_counter8:inst7.clock
 CLC => lpm_counter9:inst35.clock
 CLC => CELL:inst16.CLC
 CLC => CELL:inst17.CLC
-ADDC_REG => inst57.IN0
+ADDC_REG => inst71.IN0
 ADDC_REG => inst65.IN1
 ADDC_REG => inst49.IN0
 ADDC_REG => inst52.CLK
-ADDC_MEM => inst57.IN1
-ADDC_MEM => inst59.IN0
+ADDC_MEM => inst71.IN1
+ADDC_MEM => inst75.IN2
 ADDC_MEM => inst65.IN0
-SRA_REG_REG => inst57.IN2
-SRA_REG_REG => inst30.IN0
-AND_REG_REG => inst57.IN3
-AND_REG_REG => inst28.IN0
-MOV_REG_REG => inst44.IN0
+AND_REG_REG => inst71.IN2
+AND_REG_REG => inst66.IN1
+SRA_REG_REG => inst71.IN3
+SRA_REG_REG => inst67.IN1
+AND_REG_MEM => inst71.IN4
+AND_REG_MEM => inst75.IN1
+AND_REG_MEM => inst66.IN0
+RSA_REG_MEM => inst71.IN5
+RSA_REG_MEM => inst75.IN0
+RSA_REG_MEM => inst67.IN0
+MOV_REG_REG => inst76.IN0
 MOV_REG_REG => inst45.IN1
-NOT_REG => inst44.IN1
+NOT_REG => inst76.IN1
 NOT_REG => inst32.IN0
 NOT_REG => inst46.IN1
 WRITE_REG <= inst38.DB_MAX_OUTPUT_PORT_TYPE
@@ -23564,6 +23606,7 @@ REG2[2] => lpm_bustri15:inst10.data[2]
 REG1[0] => lpm_bustri15:inst9.data[0]
 REG1[1] => lpm_bustri15:inst9.data[1]
 REG1[2] => lpm_bustri15:inst9.data[2]
+NOT_MEM => ~NO_FANOUT~
 
 
 |course-project|ALU:inst|lpm_decode13:inst8
@@ -28512,7 +28555,7 @@ q[18] <= dffs[18].DB_MAX_OUTPUT_PORT_TYPE
 |course-project|MEMORY:inst3
 NEXT <= CASH:inst.HIT
 CLC => CASH:inst.CLC
-CLC => lpm_counter8:inst14.clock
+CLC => lpm_counter11:inst23.clock
 CLC => MEM:inst4.CLC
 CLC => inst7.CLK
 CLC => lpm_dff5:inst5.clock
@@ -50776,15 +50819,14 @@ result[17] <= result[17]~1.DB_MAX_OUTPUT_PORT_TYPE
 result[18] <= result[18]~0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|course-project|MEMORY:inst3|lpm_decode13:inst15
+|course-project|MEMORY:inst3|lpm_decode16:inst38
 data[0] => lpm_decode:lpm_decode_component.data[0]
 data[1] => lpm_decode:lpm_decode_component.data[1]
-eq1 <= lpm_decode:lpm_decode_component.eq[1]
 eq2 <= lpm_decode:lpm_decode_component.eq[2]
 eq3 <= lpm_decode:lpm_decode_component.eq[3]
 
 
-|course-project|MEMORY:inst3|lpm_decode13:inst15|lpm_decode:lpm_decode_component
+|course-project|MEMORY:inst3|lpm_decode16:inst38|lpm_decode:lpm_decode_component
 data[0] => decode_p7f:auto_generated.data[0]
 data[1] => decode_p7f:auto_generated.data[1]
 enable => ~NO_FANOUT~
@@ -50797,7 +50839,7 @@ eq[2] <= decode_p7f:auto_generated.eq[2]
 eq[3] <= decode_p7f:auto_generated.eq[3]
 
 
-|course-project|MEMORY:inst3|lpm_decode13:inst15|lpm_decode:lpm_decode_component|decode_p7f:auto_generated
+|course-project|MEMORY:inst3|lpm_decode16:inst38|lpm_decode:lpm_decode_component|decode_p7f:auto_generated
 data[0] => w_anode15w[1].IN1
 data[0] => w_anode1w[1]~1.IN0
 data[0] => w_anode24w[1]~0.IN0
@@ -50812,31 +50854,32 @@ eq[2] <= w_anode24w[2].DB_MAX_OUTPUT_PORT_TYPE
 eq[3] <= w_anode33w[2].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|course-project|MEMORY:inst3|lpm_counter8:inst14
+|course-project|MEMORY:inst3|lpm_counter11:inst23
 clock => lpm_counter:lpm_counter_component.clock
 cnt_en => lpm_counter:lpm_counter_component.cnt_en
+sclr => lpm_counter:lpm_counter_component.sclr
 q[0] <= lpm_counter:lpm_counter_component.q[0]
 q[1] <= lpm_counter:lpm_counter_component.q[1]
 
 
-|course-project|MEMORY:inst3|lpm_counter8:inst14|lpm_counter:lpm_counter_component
-clock => cntr_fai:auto_generated.clock
+|course-project|MEMORY:inst3|lpm_counter11:inst23|lpm_counter:lpm_counter_component
+clock => cntr_3pi:auto_generated.clock
 clk_en => ~NO_FANOUT~
-cnt_en => cntr_fai:auto_generated.cnt_en
+cnt_en => cntr_3pi:auto_generated.cnt_en
 updown => ~NO_FANOUT~
 aclr => ~NO_FANOUT~
 aset => ~NO_FANOUT~
 aconst => ~NO_FANOUT~
 aload => ~NO_FANOUT~
-sclr => ~NO_FANOUT~
+sclr => cntr_3pi:auto_generated.sclr
 sset => ~NO_FANOUT~
 sconst => ~NO_FANOUT~
 sload => ~NO_FANOUT~
 data[0] => ~NO_FANOUT~
 data[1] => ~NO_FANOUT~
 cin => ~NO_FANOUT~
-q[0] <= cntr_fai:auto_generated.q[0]
-q[1] <= cntr_fai:auto_generated.q[1]
+q[0] <= cntr_3pi:auto_generated.q[0]
+q[1] <= cntr_3pi:auto_generated.q[1]
 cout <= <GND>
 eq[0] <= <GND>
 eq[1] <= <GND>
@@ -50856,12 +50899,15 @@ eq[14] <= <GND>
 eq[15] <= <GND>
 
 
-|course-project|MEMORY:inst3|lpm_counter8:inst14|lpm_counter:lpm_counter_component|cntr_fai:auto_generated
+|course-project|MEMORY:inst3|lpm_counter11:inst23|lpm_counter:lpm_counter_component|cntr_3pi:auto_generated
 clock => counter_reg_bit1a[1].CLK
 clock => counter_reg_bit1a[0].CLK
 cnt_en => _~5.IN0
 q[0] <= counter_reg_bit1a[0].REGOUT
 q[1] <= counter_reg_bit1a[1].REGOUT
+sclr => _~5.IN1
+sclr => counter_reg_bit1a[1].SCLR
+sclr => counter_reg_bit1a[0].SCLR
 
 
 |course-project|MEMORY:inst3|lpm_constant7:inst2

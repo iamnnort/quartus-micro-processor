@@ -22,6 +22,8 @@ RETURNS (
 	eq1,
 	eq10,
 	eq11,
+	eq12,
+	eq13,
 	eq2,
 	eq3,
 	eq4,
