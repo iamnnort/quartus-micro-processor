@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Wed May 03 21:33:32 2017
+Analysis & Synthesis Status : Successful - Wed May 03 22:50:29 2017
 Quartus II Version : 9.1 Build 222 10/21/2009 SJ Web Edition
 Revision Name : course-project
 Top-level Entity Name : course-project
 Family : Stratix II
 Logic utilization : N/A
-    Combinational ALUTs : 2,108
+    Combinational ALUTs : 2,100
     Dedicated logic registers : 1,945
 Total registers : 1945
-Total pins : 45
+Total pins : 46
 Total virtual pins : 0
 Total block memory bits : 155,648
 DSP block 9-bit elements : 0

@@ -10391,6 +10391,7 @@ ALU:inst|CELL:inst17|lpm_bustri1:inst13|lpm_bustri:lpm_bustri_component
 ALU:inst|CELL:inst17|lpm_bustri1:inst12|lpm_bustri:lpm_bustri_component
 ALU:inst|lpm_bustri16:inst20|lpm_bustri:lpm_bustri_component
 ALU:inst|lpm_bustri16:inst15|lpm_bustri:lpm_bustri_component
+ALU:inst|lpm_bustri16:inst23|lpm_bustri:lpm_bustri_component
 ALU:inst|lpm_bustri16:inst13|lpm_bustri:lpm_bustri_component
 MEMORY:inst3|CASH:inst|SET:inst11|DATA_MEM:inst3|ROW:inst14|CELL:inst20|lpm_bustri1:inst13|lpm_bustri:lpm_bustri_component
 MEMORY:inst3|CASH:inst|SET:inst11|DATA_MEM:inst3|ROW:inst14|CELL:inst20|lpm_bustri1:inst12|lpm_bustri:lpm_bustri_component
@@ -13641,41 +13642,6 @@ MEMORY:inst3|CASH:inst|SET:inst10|TAG_MEM:inst|lpm_decode7:inst32|lpm_decode:lpm
 
 # end
 # entity
-TAG
-# storage
-db|course-project.(62).cnf
-db|course-project.(62).cnf
-# case_insensitive
-# source_file
-tag.bdf
-80e454a2156c5f848877be4f1fcf75b4
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-CU:inst2|CASH:inst3|SET:inst11|TAG_MEM:inst|TAG:inst
-CU:inst2|CASH:inst3|SET:inst11|TAG_MEM:inst|TAG:inst1
-CU:inst2|CASH:inst3|SET:inst11|TAG_MEM:inst|TAG:inst4
-CU:inst2|CASH:inst3|SET:inst11|TAG_MEM:inst|TAG:inst2
-CU:inst2|CASH:inst3|SET:inst10|TAG_MEM:inst|TAG:inst
-CU:inst2|CASH:inst3|SET:inst10|TAG_MEM:inst|TAG:inst1
-CU:inst2|CASH:inst3|SET:inst10|TAG_MEM:inst|TAG:inst4
-CU:inst2|CASH:inst3|SET:inst10|TAG_MEM:inst|TAG:inst2
-MEMORY:inst3|CASH:inst|SET:inst11|TAG_MEM:inst|TAG:inst
-MEMORY:inst3|CASH:inst|SET:inst11|TAG_MEM:inst|TAG:inst1
-MEMORY:inst3|CASH:inst|SET:inst11|TAG_MEM:inst|TAG:inst4
-MEMORY:inst3|CASH:inst|SET:inst11|TAG_MEM:inst|TAG:inst2
-MEMORY:inst3|CASH:inst|SET:inst10|TAG_MEM:inst|TAG:inst
-MEMORY:inst3|CASH:inst|SET:inst10|TAG_MEM:inst|TAG:inst1
-MEMORY:inst3|CASH:inst|SET:inst10|TAG_MEM:inst|TAG:inst4
-MEMORY:inst3|CASH:inst|SET:inst10|TAG_MEM:inst|TAG:inst2
-}
-# macro_sequence
-
-# end
-# entity
 ROW
 # storage
 db|course-project.(73).cnf
@@ -13706,26 +13672,6 @@ MEMORY:inst3|CASH:inst|SET:inst10|DATA_MEM:inst3|ROW:inst14
 MEMORY:inst3|CASH:inst|SET:inst10|DATA_MEM:inst3|ROW:inst11
 MEMORY:inst3|CASH:inst|SET:inst10|DATA_MEM:inst3|ROW:inst8
 MEMORY:inst3|CASH:inst|SET:inst10|DATA_MEM:inst3|ROW:inst
-}
-# macro_sequence
-
-# end
-# entity
-MEMORY
-# storage
-db|course-project.(138).cnf
-db|course-project.(138).cnf
-# case_insensitive
-# source_file
-memory.bdf
-12196e88c05faa3570cd1958eab36
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-MEMORY:inst3
 }
 # macro_sequence
 
@@ -14370,6 +14316,7 @@ e542f5adf6af653bd181242b9785544
 ALU:inst|lpm_bustri16:inst14
 ALU:inst|lpm_bustri16:inst20
 ALU:inst|lpm_bustri16:inst15
+ALU:inst|lpm_bustri16:inst23
 ALU:inst|lpm_bustri16:inst13
 }
 # macro_sequence
@@ -15108,6 +15055,8 @@ data0
 3
 }
 # hierarchies {
+CU:inst2|lpm_bustri18:inst24|lpm_bustri:lpm_bustri_component
+CU:inst2|lpm_bustri18:inst25|lpm_bustri:lpm_bustri_component
 ALU:inst|lpm_bustri15:inst10|lpm_bustri:lpm_bustri_component
 ALU:inst|lpm_bustri15:inst9|lpm_bustri:lpm_bustri_component
 lpm_bustri17:inst7|lpm_bustri:lpm_bustri_component
@@ -15925,9 +15874,6 @@ data0x0
 lpm_or.inc
 b3db57fced17f86f7678b84966053be
 }
-# hierarchies {
-ALU:inst|lpm_or0:inst31
-}
 # macro_sequence
 
 # end
@@ -16156,160 +16102,6 @@ data0_0
 -1
 3
 }
-# hierarchies {
-ALU:inst|lpm_or0:inst31|lpm_or:lpm_or_component
-}
-# macro_sequence
-
-# end
-# entity
-lpm_clshift0
-# storage
-db|course-project.(174).cnf
-db|course-project.(174).cnf
-# case_insensitive
-# source_file
-lpm_clshift0.tdf
-538a81485a28862196ef905e98ffe836
-7
-# used_port {
-result9
--1
-3
-result8
--1
-3
-result7
--1
-3
-result6
--1
-3
-result5
--1
-3
-result4
--1
-3
-result3
--1
-3
-result2
--1
-3
-result18
--1
-3
-result17
--1
-3
-result16
--1
-3
-result15
--1
-3
-result14
--1
-3
-result13
--1
-3
-result12
--1
-3
-result11
--1
-3
-result10
--1
-3
-result1
--1
-3
-result0
--1
-3
-distance4
--1
-3
-distance3
--1
-3
-distance2
--1
-3
-distance1
--1
-3
-distance0
--1
-3
-data9
--1
-3
-data8
--1
-3
-data7
--1
-3
-data6
--1
-3
-data5
--1
-3
-data4
--1
-3
-data3
--1
-3
-data2
--1
-3
-data18
--1
-3
-data17
--1
-3
-data16
--1
-3
-data15
--1
-3
-data14
--1
-3
-data13
--1
-3
-data12
--1
-3
-data11
--1
-3
-data10
--1
-3
-data1
--1
-3
-data0
--1
-3
-}
-# include_file {
-lpm_clshift.inc
-1f858db146807138381fb6d7c275b5f
-}
-# hierarchies {
-ALU:inst|lpm_clshift0:inst29
-}
 # macro_sequence
 
 # end
@@ -16479,9 +16271,6 @@ direction
 -1
 1
 }
-# hierarchies {
-ALU:inst|lpm_clshift0:inst29|lpm_clshift:lpm_clshift_component
-}
 # macro_sequence
 
 # end
@@ -16626,49 +16415,6 @@ data0
 -1
 3
 }
-# hierarchies {
-ALU:inst|lpm_clshift0:inst29|lpm_clshift:lpm_clshift_component|lpm_clshift_nib:auto_generated
-}
-# macro_sequence
-
-# end
-# entity
-course-project
-# storage
-db|course-project.(0).cnf
-db|course-project.(0).cnf
-# case_insensitive
-# source_file
-course-project.bdf
-9b8ebb7878d19c2182afe1b31d5a431
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-|
-}
-# macro_sequence
-
-# end
-# entity
-CU
-# storage
-db|course-project.(7).cnf
-db|course-project.(7).cnf
-# case_insensitive
-# source_file
-cu.bdf
-b5a26fc132c8380ebb6f0acc8955610
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-CU:inst2
-}
 # macro_sequence
 
 # end
@@ -16721,8 +16467,178 @@ data0
 lpm_decode.inc
 10da69a8bbd590d66779e7a142f73790
 }
+# macro_sequence
+
+# end
+# entity
+lpm_decode14
+# storage
+db|course-project.(178).cnf
+db|course-project.(178).cnf
+# case_insensitive
+# source_file
+lpm_decode14.tdf
+5830284f6e2d1ddcf094178878c92f8
+7
+# used_port {
+eq2
+-1
+3
+eq1
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+}
+# include_file {
+lpm_decode.inc
+10da69a8bbd590d66779e7a142f73790
+}
+# hierarchies {
+ALU:inst|lpm_decode14:inst36
+}
+# macro_sequence
+
+# end
+# entity
+lpm_counter9
+# storage
+db|course-project.(179).cnf
+db|course-project.(179).cnf
+# case_insensitive
+# source_file
+lpm_counter9.tdf
+c475a1ce5ce57f3955468899a81945f
+7
+# used_port {
+sclr
+-1
+3
+q1
+-1
+3
+q0
+-1
+3
+cnt_en
+-1
+3
+clock
+-1
+3
+}
+# include_file {
+lpm_counter.inc
+c5cfeeabc5f2ab60b3453f6abbc42b41
+}
+# hierarchies {
+ALU:inst|lpm_counter9:inst35
+}
+# macro_sequence
+
+# end
+# entity
+lpm_decode4
+# storage
+db|course-project.(62).cnf
+db|course-project.(62).cnf
+# case_insensitive
+# source_file
+lpm_decode4.tdf
+9a9cdd0c55a8426c5c0b4fe1486e193
+7
+# used_port {
+eq9
+-1
+3
+eq8
+-1
+3
+eq7
+-1
+3
+eq6
+-1
+3
+eq5
+-1
+3
+eq4
+-1
+3
+eq3
+-1
+3
+eq2
+-1
+3
+eq11
+-1
+3
+eq10
+-1
+3
+eq1
+-1
+3
+data3
+-1
+3
+data2
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+}
+# include_file {
+lpm_decode.inc
+10da69a8bbd590d66779e7a142f73790
+}
 # hierarchies {
 CU:inst2|lpm_decode4:inst2
+}
+# macro_sequence
+
+# end
+# entity
+TAG
+# storage
+db|course-project.(138).cnf
+db|course-project.(138).cnf
+# case_insensitive
+# source_file
+tag.bdf
+9158cd6d34d585cd672939677ec2c6ec
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+CU:inst2|CASH:inst3|SET:inst11|TAG_MEM:inst|TAG:inst
+CU:inst2|CASH:inst3|SET:inst11|TAG_MEM:inst|TAG:inst1
+CU:inst2|CASH:inst3|SET:inst11|TAG_MEM:inst|TAG:inst4
+CU:inst2|CASH:inst3|SET:inst11|TAG_MEM:inst|TAG:inst2
+CU:inst2|CASH:inst3|SET:inst10|TAG_MEM:inst|TAG:inst
+CU:inst2|CASH:inst3|SET:inst10|TAG_MEM:inst|TAG:inst1
+CU:inst2|CASH:inst3|SET:inst10|TAG_MEM:inst|TAG:inst4
+CU:inst2|CASH:inst3|SET:inst10|TAG_MEM:inst|TAG:inst2
+MEMORY:inst3|CASH:inst|SET:inst11|TAG_MEM:inst|TAG:inst
+MEMORY:inst3|CASH:inst|SET:inst11|TAG_MEM:inst|TAG:inst1
+MEMORY:inst3|CASH:inst|SET:inst11|TAG_MEM:inst|TAG:inst4
+MEMORY:inst3|CASH:inst|SET:inst11|TAG_MEM:inst|TAG:inst2
+MEMORY:inst3|CASH:inst|SET:inst10|TAG_MEM:inst|TAG:inst
+MEMORY:inst3|CASH:inst|SET:inst10|TAG_MEM:inst|TAG:inst1
+MEMORY:inst3|CASH:inst|SET:inst10|TAG_MEM:inst|TAG:inst4
+MEMORY:inst3|CASH:inst|SET:inst10|TAG_MEM:inst|TAG:inst2
 }
 # macro_sequence
 
@@ -16837,7 +16753,7 @@ address_a0
 }
 # memory_file {
 rom.hex
-13e9a9a090254b08b2f545648cb174
+6921b1a368a1a73caa68bcdf5b65e6
 }
 # hierarchies {
 CU:inst2|lpm_rom:inst1|altrom:srom|altsyncram:rom_block|altsyncram_a001:auto_generated
@@ -16848,12 +16764,12 @@ CU:inst2|lpm_rom:inst1|altrom:srom|altsyncram:rom_block|altsyncram_a001:auto_gen
 # entity
 ALU
 # storage
-db|course-project.(177).cnf
-db|course-project.(177).cnf
+db|course-project.(174).cnf
+db|course-project.(174).cnf
 # case_insensitive
 # source_file
 alu.bdf
-bb71183a371fe21dd755b5d426524037
+ae94f970ce3a797779646442db25
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
@@ -16866,20 +16782,122 @@ ALU:inst
 
 # end
 # entity
-lpm_decode14
+lpm_inv0
 # storage
-db|course-project.(178).cnf
-db|course-project.(178).cnf
+db|course-project.(177).cnf
+db|course-project.(177).cnf
 # case_insensitive
 # source_file
-lpm_decode14.tdf
-5830284f6e2d1ddcf094178878c92f8
+lpm_inv0.tdf
+81438d9f792150b551bb255e6d22e
 7
 # used_port {
-eq2
+result9
 -1
 3
-eq1
+result8
+-1
+3
+result7
+-1
+3
+result6
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result2
+-1
+3
+result18
+-1
+3
+result17
+-1
+3
+result16
+-1
+3
+result15
+-1
+3
+result14
+-1
+3
+result13
+-1
+3
+result12
+-1
+3
+result11
+-1
+3
+result10
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+data9
+-1
+3
+data8
+-1
+3
+data7
+-1
+3
+data6
+-1
+3
+data5
+-1
+3
+data4
+-1
+3
+data3
+-1
+3
+data2
+-1
+3
+data18
+-1
+3
+data17
+-1
+3
+data16
+-1
+3
+data15
+-1
+3
+data14
+-1
+3
+data13
+-1
+3
+data12
+-1
+3
+data11
+-1
+3
+data10
 -1
 3
 data1
@@ -16890,48 +16908,802 @@ data0
 3
 }
 # include_file {
-lpm_decode.inc
-10da69a8bbd590d66779e7a142f73790
+lpm_inv.inc
+c96858d51f661573a481f12120e5219f
 }
 # hierarchies {
-ALU:inst|lpm_decode14:inst36
+ALU:inst|lpm_inv0:inst42
 }
 # macro_sequence
 
 # end
 # entity
-lpm_counter9
+lpm_inv
 # storage
-db|course-project.(179).cnf
-db|course-project.(179).cnf
+db|course-project.(180).cnf
+db|course-project.(180).cnf
 # case_insensitive
 # source_file
-lpm_counter9.tdf
-c475a1ce5ce57f3955468899a81945f
+c:|altera|91|quartus|libraries|megafunctions|lpm_inv.tdf
+bf3a15611ede64d75750a39e22c85c3f
+7
+# user_parameter {
+LPM_WIDTH
+19
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+result9
+-1
+3
+result8
+-1
+3
+result7
+-1
+3
+result6
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result2
+-1
+3
+result18
+-1
+3
+result17
+-1
+3
+result16
+-1
+3
+result15
+-1
+3
+result14
+-1
+3
+result13
+-1
+3
+result12
+-1
+3
+result11
+-1
+3
+result10
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+data9
+-1
+3
+data8
+-1
+3
+data7
+-1
+3
+data6
+-1
+3
+data5
+-1
+3
+data4
+-1
+3
+data3
+-1
+3
+data2
+-1
+3
+data18
+-1
+3
+data17
+-1
+3
+data16
+-1
+3
+data15
+-1
+3
+data14
+-1
+3
+data13
+-1
+3
+data12
+-1
+3
+data11
+-1
+3
+data10
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+}
+# hierarchies {
+ALU:inst|lpm_inv0:inst42|lpm_inv:lpm_inv_component
+}
+# macro_sequence
+
+# end
+# entity
+lpm_clshift0
+# storage
+db|course-project.(181).cnf
+db|course-project.(181).cnf
+# case_insensitive
+# source_file
+lpm_clshift0.tdf
+a5bbc9c43b92acfa235a234da3eeff
 7
 # used_port {
-sclr
+result9
 -1
 3
-q1
+result8
 -1
 3
-q0
+result7
 -1
 3
-cnt_en
+result6
 -1
 3
-clock
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result2
+-1
+3
+result18
+-1
+3
+result17
+-1
+3
+result16
+-1
+3
+result15
+-1
+3
+result14
+-1
+3
+result13
+-1
+3
+result12
+-1
+3
+result11
+-1
+3
+result10
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+distance4
+-1
+3
+distance3
+-1
+3
+distance2
+-1
+3
+distance1
+-1
+3
+distance0
+-1
+3
+data9
+-1
+3
+data8
+-1
+3
+data7
+-1
+3
+data6
+-1
+3
+data5
+-1
+3
+data4
+-1
+3
+data3
+-1
+3
+data2
+-1
+3
+data18
+-1
+3
+data17
+-1
+3
+data16
+-1
+3
+data15
+-1
+3
+data14
+-1
+3
+data13
+-1
+3
+data12
+-1
+3
+data11
+-1
+3
+data10
+-1
+3
+data1
+-1
+3
+data0
 -1
 3
 }
 # include_file {
-lpm_counter.inc
-c5cfeeabc5f2ab60b3453f6abbc42b41
+lpm_clshift.inc
+1f858db146807138381fb6d7c275b5f
 }
 # hierarchies {
-ALU:inst|lpm_counter9:inst35
+ALU:inst|lpm_clshift0:inst29
+}
+# macro_sequence
+
+# end
+# entity
+lpm_clshift
+# storage
+db|course-project.(182).cnf
+db|course-project.(182).cnf
+# case_insensitive
+# source_file
+c:|altera|91|quartus|libraries|megafunctions|lpm_clshift.tdf
+89561ba8d0cb7cce575c9c72d6ad22ad
+7
+# user_parameter {
+LPM_PIPELINE
+0
+PARAMETER_UNKNOWN
+DEF
+LPM_SHIFTTYPE
+ARITHMETIC
+PARAMETER_UNKNOWN
+USR
+LPM_WIDTH
+19
+PARAMETER_UNKNOWN
+USR
+LPM_WIDTHDIST
+5
+PARAMETER_UNKNOWN
+USR
+CBXI_PARAMETER
+lpm_clshift_juc
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+result9
+-1
+3
+result8
+-1
+3
+result7
+-1
+3
+result6
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result2
+-1
+3
+result18
+-1
+3
+result17
+-1
+3
+result16
+-1
+3
+result15
+-1
+3
+result14
+-1
+3
+result13
+-1
+3
+result12
+-1
+3
+result11
+-1
+3
+result10
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+distance4
+-1
+3
+distance3
+-1
+3
+distance2
+-1
+3
+distance1
+-1
+3
+distance0
+-1
+3
+data9
+-1
+3
+data8
+-1
+3
+data7
+-1
+3
+data6
+-1
+3
+data5
+-1
+3
+data4
+-1
+3
+data3
+-1
+3
+data2
+-1
+3
+data18
+-1
+3
+data17
+-1
+3
+data16
+-1
+3
+data15
+-1
+3
+data14
+-1
+3
+data13
+-1
+3
+data12
+-1
+3
+data11
+-1
+3
+data10
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+direction
+-1
+2
+}
+# hierarchies {
+ALU:inst|lpm_clshift0:inst29|lpm_clshift:lpm_clshift_component
+}
+# macro_sequence
+
+# end
+# entity
+lpm_clshift_juc
+# storage
+db|course-project.(183).cnf
+db|course-project.(183).cnf
+# case_insensitive
+# source_file
+db|lpm_clshift_juc.tdf
+589bccdc3ee2c11aadcd06bc15e8f7a
+7
+# used_port {
+result9
+-1
+3
+result8
+-1
+3
+result7
+-1
+3
+result6
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result2
+-1
+3
+result18
+-1
+3
+result17
+-1
+3
+result16
+-1
+3
+result15
+-1
+3
+result14
+-1
+3
+result13
+-1
+3
+result12
+-1
+3
+result11
+-1
+3
+result10
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+distance4
+-1
+3
+distance3
+-1
+3
+distance2
+-1
+3
+distance1
+-1
+3
+distance0
+-1
+3
+direction
+-1
+3
+data9
+-1
+3
+data8
+-1
+3
+data7
+-1
+3
+data6
+-1
+3
+data5
+-1
+3
+data4
+-1
+3
+data3
+-1
+3
+data2
+-1
+3
+data18
+-1
+3
+data17
+-1
+3
+data16
+-1
+3
+data15
+-1
+3
+data14
+-1
+3
+data13
+-1
+3
+data12
+-1
+3
+data11
+-1
+3
+data10
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+}
+# hierarchies {
+ALU:inst|lpm_clshift0:inst29|lpm_clshift:lpm_clshift_component|lpm_clshift_juc:auto_generated
+}
+# macro_sequence
+
+# end
+# entity
+MEMORY
+# storage
+db|course-project.(184).cnf
+db|course-project.(184).cnf
+# case_insensitive
+# source_file
+memory.bdf
+311c149e3644528784c8aa4e6a7af8
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+MEMORY:inst3
+}
+# macro_sequence
+
+# end
+# entity
+CU
+# storage
+db|course-project.(7).cnf
+db|course-project.(7).cnf
+# case_insensitive
+# source_file
+cu.bdf
+e26baaf1a9cda3fa599f11690406
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+CU:inst2
+}
+# macro_sequence
+
+# end
+# entity
+lpm_bustri18
+# storage
+db|course-project.(185).cnf
+db|course-project.(185).cnf
+# case_insensitive
+# source_file
+lpm_bustri18.tdf
+e76c366767c5d5d9f541f94e692ac1f
+7
+# used_port {
+tridata2
+-1
+3
+tridata1
+-1
+3
+tridata0
+-1
+3
+enabledt
+-1
+3
+data2
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+}
+# include_file {
+lpm_bustri.inc
+e542f5adf6af653bd181242b9785544
+}
+# hierarchies {
+CU:inst2|lpm_bustri18:inst24
+CU:inst2|lpm_bustri18:inst25
+}
+# macro_sequence
+
+# end
+# entity
+lpm_constant9
+# storage
+db|course-project.(186).cnf
+db|course-project.(186).cnf
+# case_insensitive
+# source_file
+lpm_constant9.tdf
+6d75279aafb6d86aad23fac76be3f6b1
+7
+# used_port {
+result2
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+}
+# include_file {
+lpm_constant.inc
+97ffb7e3fef9ce9fce4eff8455d5da5
+}
+# hierarchies {
+CU:inst2|lpm_constant9:inst23
+}
+# macro_sequence
+
+# end
+# entity
+lpm_constant
+# storage
+db|course-project.(187).cnf
+db|course-project.(187).cnf
+# case_insensitive
+# source_file
+c:|altera|91|quartus|libraries|megafunctions|lpm_constant.tdf
+eb6dfbf4944a55f9ca719d52154e40e2
+7
+# user_parameter {
+LPM_WIDTH
+3
+PARAMETER_UNKNOWN
+USR
+LPM_CVALUE
+0
+PARAMETER_UNKNOWN
+USR
+ENABLE_RUNTIME_MOD
+NO
+PARAMETER_UNKNOWN
+USR
+CBXI_PARAMETER
+lpm_constant_5e6
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+result2
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+}
+# hierarchies {
+CU:inst2|lpm_constant9:inst23|lpm_constant:lpm_constant_component
+}
+# macro_sequence
+
+# end
+# entity
+course-project
+# storage
+db|course-project.(0).cnf
+db|course-project.(0).cnf
+# case_insensitive
+# source_file
+course-project.bdf
+5e577ad87377c5d298f1fcb13f304927
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
 }
 # macro_sequence
 

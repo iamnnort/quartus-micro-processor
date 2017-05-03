@@ -15,10 +15,12 @@
 
 FUNCTION lpm_add_sub1 
 (
+	cin,
 	dataa[18..0],
 	datab[18..0]
 )
 
 RETURNS (
+	cout,
 	result[18..0]
 );

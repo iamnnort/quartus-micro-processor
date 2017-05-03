@@ -46,7 +46,7 @@ SUBDESIGN lpm_clshift0
 VARIABLE
 
 	lpm_clshift_component : lpm_clshift WITH (
-			LPM_SHIFTTYPE = "ROTATE",
+			LPM_SHIFTTYPE = "ARITHMETIC",
 			LPM_TYPE = "LPM_CLSHIFT",
 			LPM_WIDTH = 19,
 			LPM_WIDTHDIST = 5
@@ -56,7 +56,7 @@ BEGIN
 
 	result[18..0] = lpm_clshift_component.result[18..0];
 	lpm_clshift_component.distance[4..0] = distance[4..0];
-	lpm_clshift_component.direction = GND;
+	lpm_clshift_component.direction = VCC;
 	lpm_clshift_component.data[18..0] = data[18..0];
 END;
 
@@ -66,14 +66,14 @@ END;
 -- CNX file retrieval info
 -- ============================================================
 -- Retrieval info: PRIVATE: INTENDED_DEVICE_FAMILY STRING "Stratix II"
--- Retrieval info: PRIVATE: LPM_SHIFTTYPE NUMERIC "2"
+-- Retrieval info: PRIVATE: LPM_SHIFTTYPE NUMERIC "1"
 -- Retrieval info: PRIVATE: LPM_WIDTH NUMERIC "19"
 -- Retrieval info: PRIVATE: SYNTH_WRAPPER_GEN_POSTFIX STRING "0"
 -- Retrieval info: PRIVATE: lpm_width_varies NUMERIC "0"
 -- Retrieval info: PRIVATE: lpm_widthdist NUMERIC "5"
 -- Retrieval info: PRIVATE: lpm_widthdist_style NUMERIC "1"
--- Retrieval info: PRIVATE: port_direction NUMERIC "0"
--- Retrieval info: CONSTANT: LPM_SHIFTTYPE STRING "ROTATE"
+-- Retrieval info: PRIVATE: port_direction NUMERIC "1"
+-- Retrieval info: CONSTANT: LPM_SHIFTTYPE STRING "ARITHMETIC"
 -- Retrieval info: CONSTANT: LPM_TYPE STRING "LPM_CLSHIFT"
 -- Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "19"
 -- Retrieval info: CONSTANT: LPM_WIDTHDIST NUMERIC "5"
@@ -83,7 +83,7 @@ END;
 -- Retrieval info: CONNECT: @distance 0 0 5 0 distance 0 0 5 0
 -- Retrieval info: CONNECT: @data 0 0 19 0 data 0 0 19 0
 -- Retrieval info: CONNECT: result 0 0 19 0 @result 0 0 19 0
--- Retrieval info: CONNECT: @direction 0 0 0 0 GND 0 0 0 0
+-- Retrieval info: CONNECT: @direction 0 0 0 0 VCC 0 0 0 0
 -- Retrieval info: LIBRARY: lpm lpm.lpm_components.all
 -- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_clshift0.tdf TRUE
 -- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_clshift0.inc TRUE

@@ -45,7 +45,7 @@ applicable agreement for further details.
 		(line (pt 184 24)(pt 168 24)(line_width 3))
 	)
 	(drawing
-		(text "ROTATE left" (rect 21 52 74 64)(font "Arial" ))
+		(text "ARITHMETIC right shift" (rect 21 52 120 64)(font "Arial" ))
 		(line (pt 16 16)(pt 16 64)(line_width 1))
 		(line (pt 168 16)(pt 168 64)(line_width 1))
 		(line (pt 16 16)(pt 168 16)(line_width 1))

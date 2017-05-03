@@ -20,9 +20,9 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 192 240)
+	(rect 16 16 192 304)
 	(text "CU" (rect 5 0 21 14)(font "Arial" (font_size 8)))
-	(text "inst" (rect 8 208 25 220)(font "Arial" ))
+	(text "inst" (rect 8 272 25 284)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -75,8 +75,8 @@ applicable agreement for further details.
 	(port
 		(pt 176 112)
 		(output)
-		(text "ADD_REG_REG" (rect 0 0 89 14)(font "Arial" (font_size 8)))
-		(text "ADD_REG_REG" (rect 66 107 155 121)(font "Arial" (font_size 8)))
+		(text "ADDÑ_REG" (rect 0 0 66 14)(font "Arial" (font_size 8)))
+		(text "ADDÑ_REG" (rect 89 107 155 121)(font "Arial" (font_size 8)))
 		(line (pt 176 112)(pt 160 112)(line_width 1))
 	)
 	(port
@@ -89,15 +89,15 @@ applicable agreement for further details.
 	(port
 		(pt 176 144)
 		(output)
-		(text "OR_REG_REG" (rect 0 0 81 14)(font "Arial" (font_size 8)))
-		(text "OR_REG_REG" (rect 74 139 155 153)(font "Arial" (font_size 8)))
+		(text "NOT_REG" (rect 0 0 56 14)(font "Arial" (font_size 8)))
+		(text "NOT_REG" (rect 99 139 155 153)(font "Arial" (font_size 8)))
 		(line (pt 176 144)(pt 160 144)(line_width 1))
 	)
 	(port
 		(pt 176 160)
 		(output)
-		(text "ROL_REG_REG" (rect 0 0 88 14)(font "Arial" (font_size 8)))
-		(text "ROL_REG_REG" (rect 67 155 155 169)(font "Arial" (font_size 8)))
+		(text "RSA_REG_REG" (rect 0 0 89 14)(font "Arial" (font_size 8)))
+		(text "RSA_REG_REG" (rect 66 155 155 169)(font "Arial" (font_size 8)))
 		(line (pt 176 160)(pt 160 160)(line_width 1))
 	)
 	(port
@@ -107,7 +107,35 @@ applicable agreement for further details.
 		(text "MOV_REG_REG" (rect 63 171 155 185)(font "Arial" (font_size 8)))
 		(line (pt 176 176)(pt 160 176)(line_width 1))
 	)
+	(port
+		(pt 176 192)
+		(output)
+		(text "ADD_REG_MEM" (rect 0 0 90 14)(font "Arial" (font_size 8)))
+		(text "ADD_REG_MEM" (rect 65 187 155 201)(font "Arial" (font_size 8)))
+		(line (pt 176 192)(pt 160 192)(line_width 1))
+	)
+	(port
+		(pt 176 208)
+		(output)
+		(text "AND_REG_MEM" (rect 0 0 90 14)(font "Arial" (font_size 8)))
+		(text "AND_REG_MEM" (rect 65 203 155 217)(font "Arial" (font_size 8)))
+		(line (pt 176 208)(pt 160 208)(line_width 1))
+	)
+	(port
+		(pt 176 224)
+		(output)
+		(text "OR_REG_MEM" (rect 0 0 82 14)(font "Arial" (font_size 8)))
+		(text "OR_REG_MEM" (rect 73 219 155 233)(font "Arial" (font_size 8)))
+		(line (pt 176 224)(pt 160 224)(line_width 1))
+	)
+	(port
+		(pt 176 240)
+		(output)
+		(text "ROL_REG_MEM" (rect 0 0 89 14)(font "Arial" (font_size 8)))
+		(text "ROL_REG_MEM" (rect 66 235 155 249)(font "Arial" (font_size 8)))
+		(line (pt 176 240)(pt 160 240)(line_width 1))
+	)
 	(drawing
-		(rectangle (rect 16 16 160 208)(line_width 1))
+		(rectangle (rect 16 16 160 272)(line_width 1))
 	)
 )

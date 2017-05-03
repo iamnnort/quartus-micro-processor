@@ -54,8 +54,8 @@ applicable agreement for further details.
 	(port
 		(pt 0 96)
 		(input)
-		(text "ADD_REG_REG" (rect 0 0 89 14)(font "Arial" (font_size 8)))
-		(text "ADD_REG_REG" (rect 21 91 110 105)(font "Arial" (font_size 8)))
+		(text "ADDC_REG" (rect 0 0 66 14)(font "Arial" (font_size 8)))
+		(text "ADDC_REG" (rect 21 91 87 105)(font "Arial" (font_size 8)))
 		(line (pt 0 96)(pt 16 96)(line_width 1))
 	)
 	(port
@@ -68,15 +68,15 @@ applicable agreement for further details.
 	(port
 		(pt 0 128)
 		(input)
-		(text "OR_REG_REG" (rect 0 0 81 14)(font "Arial" (font_size 8)))
-		(text "OR_REG_REG" (rect 21 123 102 137)(font "Arial" (font_size 8)))
+		(text "NOT_REG" (rect 0 0 56 14)(font "Arial" (font_size 8)))
+		(text "NOT_REG" (rect 21 123 77 137)(font "Arial" (font_size 8)))
 		(line (pt 0 128)(pt 16 128)(line_width 1))
 	)
 	(port
 		(pt 0 144)
 		(input)
-		(text "ROL_REG_REG" (rect 0 0 88 14)(font "Arial" (font_size 8)))
-		(text "ROL_REG_REG" (rect 21 139 109 153)(font "Arial" (font_size 8)))
+		(text "SRA_REG_REG" (rect 0 0 89 14)(font "Arial" (font_size 8)))
+		(text "SRA_REG_REG" (rect 21 139 110 153)(font "Arial" (font_size 8)))
 		(line (pt 0 144)(pt 16 144)(line_width 1))
 	)
 	(port
