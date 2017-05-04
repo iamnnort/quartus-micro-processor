@@ -10,6 +10,7 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|course-project|MEMORY:inst3|CASH:inst|SET:inst10|DATA_MEM:inst3|ROW:inst14|lpm_counter13:inst4|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_3pi.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|course-project|ALU:inst|lpm_add_sub1:inst|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_i9i.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|course-project|CU:inst2|CASH:inst3|SET:inst10|DATA_MEM:inst3|ROW:inst|lpm_counter13:inst9|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_3pi.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|course-project|CU:inst2|lpm_compare2:inst44|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_53j.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|course-project|MEMORY:inst3|CASH:inst|SET:inst11|DATA_MEM:inst3|ROW:inst14|lpm_counter13:inst4|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_3pi.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|course-project|MEMORY:inst3|CASH:inst|SET:inst10|DATA_MEM:inst3|ROW:inst11|lpm_counter13:inst9|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_3pi.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|course-project|CU:inst2|CASH:inst3|SET:inst10|TAG_MEM:inst|lpm_compare1:inst6|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_g1h.tdf"/>
